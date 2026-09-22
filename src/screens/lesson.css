@@ -1,0 +1,193 @@
+.lesson__header {
+  flex: none;
+  background: var(--sg-black);
+  box-shadow: inset 0 calc(var(--px) * -1) 0 var(--sg-blue-deep);
+}
+
+.lesson__header-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--px);
+  padding-block: calc(var(--px) * 2) calc(var(--px) * 3);
+}
+
+.lesson__title {
+  font-size: var(--text-lg);
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+/* --- Lépésjelző ---------------------------------------------------------------------------- */
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: calc(var(--px) * 2);
+  margin-top: calc(var(--px) * 2);
+}
+
+.steps__tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--px) * 1.5);
+  min-height: 40px;
+  padding: 0 calc(var(--px) * 2);
+  border: 0;
+  background: var(--sg-black-soft);
+  color: var(--sg-light-muted);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  cursor: pointer;
+  clip-path: var(--notch);
+}
+
+.steps__tab:disabled {
+  cursor: not-allowed;
+  --dither-color: var(--sg-black-soft);
+  background-color: var(--sg-black);
+  background-image: conic-gradient(var(--dither-color) 25%, transparent 0 50%, var(--dither-color) 0 75%, transparent 0);
+  background-size: calc(var(--px) * 2) calc(var(--px) * 2);
+}
+
+.steps__num {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  background: var(--sg-black);
+  color: var(--sg-light);
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.steps__done {
+  display: none;
+  color: var(--sg-blue);
+}
+
+.steps__done .icon {
+  width: 14px;
+  height: 14px;
+}
+
+.steps__tab.is-done .steps__done {
+  display: inline-flex;
+}
+
+.steps__tab.is-current {
+  background: var(--sg-blue);
+  color: var(--sg-black);
+}
+
+.steps__tab.is-current .steps__done {
+  color: var(--sg-black);
+}
+
+.steps__tab:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 var(--px) var(--sg-light);
+}
+
+/* --- Tartalom ------------------------------------------------------------------------------- */
+
+.lesson__stage {
+  padding-block: calc(var(--px) * 5) var(--gap-lg);
+}
+
+.lesson__step {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--px) * 4);
+}
+
+.lesson__summary {
+  color: var(--sg-light-muted);
+}
+
+/* --- Mentor-párbeszéd alul ------------------------------------------------------------------ */
+
+.lesson__dialog {
+  flex: none;
+  padding-block: calc(var(--px) * 3);
+  background: var(--sg-black);
+  box-shadow: inset 0 var(--px) 0 var(--sg-blue-deep);
+}
+
+@media (max-height: 560px) {
+  .lesson__dialog sg-dialog {
+    --portrait-size: 64px;
+  }
+
+  .lesson__dialog .bubble__text {
+    font-size: var(--text-sm);
+  }
+}
+
+/* --- Összegzés ------------------------------------------------------------------------------ */
+
+.summary {
+  align-items: center;
+  text-align: center;
+  padding: calc(var(--px) * 7) calc(var(--px) * 5);
+}
+
+.summary__icon {
+  width: 60px;
+  height: 54px;
+  color: var(--sg-light-muted);
+}
+
+.summary__icon.is-passed {
+  color: var(--sg-blue);
+}
+
+.summary__score {
+  font-size: var(--text-3xl);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.summary__score:focus {
+  outline: none;
+}
+
+.summary__label {
+  margin-top: calc(var(--px) * -2);
+  color: var(--sg-ink-muted);
+}
+
+.summary__xp {
+  font-size: var(--text-lg);
+  padding: var(--px) calc(var(--px) * 3);
+  --icon-accent: var(--sg-light);
+}
+
+.summary__note {
+  max-width: 36ch;
+  color: var(--sg-ink-muted);
+  font-size: var(--text-sm);
+}
+
+.summary__actions {
+  width: 100%;
+  margin-top: calc(var(--px) * 2);
+}
+
+.summary__actions .btn {
+  flex: 1 1 180px;
+}
+
+/* --- Zárt / hiányzó lecke ------------------------------------------------------------------- */
+
+.lesson__message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap);
+  padding-block: var(--gap-lg);
+}
+
+.lesson__message sg-dialog {
+  width: 100%;
+}

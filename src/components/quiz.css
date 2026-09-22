@@ -1,0 +1,194 @@
+sg-quiz {
+  display: block;
+}
+
+.quiz {
+  padding: calc(var(--px) * 5) calc(var(--px) * 5) calc(var(--px) * 6);
+}
+
+.quiz__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(var(--px) * 3);
+}
+
+.quiz__pips {
+  display: flex;
+  gap: var(--px);
+}
+
+.quiz__pip {
+  width: calc(var(--px) * 4);
+  height: calc(var(--px) * 2);
+}
+
+.quiz__pip.is-todo {
+  box-shadow: inset 0 0 0 var(--px) var(--sg-light-muted);
+}
+
+.quiz__pip.is-current {
+  box-shadow: inset 0 0 0 var(--px) var(--sg-black);
+}
+
+.quiz__pip.is-correct {
+  background: var(--sg-blue);
+}
+
+.quiz__pip.is-wrong {
+  background: var(--sg-black);
+}
+
+.quiz__question {
+  margin: calc(var(--px) * 3) 0 calc(var(--px) * 4);
+  font-size: var(--text-xl);
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.quiz__question:focus {
+  outline: none;
+}
+
+.quiz__options {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--px) * 3);
+  list-style: none;
+}
+
+.quiz__option {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: calc(var(--px) * 3);
+  width: 100%;
+  min-height: 52px;
+  padding: calc(var(--px) * 2) calc(var(--px) * 3) calc(var(--px) * 2.5) calc(var(--px) * 2);
+  border: 0;
+  background: var(--sg-light);
+  color: var(--sg-black);
+  font-weight: 500;
+  font-size: var(--text-md);
+  line-height: 1.3;
+  text-align: left;
+  cursor: pointer;
+  clip-path: var(--notch);
+  box-shadow:
+    inset 0 0 0 var(--px) var(--sg-black),
+    inset 0 calc(var(--px) * -2) 0 var(--sg-light-shade);
+}
+
+.quiz__option:hover:not(:disabled) {
+  background: var(--sg-blue-pale);
+}
+
+.quiz__option:active:not(:disabled) {
+  translate: 0 var(--px);
+}
+
+.quiz__option:focus-visible {
+  outline: none;
+  box-shadow:
+    inset 0 0 0 var(--px) var(--sg-black),
+    inset 0 0 0 calc(var(--px) * 2) var(--sg-blue);
+}
+
+.quiz__option:disabled {
+  cursor: default;
+}
+
+.quiz__key {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  background: var(--sg-black);
+  color: var(--sg-light);
+  font-weight: 900;
+  clip-path: var(--notch);
+}
+
+.quiz__mark {
+  display: inline-flex;
+  align-items: center;
+}
+
+.quiz__mark .icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* A helyes válasz: kék, pipával */
+.quiz__option.is-answer {
+  background: var(--sg-blue);
+  box-shadow:
+    inset 0 0 0 var(--px) var(--sg-black),
+    inset 0 calc(var(--px) * -2) 0 var(--sg-blue-dark);
+}
+
+/* A választott hibás válasz: invertált, áthúzva, X-szel */
+.quiz__option.is-wrong {
+  background: var(--sg-black);
+  color: var(--sg-light);
+  box-shadow: inset 0 0 0 var(--px) var(--sg-light-muted);
+}
+
+.quiz__option.is-wrong .quiz__option-text {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.quiz__option.is-wrong .quiz__key {
+  background: var(--sg-light);
+  color: var(--sg-black);
+}
+
+.quiz__option.is-dimmed {
+  opacity: 0.5;
+}
+
+.quiz__feedback:empty {
+  display: none;
+}
+
+.quiz__result {
+  display: flex;
+  align-items: flex-start;
+  gap: calc(var(--px) * 3);
+  margin-top: calc(var(--px) * 4);
+  padding: calc(var(--px) * 3) calc(var(--px) * 4);
+  clip-path: var(--notch);
+}
+
+.quiz__result.is-correct {
+  background: var(--sg-blue);
+  color: var(--sg-black);
+}
+
+.quiz__result.is-wrong {
+  background: var(--sg-black);
+  color: var(--sg-light);
+}
+
+.quiz__result-icon {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
+}
+
+.quiz__result-title {
+  font-weight: 900;
+  font-size: var(--text-lg);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.quiz__explanation {
+  margin-top: var(--px);
+}
+
+.quiz__next {
+  margin-top: calc(var(--px) * 4);
+}

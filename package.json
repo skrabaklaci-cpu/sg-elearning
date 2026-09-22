@@ -1,0 +1,27 @@
+{
+  "name": "sg-elearning",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Gamifikált érettségi-felkészítő webapp a Studium Generale Alapítvány számára",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "sprites": "node scripts/build-sprites.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0",
+    "sharp": "^0.35.4",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.1"
+  },
+  "engines": {
+    "node": ">=22.12"
+  }
+}

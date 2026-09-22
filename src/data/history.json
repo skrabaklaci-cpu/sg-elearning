@@ -1,0 +1,86 @@
+{
+  "type": "world",
+  "id": "history",
+  "order": 2,
+  "title": "Történelem",
+  "realm": "Az Idő Ösvényei",
+  "mentor": "history",
+  "description": "Korszakok, fordulópontok és összefüggések.",
+  "lessons": [
+    {
+      "id": "history-01",
+      "title": "Az 1848–49-es forradalom és szabadságharc",
+      "summary": "Március 15., az áprilisi törvények és a szabadságharc vége.",
+      "video": { "youtubeId": "", "title": "Az 1848–49-es forradalom és szabadságharc" },
+      "slides": [
+        {
+          "title": "A pesti forradalom",
+          "body": "**1848. március 15-én** a márciusi ifjak – köztük Petőfi Sándor – cenzúra nélkül kinyomtatták a 12 pontot és a Nemzeti dalt.\n\nEz a nap ma nemzeti ünnepünk.",
+          "emotion": "joyful",
+          "mentor": "Ez az a nap, amit minden évben megünneplünk!"
+        },
+        {
+          "title": "A 12 pont",
+          "body": "„Mit kíván a magyar nemzet.” Néhány követelés:\n• sajtószabadság, a cenzúra eltörlése\n• felelős minisztérium Buda-Pesten\n• évenkénti országgyűlés Pesten\n• törvény előtti egyenlőség, közteherviselés\n• az úrbéri viszonyok megszüntetése\n• unió Erdéllyel",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Az áprilisi törvények",
+          "body": "Az utolsó rendi országgyűlés Pozsonyban fogadta el a törvényeket, V. Ferdinánd pedig **1848. április 11-én** szentesítette őket.\n\nMagyarország alkotmányos monarchia lett, felelős kormánnyal.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Az első felelős kormány",
+          "body": "Miniszterelnök: **gróf Batthyány Lajos**.\n\nA kormány tagja volt többek között Kossuth Lajos (pénzügy), Széchenyi István (közlekedés), Deák Ferenc (igazságügy) és Eötvös József (vallás- és közoktatásügy).",
+          "emotion": "happy",
+          "mentor": "Micsoda csapat! A reformkor nagyjai egy kormányban."
+        },
+        {
+          "title": "A szabadságharc vége",
+          "body": "Az osztrák és az orosz haderő túlerejével szemben a honvédsereg **1849. augusztus 13-án Világosnál** letette a fegyvert.\n\n**1849. október 6-án** Aradon kivégezték a 13 honvédtisztet, Pesten pedig Batthyány Lajost.",
+          "emotion": "sad",
+          "mentor": "Szomorú vég, de a jobbágyfelszabadítás például megmaradt."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik napon tört ki a pesti forradalom?",
+          "options": ["1848. április 11.", "1848. március 15.", "1849. augusztus 13.", "1849. október 6."],
+          "answer": 1,
+          "explanation": "1848. március 15-én nyomtatták ki a 12 pontot és a Nemzeti dalt. Április 11-én az áprilisi törvényeket szentesítették."
+        },
+        {
+          "question": "Ki volt az első felelős magyar kormány miniszterelnöke?",
+          "options": ["Kossuth Lajos", "Széchenyi István", "gróf Batthyány Lajos", "Deák Ferenc"],
+          "answer": 2,
+          "explanation": "Batthyány Lajos vezette a kormányt. Kossuth a pénzügyi, Széchenyi a közlekedési, Deák az igazságügyi tárcát kapta."
+        },
+        {
+          "question": "Melyik követelés szerepelt a 12 pontban?",
+          "options": [
+            "A sajtó szabadsága, a cenzúra eltörlése",
+            "Az ország teljes elszakadása a Habsburg Birodalomtól",
+            "Választójog a nőknek",
+            "A királyság megszüntetése"
+          ],
+          "answer": 0,
+          "explanation": "A 12 pont első követelése a sajtószabadság volt. A Habsburgoktól való elszakadás csak 1849-ben, a Függetlenségi nyilatkozattal került napirendre."
+        },
+        {
+          "question": "Mi történt 1849. augusztus 13-án Világosnál?",
+          "options": [
+            "Kihirdették a Függetlenségi nyilatkozatot",
+            "Szentesítették az áprilisi törvényeket",
+            "Kitört a pesti forradalom",
+            "A honvédsereg letette a fegyvert az orosz csapatok előtt"
+          ],
+          "answer": 3,
+          "explanation": "Görgei Artúr fegyverletétele a szabadságharc végét jelentette. A Függetlenségi nyilatkozatot 1849. április 14-én fogadták el Debrecenben."
+        }
+      ]
+    },
+    { "id": "history-02", "title": "A kiegyezés", "comingSoon": true },
+    { "id": "history-03", "title": "A dualizmus kora", "comingSoon": true },
+    { "id": "history-04", "title": "Az első világháború", "comingSoon": true }
+  ]
+}

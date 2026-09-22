@@ -1,0 +1,82 @@
+{
+  "guide": {
+    "name": "Csery",
+    "role": "Kalauz",
+    "lines": {
+      "welcomeBack": [
+        "Újra itt vagy! Folytassuk ott, ahol abbahagytuk?",
+        "Szia! A térkép már vár rád.",
+        "Jó újra látni! Gyűjtsünk ma is pár XP-t?"
+      ],
+      "levelUp": [
+        "Szintet léptél! Így kell ezt csinálni!",
+        "Nézd csak, egy szinttel feljebb! Büszke vagyok rád.",
+        "Szintlépés! Egyre jobban megy, ugye?"
+      ],
+      "streakStart": ["Megvan a mai tanulás! Gyere vissza holnap is, és elindul a sorozatod."],
+      "streak": ["{n} napos sorozat! Holnap is várlak.", "Már {n} napja tanulsz egymás után. Ne szakítsd meg!"],
+      "resetConfirm": ["Biztosan törlöd a haladásodat? Az XP, a szint és a sorozat is elvész, és ez nem vonható vissza."],
+      "missing": ["Hoppá, ezt a leckét nem találom. Nézzünk szét inkább a térképen!"]
+    }
+  },
+  "math": {
+    "name": "Zsófi",
+    "role": "Matematika-mentor",
+    "lines": {
+      "greet": ["Szia, Zsófi vagyok! A számok nyomába eredünk, lépésről lépésre."],
+      "videoIntro": ["Kezdjük egy rövid videóval! Figyeld a levezetés lépéseit."],
+      "videoSoon": ["A videó hamarosan felkerül ide. Addig lapozzuk át a diákat!"],
+      "slidesIntro": ["Nézzük át a lényeget pár dián. Lapozz nyugodtan a saját tempódban!"],
+      "slidesEnd": ["Ez volt a lényeg! Jöhet egy kis gyakorlás?"],
+      "quizStart": ["Lássuk, mi ragadt meg! Nyugi, menni fog."],
+      "correct": ["Pontosan!", "Ez az, telitalálat!", "Szép megoldás!", "Hibátlan logika!"],
+      "correctStreak": ["Sorban jönnek a jó válaszok! Belejöttél!"],
+      "wrong": ["Majdnem! Nézzük meg együtt.", "Semmi gond, ebből tanulunk.", "Nem egészen. Olvasd el a magyarázatot!"],
+      "quizPerfect": ["Hibátlan! Ezt nevezem precíz munkának!"],
+      "quizPassed": ["Szép munka! Ez a lecke megvan."],
+      "quizFailed": ["Még nem az igazi, de semmi baj. Nézd át a diákat, és próbáld újra!"],
+      "locked": ["Nono, ne olyan gyorsan! Előbb az előző leckét fejezd be."],
+      "soon": ["Ezen a leckén még dolgozunk. Hamarosan jön!"]
+    }
+  },
+  "history": {
+    "name": "Ferkó",
+    "role": "Történelem-mentor",
+    "lines": {
+      "greet": ["Szia, Ferkó vagyok! Utazzunk vissza az időben!"],
+      "videoIntro": ["Kezdjük egy videóval! Figyeld a dátumokat és a neveket."],
+      "videoSoon": ["Ide hamarosan videó kerül. Addig nézzük meg a diákat!"],
+      "slidesIntro": ["Lapozzuk végig a legfontosabb eseményeket! Igazi fordulópont következik."],
+      "slidesEnd": ["Megvannak a legfontosabbak! Jöhet a kvíz?"],
+      "quizStart": ["Lássuk, mennyire vagy otthon a korszakban!"],
+      "correct": ["Pontosan így történt!", "Ez az! Igazi történész vagy.", "Telitalálat!"],
+      "correctStreak": ["Sorban jönnek a jó válaszok! Ilyen tempóval a vizsga is menni fog."],
+      "wrong": ["Majdnem! A részletek néha csalókák.", "Nem egészen, de ebből is tanulunk.", "Hoppá! Olvasd el a magyarázatot."],
+      "quizPerfect": ["Hibátlan! Még a krónikások is megirigyelnék."],
+      "quizPassed": ["Szép munka! Ez a fejezet megvan."],
+      "quizFailed": ["Még nem az igazi. Lapozd át újra a diákat, és próbáld meg még egyszer!"],
+      "locked": ["Hohó, az idő sorrendben halad! Előbb az előző leckét fejezd be."],
+      "soon": ["Ezt a fejezetet még most írjuk. Hamarosan jön!"]
+    }
+  },
+  "economics": {
+    "name": "Dorina",
+    "role": "Közgazdaságtan-mentor",
+    "lines": {
+      "greet": ["Szia, Dorina vagyok! Megmutatom, hogyan működik a piac."],
+      "videoIntro": ["Kezdjük egy rövid videóval! Figyeld, mi mozgatja az árakat."],
+      "videoSoon": ["A videó hamarosan érkezik. Addig nézzük a diákat!"],
+      "slidesIntro": ["Nézzük a lényeget! Pár dián végigmegyünk a legfontosabb fogalmakon."],
+      "slidesEnd": ["Ennyi az elmélet! Most jöhet a gyakorlat."],
+      "quizStart": ["Lássuk, hogyan döntenél a piacon!"],
+      "correct": ["Pontosan!", "Így van!", "Ez az, jó befektetés volt ez a válasz!"],
+      "correctStreak": ["Ez már trend! Sorban jönnek a jó válaszok."],
+      "wrong": ["Majdnem! Nézzük meg, mi a logika mögötte.", "Nem egészen. Olvasd el a magyarázatot!", "Semmi gond, a piacon is tanul az ember."],
+      "quizPerfect": ["Hibátlan! Ez aztán megtérülő befektetés volt."],
+      "quizPassed": ["Szép munka! Ez a lecke megvan."],
+      "quizFailed": ["Még nem az igazi. Nézd át a diákat, és próbáld újra!"],
+      "locked": ["Nono! Előbb az előző leckét kell teljesíteni."],
+      "soon": ["Ez a lecke még készül. Hamarosan jön!"]
+    }
+  }
+}

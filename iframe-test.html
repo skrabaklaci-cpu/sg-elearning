@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iframe-teszt · SG E-Learning</title>
+    <style>
+      /* Csak fejlesztői oldal: a Wix HTML embedet szimulálja. Nem kerül a buildbe. */
+      body {
+        margin: 0;
+        padding: 16px;
+        background: #231f20;
+        color: #f0f0ff;
+        font: 14px/1.4 system-ui, sans-serif;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      code {
+        color: #009edc;
+      }
+      iframe {
+        display: block;
+        margin: 0 auto;
+        border: 2px solid #009edc;
+        background: #231f20;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <strong>Wix-szimuláció</strong>
+      <span>Szülő: <code id="parent-origin"></code> · app (cross-site iframe): <code id="app-origin"></code></span>
+      <label>
+        Méret:
+        <select id="size">
+          <option value="360x640">360×640 (kis Android)</option>
+          <option value="375x667">375×667 (iPhone SE)</option>
+          <option value="390x844" selected>390×844 (iPhone)</option>
+          <option value="768x1024">768×1024 (tablet)</option>
+          <option value="1100x760">1100×760 (asztali Wix-szekció)</option>
+        </select>
+      </label>
+    </header>
+    <iframe id="app" title="SG E-Learning" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    <script>
+      // A szülő localhoston fut, az app 127.0.0.1-ről tölt (vagy fordítva): így a böngésző
+      // harmadik félként kezeli, mint a Wix-en. Ekkor derül ki, ha a tárhely tiltva van.
+      const frame = document.getElementById('app');
+      const altHost = location.hostname === '127.0.0.1' ? 'localhost' : '127.0.0.1';
+      const appOrigin = `${location.protocol}//${altHost}:${location.port || 5173}`;
+      frame.src = `${appOrigin}/`;
+      document.getElementById('parent-origin').textContent = location.origin;
+      document.getElementById('app-origin').textContent = appOrigin;
+
+      const size = document.getElementById('size');
+      const applySize = () => {
+        const [w, h] = size.value.split('x');
+        frame.style.width = `${w}px`;
+        frame.style.height = `${h}px`;
+      };
+      size.addEventListener('change', applySize);
+      applySize();
+
+      // A későbbi wixAdapter üzenetei itt látszanak majd.
+      window.addEventListener('message', (event) => console.log('[iframe → szülő]', event.origin, event.data));
+    </script>
+  </body>
+</html>

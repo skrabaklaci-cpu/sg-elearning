@@ -1,0 +1,80 @@
+{
+  "type": "world",
+  "id": "math",
+  "order": 1,
+  "title": "Matematika",
+  "realm": "A Számok Birodalma",
+  "mentor": "math",
+  "description": "Egyenletek, függvények, valószínűség – lépésről lépésre.",
+  "lessons": [
+    {
+      "id": "math-01",
+      "title": "A másodfokú egyenlet",
+      "summary": "Megoldóképlet, diszkrimináns és ellenőrzés.",
+      "video": { "youtubeId": "", "title": "A másodfokú egyenlet megoldóképlete" },
+      "slides": [
+        {
+          "title": "Mi az a másodfokú egyenlet?",
+          "body": "Az általános alakja:\n**ax² + bx + c = 0**, ahol **a ≠ 0**.\n\nHa a = 0 lenne, eltűnne az x²-es tag, és elsőfokú egyenletet kapnánk.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A megoldóképlet",
+          "body": "**x₁,₂ = (−b ± √(b² − 4ac)) / (2a)**\n\nA függvénytáblában is megtalálod, de érdemes fejből tudni: az érettségin rengetegszer előkerül.",
+          "emotion": "confident",
+          "mentor": "Ezt a képletet tényleg megéri megtanulni!"
+        },
+        {
+          "title": "A diszkrimináns dönt",
+          "body": "A gyökjel alatti kifejezés a diszkrimináns: **D = b² − 4ac**.\n• D > 0: két különböző valós gyök\n• D = 0: egy (kétszeres) valós gyök\n• D < 0: nincs valós gyök",
+          "emotion": "surprised",
+          "mentor": "Érdemes mindig a diszkriminánssal kezdeni."
+        },
+        {
+          "title": "Egy példa lépésről lépésre",
+          "body": "**x² − 5x + 6 = 0**, tehát a = 1, b = −5, c = 6.\n\nD = (−5)² − 4 · 1 · 6 = 25 − 24 = 1\nx₁,₂ = (5 ± 1) / 2, így **x₁ = 3** és **x₂ = 2**.",
+          "emotion": "happy"
+        },
+        {
+          "title": "Ellenőrzés",
+          "body": "Helyettesítsd vissza a gyököket!\n3² − 5 · 3 + 6 = 9 − 15 + 6 = 0\n2² − 5 · 2 + 6 = 4 − 10 + 6 = 0\n\nA visszahelyettesítéssel kiszűrheted a számolási hibákat. A vizsgán is jó szokás.",
+          "emotion": "confident"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Hány valós megoldása van az x² + 4x + 4 = 0 egyenletnek?",
+          "options": [
+            "Nincs valós megoldása",
+            "Egy (kétszeres) valós megoldása van",
+            "Két különböző valós megoldása van",
+            "Végtelen sok"
+          ],
+          "answer": 1,
+          "explanation": "D = 4² − 4 · 1 · 4 = 0, ezért egy kétszeres gyök van: x = −2."
+        },
+        {
+          "question": "Mennyi az x² − 7x + 10 = 0 egyenlet diszkriminánsa?",
+          "options": ["49", "−9", "9", "89"],
+          "answer": 2,
+          "explanation": "D = (−7)² − 4 · 1 · 10 = 49 − 40 = 9."
+        },
+        {
+          "question": "Melyik számpár az x² − x − 6 = 0 egyenlet két megoldása?",
+          "options": ["x₁ = −3, x₂ = 2", "x₁ = 3, x₂ = −2", "x₁ = 6, x₂ = −1", "x₁ = 2, x₂ = 3"],
+          "answer": 1,
+          "explanation": "D = 1 + 24 = 25, így x₁,₂ = (1 ± 5) / 2, azaz x₁ = 3 és x₂ = −2. Ellenőrzés: 9 − 3 − 6 = 0."
+        },
+        {
+          "question": "Milyen feltétel mellett másodfokú az ax² + bx + c = 0 egyenlet?",
+          "options": ["a ≠ 0", "b ≠ 0", "c ≠ 0", "a > 0"],
+          "answer": 0,
+          "explanation": "Ha a = 0, eltűnik az x²-es tag. Az a lehet negatív is, csak nulla nem."
+        }
+      ]
+    },
+    { "id": "math-02", "title": "A Viète-formulák", "comingSoon": true },
+    { "id": "math-03", "title": "Másodfokú egyenlőtlenségek", "comingSoon": true },
+    { "id": "math-04", "title": "Szöveges feladatok", "comingSoon": true }
+  ]
+}

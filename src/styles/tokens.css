@@ -1,0 +1,114 @@
+/* Arculati tokenek. Színkód KIZÁRÓLAG ebben a fájlban szerepelhet (lásd CLAUDE.md és palette.test.js). */
+
+@font-face {
+  font-family: 'RocketSans';
+  src: url('../assets/fonts/RocketSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'RocketSans';
+  src: url('../assets/fonts/RocketSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'RocketSans';
+  src: url('../assets/fonts/RocketSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'RocketSans';
+  src: url('../assets/fonts/RocketSans-Heavy.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* A három arculati szín */
+  --sg-blue: #009edc; /* SG Blue */
+  --sg-black: #231f20; /* Process Black */
+  --sg-light: #f0f0ff; /* „Sprite” */
+
+  /* Csak a három színből kevert árnyalatok */
+  --sg-blue-dark: color-mix(in srgb, var(--sg-blue) 62%, var(--sg-black));
+  --sg-blue-deep: color-mix(in srgb, var(--sg-blue) 22%, var(--sg-black));
+  --sg-blue-pale: color-mix(in srgb, var(--sg-blue) 18%, var(--sg-light));
+  --sg-blue-bright: color-mix(in srgb, var(--sg-blue) 82%, var(--sg-light));
+  --sg-light-shade: color-mix(in srgb, var(--sg-light) 82%, var(--sg-black));
+  --sg-light-muted: color-mix(in srgb, var(--sg-light) 72%, var(--sg-black));
+  --sg-black-soft: color-mix(in srgb, var(--sg-black) 88%, var(--sg-light));
+  --sg-ink-muted: color-mix(in srgb, var(--sg-black) 72%, var(--sg-light));
+
+  /* Tipográfia */
+  --font: 'RocketSans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+
+  /* Pixel-egység: minden keret és lépcső ennek többszöröse */
+  --px: 3px;
+  --gap: calc(var(--px) * 4);
+  --gap-lg: calc(var(--px) * 8);
+  --tap: 48px;
+  --content-max: 720px;
+  --hud-height: 56px;
+
+  /* Lépcsős sarkok (clip-path) */
+  --notch: polygon(
+    0 var(--px),
+    var(--px) var(--px),
+    var(--px) 0,
+    calc(100% - var(--px)) 0,
+    calc(100% - var(--px)) var(--px),
+    100% var(--px),
+    100% calc(100% - var(--px)),
+    calc(100% - var(--px)) calc(100% - var(--px)),
+    calc(100% - var(--px)) 100%,
+    var(--px) 100%,
+    var(--px) calc(100% - var(--px)),
+    0 calc(100% - var(--px))
+  );
+  --notch-2: polygon(
+    0 calc(var(--px) * 2),
+    var(--px) calc(var(--px) * 2),
+    var(--px) var(--px),
+    calc(var(--px) * 2) var(--px),
+    calc(var(--px) * 2) 0,
+    calc(100% - var(--px) * 2) 0,
+    calc(100% - var(--px) * 2) var(--px),
+    calc(100% - var(--px)) var(--px),
+    calc(100% - var(--px)) calc(var(--px) * 2),
+    100% calc(var(--px) * 2),
+    100% calc(100% - var(--px) * 2),
+    calc(100% - var(--px)) calc(100% - var(--px) * 2),
+    calc(100% - var(--px)) calc(100% - var(--px)),
+    calc(100% - var(--px) * 2) calc(100% - var(--px)),
+    calc(100% - var(--px) * 2) 100%,
+    calc(var(--px) * 2) 100%,
+    calc(var(--px) * 2) calc(100% - var(--px)),
+    var(--px) calc(100% - var(--px)),
+    var(--px) calc(100% - var(--px) * 2),
+    0 calc(100% - var(--px) * 2)
+  );
+
+  --ease-pixel: steps(4, end);
+  --dur-fast: 120ms;
+  --dur: 200ms;
+}
+
+@media (min-width: 600px) {
+  :root {
+    --px: 4px;
+    --text-2xl: 2rem;
+    --text-3xl: 2.75rem;
+  }
+}

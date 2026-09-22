@@ -1,0 +1,24 @@
+{
+  "title": "Érettségi kaland",
+  "subtitle": "Studium Generale · ingyenes érettségi-felkészítő",
+  "lines": [
+    { "emotion": "happy", "text": "Szia! Csery vagyok, a kalauzod. Örülök, hogy itt vagy!" },
+    {
+      "emotion": "confident",
+      "text": "A Studium Generale csapatával abban segítünk, hogy magabiztosan menj az érettségire. Teljesen ingyen."
+    },
+    {
+      "emotion": "thinking",
+      "text": "Három világ vár rád: Matematika, Történelem és Közgazdaságtan. Mindegyikben egy mentor kísér végig."
+    },
+    {
+      "emotion": "joyful",
+      "text": "Egy lecke: rövid videó, néhány dia és egy kis kvíz. Mindenért XP jár, és ha elég összegyűlik, szintet lépsz!"
+    },
+    {
+      "emotion": "surprised",
+      "text": "Ha minden nap tanulsz egy keveset, nő a napi sorozatod. Próbáld meg nem megszakítani!"
+    },
+    { "emotion": "confident", "text": "Készen állsz? Irány a térkép!" }
+  ]
+}

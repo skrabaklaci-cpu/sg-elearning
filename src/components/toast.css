@@ -1,0 +1,60 @@
+sg-toast {
+  position: fixed;
+  z-index: 40;
+  top: calc(var(--hud-height) + var(--px) * 3);
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding-inline: var(--gap);
+  pointer-events: none;
+}
+
+.toast__region {
+  width: 100%;
+  max-width: calc(var(--content-max) - var(--gap) * 2);
+}
+
+.toast__card {
+  display: flex;
+  align-items: flex-end;
+  gap: calc(var(--px) * 3);
+  padding: calc(var(--px) * 2) calc(var(--px) * 4) 0 calc(var(--px) * 2);
+  background: var(--sg-light);
+  color: var(--sg-black);
+  clip-path: var(--notch-2);
+  box-shadow: inset 0 0 0 var(--px) var(--sg-blue);
+  pointer-events: auto;
+  cursor: pointer;
+  animation: toast-in 180ms steps(3, end);
+}
+
+.toast__card.is-leaving {
+  animation: toast-out 180ms steps(3, end) forwards;
+}
+
+.toast__portrait {
+  flex: none;
+  line-height: 0;
+}
+
+.toast__text {
+  align-self: center;
+  padding-block: calc(var(--px) * 3);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+@keyframes toast-in {
+  from {
+    translate: 0 calc(var(--px) * -6);
+    opacity: 0;
+  }
+}
+
+@keyframes toast-out {
+  to {
+    translate: 0 calc(var(--px) * -6);
+    opacity: 0;
+  }
+}

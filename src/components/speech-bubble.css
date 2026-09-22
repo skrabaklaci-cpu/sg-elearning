@@ -1,0 +1,98 @@
+sg-speech-bubble {
+  --bubble-bg: var(--sg-light);
+  position: relative;
+  display: block;
+  min-width: 0;
+  text-align: left;
+  cursor: default;
+}
+
+.bubble__box {
+  position: relative;
+  background: var(--bubble-bg);
+  color: var(--sg-black);
+  padding: calc(var(--px) * 3) calc(var(--px) * 4) calc(var(--px) * 4);
+  clip-path: var(--notch-2);
+  box-shadow: inset 0 calc(var(--px) * -2) 0 var(--sg-light-shade);
+}
+
+.bubble__name {
+  display: block;
+  margin-bottom: calc(var(--px) * 0.5);
+  color: var(--sg-blue-dark);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.bubble__text {
+  position: relative;
+  font-size: var(--text-md);
+  line-height: 1.45;
+}
+
+.bubble__ghost {
+  visibility: hidden;
+}
+
+.bubble__typed {
+  position: absolute;
+  inset: 0;
+}
+
+/* --- Lépcsős „csőr” ------------------------------------------------------------------------ */
+
+.bubble__tail {
+  position: absolute;
+  background: var(--bubble-bg);
+}
+
+sg-speech-bubble[tail='left'] {
+  margin-left: calc(var(--px) * 3);
+}
+
+sg-speech-bubble[tail='left'] .bubble__tail {
+  left: calc(var(--px) * -3);
+  top: calc(var(--px) * 5);
+  width: calc(var(--px) * 3);
+  height: calc(var(--px) * 5);
+  clip-path: polygon(
+    66.66% 0,
+    100% 0,
+    100% 100%,
+    66.66% 100%,
+    66.66% 80%,
+    33.33% 80%,
+    33.33% 60%,
+    0 60%,
+    0 40%,
+    33.33% 40%,
+    33.33% 20%,
+    66.66% 20%
+  );
+}
+
+sg-speech-bubble[tail='top'] {
+  margin-top: calc(var(--px) * 3);
+}
+
+sg-speech-bubble[tail='top'] .bubble__tail {
+  top: calc(var(--px) * -3);
+  left: calc(50% - var(--px) * 2.5);
+  width: calc(var(--px) * 5);
+  height: calc(var(--px) * 3);
+  clip-path: polygon(40% 0, 60% 0, 60% 33.33%, 80% 33.33%, 80% 66.66%, 100% 66.66%, 100% 100%, 0 100%, 0 66.66%, 20% 66.66%, 20% 33.33%, 40% 33.33%);
+}
+
+sg-speech-bubble[tail='bottom'] {
+  margin-bottom: calc(var(--px) * 3);
+}
+
+sg-speech-bubble[tail='bottom'] .bubble__tail {
+  bottom: calc(var(--px) * -3);
+  left: calc(50% - var(--px) * 2.5);
+  width: calc(var(--px) * 5);
+  height: calc(var(--px) * 3);
+  clip-path: polygon(0 0, 100% 0, 100% 33.33%, 80% 33.33%, 80% 66.66%, 60% 66.66%, 60% 100%, 40% 100%, 40% 66.66%, 20% 66.66%, 20% 33.33%, 0 33.33%);
+}

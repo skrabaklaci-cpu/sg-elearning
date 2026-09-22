@@ -1,0 +1,33 @@
+{
+  "generatedBy": "scripts/build-sprites.mjs",
+  "sheets": {
+    "economics": {
+      "file": "economics.png",
+      "columns": 3,
+      "rows": 3,
+      "cellWidth": 69,
+      "cellHeight": 108
+    },
+    "guide": {
+      "file": "guide.png",
+      "columns": 3,
+      "rows": 3,
+      "cellWidth": 64,
+      "cellHeight": 84
+    },
+    "history": {
+      "file": "history.png",
+      "columns": 3,
+      "rows": 3,
+      "cellWidth": 71,
+      "cellHeight": 110
+    },
+    "math": {
+      "file": "math.png",
+      "columns": 3,
+      "rows": 3,
+      "cellWidth": 57,
+      "cellHeight": 82
+    }
+  }
+}

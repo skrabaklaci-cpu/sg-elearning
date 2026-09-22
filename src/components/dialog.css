@@ -1,0 +1,27 @@
+sg-dialog {
+  --portrait-size: 88px;
+  display: grid;
+  grid-template-columns: var(--portrait-size) minmax(0, 1fr);
+  align-items: end;
+  gap: calc(var(--px) * 2);
+}
+
+.dialog__portrait {
+  position: relative;
+  width: var(--portrait-size);
+  height: var(--portrait-size);
+  background: var(--sg-blue-deep);
+  clip-path: var(--notch-2);
+  box-shadow: inset 0 0 0 var(--px) var(--sg-blue-dark);
+}
+
+sg-dialog sg-speech-bubble {
+  align-self: center;
+}
+
+@media (min-width: 600px) {
+  sg-dialog {
+    --portrait-size: 176px;
+    gap: calc(var(--px) * 3);
+  }
+}

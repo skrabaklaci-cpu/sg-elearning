@@ -1,0 +1,148 @@
+sg-level-up {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: var(--gap);
+}
+
+.levelup__backdrop {
+  position: absolute;
+  inset: 0;
+  background: color-mix(in srgb, var(--sg-black) 90%, transparent);
+}
+
+.levelup__panel {
+  position: relative;
+  width: min(100%, 420px);
+  max-height: 100%;
+  overflow: hidden auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--px) * 3);
+  padding: calc(var(--px) * 6) calc(var(--px) * 5);
+  background: var(--sg-black);
+  color: var(--sg-light);
+  text-align: center;
+  clip-path: var(--notch-2);
+  box-shadow: inset 0 0 0 var(--px) var(--sg-blue);
+}
+
+.levelup__rays {
+  position: absolute;
+  left: 50%;
+  top: 34%;
+  width: 180%;
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  background: repeating-conic-gradient(var(--sg-blue-deep) 0 10deg, transparent 10deg 20deg);
+  pointer-events: none;
+}
+
+sg-level-up.is-open .levelup__rays {
+  animation: levelup-spin 12s steps(36, end) infinite;
+}
+
+@keyframes levelup-spin {
+  to {
+    rotate: 360deg;
+  }
+}
+
+.levelup__kicker {
+  position: relative;
+  font-size: var(--text-3xl);
+  color: var(--sg-light);
+}
+
+.levelup__stage {
+  position: relative;
+  width: 100%;
+  height: min(36vh, 260px);
+}
+
+.levelup__levels {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: calc(var(--px) * 3);
+  font-weight: 900;
+  font-size: var(--text-lg);
+}
+
+.levelup__from {
+  color: var(--sg-light-muted);
+}
+
+.levelup__arrow {
+  color: var(--sg-blue);
+}
+
+.levelup__to {
+  padding: 0 calc(var(--px) * 2);
+  background: var(--sg-blue);
+  color: var(--sg-black);
+  clip-path: var(--notch);
+}
+
+.levelup__title {
+  position: relative;
+  font-size: var(--text-xl);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--sg-blue);
+}
+
+.levelup__panel sg-speech-bubble {
+  position: relative;
+  width: 100%;
+}
+
+.levelup__panel .btn {
+  position: relative;
+}
+
+/* Pixel-konfetti */
+.levelup__confetti {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.levelup__bit {
+  position: absolute;
+  top: -12px;
+  left: var(--x);
+  width: calc(var(--px) * 2);
+  height: calc(var(--px) * 2);
+  background: var(--sg-blue);
+}
+
+.levelup__bit.is-light {
+  background: var(--sg-light);
+}
+
+sg-level-up.is-open .levelup__bit {
+  animation: levelup-fall var(--fall) steps(10, end) var(--delay) 2 both;
+}
+
+@keyframes levelup-fall {
+  to {
+    translate: calc(var(--px) * 6) 110vh;
+  }
+}
+
+sg-level-up.is-open .levelup__panel {
+  animation: levelup-pop 260ms steps(4, end);
+}
+
+@keyframes levelup-pop {
+  from {
+    scale: 0.85;
+    opacity: 0;
+  }
+}

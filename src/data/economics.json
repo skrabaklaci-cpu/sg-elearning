@@ -1,0 +1,85 @@
+{
+  "type": "world",
+  "id": "economics",
+  "order": 3,
+  "title": "Közgazdaságtan",
+  "realm": "A Piacok Völgye",
+  "mentor": "economics",
+  "description": "Kereslet, kínálat, piacok és pénz – érthetően.",
+  "lessons": [
+    {
+      "id": "economics-01",
+      "title": "Kereslet, kínálat, piaci egyensúly",
+      "summary": "Hogyan alakul ki az ár a piacon?",
+      "video": { "youtubeId": "", "title": "Kereslet és kínálat" },
+      "slides": [
+        {
+          "title": "A kereslet",
+          "body": "A kereslet megmutatja, hogy adott áron mennyit **akarnak és tudnak** megvásárolni a vevők.\n\nHa az ár nő, a keresett mennyiség általában csökken. Ez a **kereslet törvénye**.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A kínálat",
+          "body": "A kínálat azt mutatja meg, hogy adott áron mennyit akarnak eladni a termelők.\n\nMagasabb áron többet éri meg eladni, ezért a kínálati görbe általában **emelkedő**.",
+          "emotion": "confident"
+        },
+        {
+          "title": "A piaci egyensúly",
+          "body": "Az egyensúlyi áron a keresett és a kínált mennyiség **megegyezik**: itt metszi egymást a keresleti és a kínálati görbe.\n\nEzen az áron nincs se hiány, se felesleg.",
+          "emotion": "happy",
+          "mentor": "Ez a két görbe metszéspontja. Érdemes le is rajzolni!"
+        },
+        {
+          "title": "Ha nincs egyensúly",
+          "body": "• Ha az ár az egyensúlyi **fölött** van, **túlkínálat** (felesleg) alakul ki, és az ár csökkenni kezd.\n• Ha az ár az egyensúlyi **alatt** van, **túlkereslet** (hiány) lép fel, és az ár emelkedik.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Mozgás vagy eltolódás?",
+          "body": "Ha csak a termék **saját ára** változik, a görbe mentén mozgunk.\n\nHa más tényező változik – például a jövedelem, az ízlés vagy egy helyettesítő termék ára –, akkor **maga a görbe tolódik el**.",
+          "emotion": "thinking",
+          "mentor": "Ezt a különbséget a vizsgán is gyakran kérdezik."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mi történik a keresett mennyiséggel, ha egy termék ára emelkedik (minden más változatlan)?",
+          "options": ["Általában nő", "Általában csökken", "Nem változik", "Mindig nullára esik"],
+          "answer": 1,
+          "explanation": "Ez a kereslet törvénye: magasabb áron a vevők általában kevesebbet vásárolnak."
+        },
+        {
+          "question": "Mit jelent a piaci egyensúly?",
+          "options": [
+            "A keresett és a kínált mennyiség megegyezik",
+            "Az ár a lehető legalacsonyabb",
+            "A termelők nyeresége nulla",
+            "Minden vevő ingyen jut a termékhez"
+          ],
+          "answer": 0,
+          "explanation": "Az egyensúlyi áron pontosan annyit akarnak megvenni, amennyit eladni: nincs se hiány, se felesleg."
+        },
+        {
+          "question": "Mi alakul ki, ha az ár az egyensúlyi ár fölött van?",
+          "options": ["Túlkereslet (hiány)", "Piaci egyensúly", "Túlkínálat (felesleg)", "Infláció"],
+          "answer": 2,
+          "explanation": "Magas áron a termelők többet kínálnak, a vevők kevesebbet keresnek. A felesleg lefelé nyomja az árat."
+        },
+        {
+          "question": "Melyik okozza a keresleti görbe eltolódását?",
+          "options": [
+            "A termék saját árának változása",
+            "A fogyasztók jövedelmének változása",
+            "A termelési költségek változása",
+            "Egyik sem, a keresleti görbe sosem tolódik el"
+          ],
+          "answer": 1,
+          "explanation": "A saját ár változása görbe menti mozgás. A jövedelem változása az egész keresleti görbét eltolja, a termelési költség pedig a kínálati görbére hat."
+        }
+      ]
+    },
+    { "id": "economics-02", "title": "A rugalmasság", "comingSoon": true },
+    { "id": "economics-03", "title": "Piaci szerkezetek", "comingSoon": true },
+    { "id": "economics-04", "title": "Pénz és infláció", "comingSoon": true }
+  ]
+}
