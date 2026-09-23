@@ -11,12 +11,24 @@
   gap: calc(var(--px) * 2);
 }
 
+.subject-head .kicker {
+  color: var(--subject-light);
+}
+
 .subject-head__title {
   font-size: var(--text-2xl);
+  text-shadow:
+    var(--px) var(--px) 0 var(--subject-dark),
+    calc(var(--px) * 2) calc(var(--px) * 2) 0 var(--subject-deep);
 }
 
 .subject-head__dialog {
   margin-top: calc(var(--px) * 2);
+}
+
+.subject-head__dialog .dialog__portrait {
+  background: var(--subject-deep);
+  box-shadow: inset 0 0 0 var(--px) var(--subject-dark);
 }
 
 .subject-head__progress {
@@ -32,142 +44,157 @@
 .subject-head__progress .icon {
   width: 18px;
   height: 18px;
-  color: var(--sg-blue);
+  color: var(--subject-light);
 }
 
-/* --- Leckelista ---------------------------------------------------------------------------- */
+/* --- A tárgy térképe ------------------------------------------------------------------------ */
 
-.lessons {
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--px) * 2);
+.path {
+  --dot: 6px;
+  --node: 64px;
+  position: relative;
+  padding-block: calc(var(--px) * 3);
+}
+
+.path__dots {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  shape-rendering: crispEdges;
+}
+
+.path__dots rect {
+  fill: var(--sg-light-muted);
+}
+
+.path__dots rect.is-open {
+  fill: var(--subject);
+}
+
+.path__list {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: calc(var(--px) * 8);
   list-style: none;
 }
 
-.lesson-row__btn {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
+.path__step {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: calc(var(--px) * 3);
-  width: 100%;
-  padding: calc(var(--px) * 2) calc(var(--px) * 3) calc(var(--px) * 2.5) calc(var(--px) * 2);
+  gap: calc(var(--px) * 2);
+  text-align: center;
+}
+
+.path__node {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: var(--node);
+  height: var(--node);
   border: 0;
-  background: var(--sg-light);
-  color: var(--sg-black);
-  text-align: left;
   cursor: pointer;
-  clip-path: var(--notch);
+  clip-path: var(--notch-2);
+  background: var(--sg-light);
+  color: var(--subject-dark);
   box-shadow: inset 0 calc(var(--px) * -2) 0 var(--sg-light-shade);
 }
 
-.lesson-row__btn:hover {
-  background: var(--sg-blue-pale);
+.path__node .icon {
+  width: 28px;
+  height: 28px;
 }
 
-.lesson-row__btn:active {
+.path__node:active {
   translate: 0 var(--px);
 }
 
-.lesson-row__btn:focus-visible {
+.path__node:focus-visible {
   outline: none;
   box-shadow:
-    inset 0 0 0 calc(var(--px) * 2) var(--sg-blue),
-    inset 0 calc(var(--px) * -2) 0 var(--sg-light-shade);
+    inset 0 0 0 var(--px) var(--sg-black),
+    inset 0 0 0 calc(var(--px) * 2) var(--sg-light);
 }
 
-.lesson-row__tile {
-  display: grid;
-  place-items: center;
-  width: 44px;
-  height: 44px;
-  background: var(--sg-blue);
-  color: var(--sg-black);
-  clip-path: var(--notch);
-  box-shadow: inset 0 calc(var(--px) * -1) 0 var(--sg-blue-dark);
+.is-available .path__node {
+  background: var(--subject-strong);
+  color: var(--subject-ink);
+  box-shadow: inset 0 calc(var(--px) * -2) 0 var(--subject-dark);
+  animation: node-pulse 1.2s steps(2, jump-none) infinite;
 }
 
-.lesson-row__tile .icon {
-  width: 22px;
-  height: 22px;
+.is-available .path__node .icon {
+  width: 24px;
+  height: 28px;
+  margin-left: 4px;
 }
 
-.lesson-row__body {
+@keyframes node-pulse {
+  50% {
+    box-shadow:
+      inset 0 0 0 var(--px) var(--sg-light),
+      inset 0 calc(var(--px) * -2) 0 var(--subject-dark);
+  }
+}
+
+.is-locked .path__node,
+.is-soon .path__node {
+  --dither-color: var(--sg-black-soft);
+  background-color: var(--sg-black);
+  background-image: conic-gradient(var(--dither-color) 25%, transparent 0 50%, var(--dither-color) 0 75%, transparent 0);
+  background-size: calc(var(--px) * 2) calc(var(--px) * 2);
+  color: var(--sg-light-muted);
+  box-shadow: inset 0 0 0 var(--px) var(--sg-black-soft);
+  --icon-accent: var(--subject-deep);
+}
+
+.path__label {
   display: flex;
   flex-direction: column;
   gap: 1px;
-  min-width: 0;
+  max-width: 14ch;
+  padding: var(--px) calc(var(--px) * 2);
+  background: var(--sg-black);
+  font-size: 0.8125rem;
+  line-height: 1.25;
 }
 
-.lesson-row__top {
-  display: flex;
-  align-items: center;
-  gap: calc(var(--px) * 2);
-}
-
-.lesson-row__num {
-  color: var(--sg-blue-dark);
+.path__num {
+  color: var(--subject-light);
   font-size: 0.6875rem;
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.lesson-row__tag {
-  font-size: 0.625rem;
-  padding: 0 var(--px);
-}
-
-.lesson-row__title {
-  font-size: var(--text-md);
+.path__name {
   font-weight: 700;
-  line-height: 1.2;
 }
 
-.lesson-row__note {
-  color: var(--sg-ink-muted);
-  font-size: var(--text-sm);
-  line-height: 1.3;
+.path__status {
+  color: var(--sg-light-muted);
+  font-size: 0.75rem;
 }
 
-.lesson-row__go {
-  display: grid;
-  place-items: center;
-  width: 24px;
-  color: var(--sg-blue-dark);
+.is-available .path__status {
+  color: var(--subject-light);
+  font-weight: 900;
 }
 
-.lesson-row__go .icon {
-  width: 20px;
-  height: 20px;
-}
+@media (min-width: 600px) {
+  .path {
+    --dot: 8px;
+    --node: 80px;
+  }
 
-/* Állapotok */
-.is-completed .lesson-row__tile {
-  background: var(--sg-black);
-  color: var(--sg-blue);
-  box-shadow: none;
-}
+  .path__node .icon {
+    width: 36px;
+    height: 36px;
+  }
 
-.is-locked .lesson-row__btn,
-.is-soon .lesson-row__btn {
-  --dither-color: var(--sg-light-shade);
-  background-color: var(--sg-light);
-  background-image: conic-gradient(var(--dither-color) 25%, transparent 0 50%, var(--dither-color) 0 75%, transparent 0);
-  background-size: calc(var(--px) * 2) calc(var(--px) * 2);
-  color: var(--sg-ink-muted);
-}
-
-.is-locked .lesson-row__tile,
-.is-soon .lesson-row__tile {
-  background: var(--sg-light-shade);
-  color: var(--sg-ink-muted);
-  box-shadow: none;
-  --icon-accent: var(--sg-light);
-}
-
-.is-locked .lesson-row__num,
-.is-soon .lesson-row__num,
-.is-locked .lesson-row__go,
-.is-soon .lesson-row__go {
-  color: var(--sg-ink-muted);
+  .path__label {
+    max-width: 20ch;
+    font-size: var(--text-sm);
+  }
 }

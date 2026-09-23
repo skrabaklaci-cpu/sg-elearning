@@ -80,7 +80,7 @@ sg-quiz {
 }
 
 .quiz__option:hover:not(:disabled) {
-  background: var(--sg-blue-pale);
+  background: var(--subject-pale);
 }
 
 .quiz__option:active:not(:disabled) {

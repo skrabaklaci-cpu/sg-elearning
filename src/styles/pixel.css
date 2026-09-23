@@ -226,3 +226,29 @@
     var(--px) var(--px) 0 var(--sg-blue-dark),
     calc(var(--px) * 2) calc(var(--px) * 2) 0 var(--sg-blue-deep);
 }
+
+/* --- Tárgyszínek ---------------------------------------------------------------------------- */
+/*
+ * A tárgy képernyőin (data-subject) a kiemelt, „identitás” jellegű elemek a tárgy színét veszik
+ * fel: gombok, címkék, kickerek, kitöltések. A helyes/hibás visszajelzés szándékosan marad a
+ * kék–fekete párban, hogy a piros matekszín ne tűnjön hibajelzésnek.
+ */
+[data-subject] .btn:not(.btn--light):not(.btn--ghost):not(.btn--ghost-dark) {
+  --btn-bg: var(--subject-strong);
+  --btn-fg: var(--subject-ink);
+  --btn-shade: var(--subject-dark);
+  --btn-hover: var(--subject);
+}
+
+[data-subject] .tag:not(.tag--dark) {
+  background: var(--subject-strong);
+  color: var(--subject-ink);
+}
+
+[data-subject] .kicker {
+  color: var(--subject-light);
+}
+
+[data-subject] .panel .kicker {
+  color: var(--subject-dark);
+}

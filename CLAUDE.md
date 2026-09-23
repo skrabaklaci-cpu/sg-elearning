@@ -30,7 +30,8 @@ sprites/                  nyers karakterképek (NEM kerülnek a buildbe)
 scripts/build-sprites.mjs nyers képek → natív felbontású, átlátszó PNG + cellaméretek
 iframe-test.html          csak dev: az appot telefonméretű, cross-site iframe-be ágyazza
 .github/workflows/        deploy.yml: lint + teszt + build → GitHub Pages
-Math/Slide PDFs/          a felkészítő eredeti diasorai (forrásanyag, NEM verziókövetett)
+Math/Slide PDFs/          a matek diasorai (forrásanyag a leckékhez, NEM verziókövetett)
+History/Slide PDFs/       a történelem diasorai (szintén nem verziókövetett)
 src/
   main.js                 indítás: állapot betöltése, globális rétegek (szintlépés, toast), router
   router.js               hash-router: #/, #/subjects, #/subject/:id, #/lesson/:id
@@ -52,8 +53,8 @@ src/
     schema.js             alapállapot, sémaverzió, migráció
     progress.js           XP, szint, streak, feloldás (tiszta függvények)
   components/             <sg-*> custom elementek + a saját .css-fájljuk, icons.js (pixel-ikonok)
-  screens/                StartScreen, SubjectsScreen (tárgyválasztó), SubjectScreen (leckelista),
-                          LessonScreen + a saját .css-fájljuk
+  screens/                StartScreen, SubjectsScreen (tárgyválasztó), SubjectScreen (a tárgy
+                          térképe), LessonScreen + a saját .css-fájljuk
   styles/                 tokens.css (színek, betű, pixel-egység), base.css, pixel.css
   assets/fonts/           RocketSans (woff2)
   assets/sprites/         GENERÁLT PNG-k + sprites.json (kézzel ne szerkeszd)
@@ -97,13 +98,19 @@ src/
 
 ### 3. Arculat
 
-- Színek **kizárólag**: `#009EDC` (SG Blue), `#231F20` (Process Black), `#F0F0FF` („Sprite”),
-  és csak a `src/styles/tokens.css` változóin át (`--sg-blue`, `--sg-black`, `--sg-light` és a
-  belőlük kevert `--sg-*` árnyalatok). Máshol hex/rgb/hsl szín nem szerepelhet; ezt a
-  `src/styles/palette.test.js` ellenőrzi. Átlátszóság vagy keverés csak e háromból (`color-mix`);
-  köztes tónus helyett inkább pixel-dither mintát használj.
-- Kontraszt: kék alapon mindig fekete szöveg (a világos szöveg kéken nem elég olvasható);
-  világos alapon a kék szöveg helyett `--sg-blue-dark`.
+- Alapszínek **kizárólag**: `#009EDC` (SG Blue), `#231F20` (Process Black), `#F0F0FF` („Sprite”).
+  Ezekre épül minden tárgyfüggetlen felület: kezdőképernyő, HUD, szintlépés, helyes/hibás jelzés.
+- Tárgyanként egy **szekciószín** jön hozzá: matek `#DA291C`, töri `#00B2A2`, közgazdaságtan
+  `#81CC45`. Csak az adott tárgy képernyőin használjuk (tárgyválasztó kártya, térkép, lecke).
+- Minden szín a `src/styles/tokens.css` változóin át jön. A tárgy képernyőjének gyökerén
+  `data-subject="math|history|economics"` van, ami átállítja a `--subject*` változókat:
+  `--subject` (kitöltés), `--subject-strong` + `--subject-ink` (szöveges felület),
+  `--subject-dark` (világos panelen szöveg), `--subject-light` (sötét háttéren szöveg),
+  `--subject-deep`, `--subject-pale`. Máshol hex/rgb/hsl nem szerepelhet: `palette.test.js` ellenőrzi.
+- A **helyes/hibás visszajelzés marad kék–fekete**, nem veszi fel a tárgy színét: a piros
+  matekszín hibajelzésnek tűnne. A tárgyszín az „identitás” elemeké (fejléc, ösvény, gombok, sávok).
+- Kontraszt: kék alapon fekete szöveg; a tárgyszínen a `--subject-ink` a helyes szövegszín;
+  világos panelen `--subject-dark`, sötét háttéren `--subject-light` a kis szöveghez.
 - Nincs zöld/piros „helyes/hibás”: a visszajelzést ikon, szöveg és a mentor érzelme adja.
   Kivétel csak a karakter-sprite-ok és a YouTube-lejátszó saját színei.
 - Betű: RocketSans (`src/assets/fonts/`, woff2), fallback `system-ui, sans-serif`.

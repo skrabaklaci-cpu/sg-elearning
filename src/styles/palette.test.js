@@ -7,7 +7,8 @@ import { describe, expect, it } from 'vitest';
 
 const SRC = fileURLToPath(new URL('..', import.meta.url));
 const TOKENS = join(SRC, 'styles', 'tokens.css');
-const BRAND = ['#009edc', '#231f20', '#f0f0ff'];
+// A három alapszín + a tárgyankénti szekciószínek (Matek Red, Töris Patina, KGreen).
+const BRAND = ['#009edc', '#231f20', '#f0f0ff', '#da291c', '#00b2a2', '#81cc45'];
 
 function files(dir) {
   return readdirSync(dir).flatMap((name) => {

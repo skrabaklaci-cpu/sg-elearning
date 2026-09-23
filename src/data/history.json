@@ -5,13 +5,1485 @@
   "title": "Történelem",
   "realm": "Az Idő Ösvényei",
   "mentor": "history",
-  "description": "Korszakok, fordulópontok és összefüggések.",
+  "description": "A teljes felkészítő tematika: az ókortól az Európai Unióig.",
   "lessons": [
     {
       "id": "history-01",
+      "title": "Az ókori Görögország",
+      "summary": "Poliszok, athéni demokrácia, perzsa háborúk.",
+      "video": {
+        "youtubeId": "",
+        "title": "Az ókori Görögország"
+      },
+      "slides": [
+        {
+          "title": "A polisz",
+          "body": "A görög világ **városállamokból** (poliszokból) állt: a város és a környező földek alkottak egy-egy önálló közösséget.\n\nA két legismertebb polisz Athén és Spárta, berendezkedésük viszont gyökeresen különbözött.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Athén és Spárta",
+          "body": "**Athén:** tengeri kereskedelem, és a Kr. e. 5. században a **demokrácia** kiteljesedése. A népgyűlésen a felnőtt férfi polgárok döntöttek, fénykora Periklész nevéhez fűződik.\n\n**Spárta:** katonaállam, szigorú neveléssel és arisztokratikus vezetéssel.",
+          "emotion": "confident",
+          "mentor": "Figyelj: a nők, a rabszolgák és a betelepültek nem voltak polgárok."
+        },
+        {
+          "title": "Görög–perzsa háborúk",
+          "body": "• **Kr. e. 490:** marathóni csata, athéni győzelem\n• **Kr. e. 480:** a thermopülai szorosnál Leónidasz spártaijai feltartják a perzsákat, majd a **szalamiszi** tengeri csatában győznek a görögök\n\nA győzelem után jött létre az athéni vezetésű déloszi szövetség.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Hanyatlás és hellenizmus",
+          "body": "A **peloponnészoszi háborúban** (Kr. e. 431–404) Spárta legyőzte Athént, a poliszvilág meggyengült.\n\nKr. e. 338-ban Makedónia került fölénybe, Nagy Sándor hódításai nyomán pedig kialakult a görög és keleti kultúrát ötvöző **hellenizmus**.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik csatában győzték le az athéniak a perzsákat Kr. e. 490-ben?",
+          "options": [
+            "A marathóni csatában",
+            "A szalamiszi csatában",
+            "A thermopülai csatában",
+            "A khairóneiai csatában"
+          ],
+          "answer": 0,
+          "explanation": "Marathónnál Kr. e. 490-ben az athéniak győztek. Szalamisz és Thermopülai a tíz évvel későbbi hadjárathoz tartozik."
+        },
+        {
+          "question": "Kinek a nevéhez kötjük az athéni demokrácia fénykorát?",
+          "options": [
+            "Periklész",
+            "Szolón",
+            "Leónidasz",
+            "Nagy Sándor"
+          ],
+          "answer": 0,
+          "explanation": "Periklész korában, a Kr. e. 5. század közepén teljesedett ki az athéni demokrácia. Szolón korábbi reformer volt."
+        },
+        {
+          "question": "Mi volt a polisz?",
+          "options": [
+            "Görög városállam",
+            "A spártai király címe",
+            "Az athéni népgyűlés neve",
+            "Egy hadihajótípus"
+          ],
+          "answer": 0,
+          "explanation": "A polisz a városból és a hozzá tartozó földekből álló önálló államszervezet volt."
+        }
+      ]
+    },
+    {
+      "id": "history-02",
+      "title": "Az ókori Róma",
+      "summary": "Köztársaság, pun háborúk, császárság és bukás.",
+      "video": {
+        "youtubeId": "",
+        "title": "Az ókori Róma"
+      },
+      "slides": [
+        {
+          "title": "A köztársaság",
+          "body": "A királyság megdöntése után Rómát **választott tisztségviselők** vezették: két consul, mellettük a szenátus és a plebejusokat védő néptribunus.\n\nA patríciusok és a plebejusok küzdelme fokozatosan kiszélesítette a jogokat.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A pun háborúk",
+          "body": "Róma három háborúban győzte le **Karthágót** (Kr. e. 264–146).\n\nHannibal átkelt az Alpokon és Cannae-nál nagy győzelmet aratott, a döntés mégis Zamánál (Kr. e. 202) született. Kr. e. 146-ban Karthágó elpusztult.",
+          "emotion": "surprised",
+          "mentor": "A Földközi-tenger ezzel „Mare Nostrum”, vagyis a mi tengerünk lett."
+        },
+        {
+          "title": "A császárság születése",
+          "body": "A hódítások megrengették a köztársaságot. **Julius Caesart** Kr. e. 44-ben meggyilkolták, unokaöccse, **Augustus** pedig Kr. e. 27-től egyeduralkodóként, de köztársasági formák között kormányzott (principátus).",
+          "emotion": "confident"
+        },
+        {
+          "title": "A birodalom vége",
+          "body": "A kereszténység a 4. század végére államvallás lett.\n\n**395-ben** a birodalmat kettéosztották, a **Nyugatrómai Birodalom 476-ban** bukott el. A keleti rész, Bizánc még csaknem ezer évig fennmaradt.",
+          "emotion": "sad"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik évben bukott meg a Nyugatrómai Birodalom?",
+          "options": [
+            "476",
+            "395",
+            "313",
+            "1453"
+          ],
+          "answer": 0,
+          "explanation": "476-ban fosztották meg trónjától az utolsó nyugatrómai császárt. 395 a birodalom kettéosztása, 1453 Bizánc bukása."
+        },
+        {
+          "question": "Ki ellen vívta Róma a pun háborúkat?",
+          "options": [
+            "Karthágó ellen",
+            "A perzsák ellen",
+            "A gallok ellen",
+            "Egyiptom ellen"
+          ],
+          "answer": 0,
+          "explanation": "A pun háborúk a Földközi-tenger nyugati medencéjéért folytak Karthágó ellen."
+        },
+        {
+          "question": "Ki volt az első római császár?",
+          "options": [
+            "Augustus",
+            "Julius Caesar",
+            "Nero",
+            "Romulus"
+          ],
+          "answer": 0,
+          "explanation": "Augustus Kr. e. 27-től uralkodott egyeduralkodóként. Caesart még a köztársaság idején gyilkolták meg."
+        }
+      ]
+    },
+    {
+      "id": "history-03",
+      "title": "Hűbériség és a Frank Birodalom",
+      "summary": "Hűbéri lánc, Nagy Károly és az uradalom.",
+      "video": {
+        "youtubeId": "",
+        "title": "Hűbériség és frankok"
+      },
+      "slides": [
+        {
+          "title": "A hűbériség",
+          "body": "A **hűbérúr** birtokot (feudumot) adott a **hűbéresnek**, aki cserébe hűségesküt tett és katonai szolgálattal tartozott.\n\nÍgy épült fel a hűbéri lánc, amelynek csúcsán az uralkodó állt.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A Frank Birodalom",
+          "body": "A frankok a Nyugatrómai Birodalom romjain szerveződtek állammá. Klodvig felvette a kereszténységet, Martell Károly **732-ben Poitiers-nél** megállította az arab előretörést.\n\n**Nagy Károlyt 800 karácsonyán** császárrá koronázta a pápa.",
+          "emotion": "confident"
+        },
+        {
+          "title": "A birodalom felosztása",
+          "body": "Nagy Károly utódai megosztoztak az örökségen: a **843-as verduni szerződés** három részre osztotta a birodalmat.\n\nA keleti és a nyugati rész a későbbi Németország és Franciaország magja lett.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Az uradalom",
+          "body": "A gazdaság alapja az **önellátó uradalom** volt: a földesúri majorság és a jobbágytelkek.\n\nA jobbágy **robottal**, terményjáradékkal és pénzjáradékkal tartozott, az egyháznak pedig tizedet fizetett.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik évben koronázták császárrá Nagy Károlyt?",
+          "options": [
+            "800-ban",
+            "732-ben",
+            "843-ban",
+            "962-ben"
+          ],
+          "answer": 0,
+          "explanation": "800 karácsonyán Rómában koronázta császárrá a pápa. 732 Poitiers, 843 Verdun."
+        },
+        {
+          "question": "Mit rögzített a 843-as verduni szerződés?",
+          "options": [
+            "A Frank Birodalom három részre osztását",
+            "A pápa és a császár viszonyát",
+            "A hűbéri eskü szövegét",
+            "A magyarok letelepedését"
+          ],
+          "answer": 0,
+          "explanation": "Nagy Károly unokái osztoztak meg a birodalmon, ebből nőtt ki a későbbi Francia- és Németország."
+        },
+        {
+          "question": "Mi volt a feudum?",
+          "options": [
+            "A hűbérúr által szolgálatért adott birtok",
+            "A jobbágy saját tulajdonú földje",
+            "Az egyháznak fizetett adó",
+            "A városi céhek pénztára"
+          ],
+          "answer": 0,
+          "explanation": "A hűbérbirtokot a szolgálatért kapta a hűbéres, nem örökös tulajdonként."
+        }
+      ]
+    },
+    {
+      "id": "history-04",
+      "title": "Mezőgazdaság, kereskedelem, céhek",
+      "summary": "Technikai újítások, városok, céhek és a merkantilizmus.",
+      "video": {
+        "youtubeId": "",
+        "title": "Termelési technikák, a mezőgazdaság fejlődése"
+      },
+      "slides": [
+        {
+          "title": "Az uradalomtól a fellendülésig",
+          "body": "A korai középkor önellátó uradalmai után a 11–13. században látványos fejlődés indult.\n\nTöbb élelem termett, nőtt a népesség, és megjelent a piacra termelés.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Technikai újítások",
+          "body": "• **nehézeke**, amely mélyebben szántott\n• **szügyhám** és patkó: a ló igavonóvá vált\n• vízimalom, szélmalom\n• **hármas nyomásos gazdálkodás**: őszi, tavaszi vetés és ugar",
+          "emotion": "surprised",
+          "mentor": "A terméstöbblet nélkül nem születtek volna meg a városok."
+        },
+        {
+          "title": "Városok és céhek",
+          "body": "A többlet piacot és városokat hívott életre. Az iparosok **céhekbe** tömörültek: a mester, a legény és az inas hierarchiájába.\n\nA céh szabta meg a minőséget, az árat és a termelt mennyiséget.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Világgazdaság és manufaktúra",
+          "body": "A 16–17. században a távolsági kereskedelem új szintre lépett.\n\nA **merkantilizmus** az aktív kereskedelmi mérleget célozta (több kivitel, kevesebb behozatal), a **manufaktúra** pedig munkamegosztással termelt, még kézi munkával.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mi tette lehetővé a középkori mezőgazdasági fellendülést?",
+          "options": [
+            "A nehézeke és a hármas nyomásos gazdálkodás",
+            "A gőzgép elterjedése",
+            "A műtrágya feltalálása",
+            "A jobbágyfelszabadítás"
+          ],
+          "answer": 0,
+          "explanation": "Az új eszközök és a földek jobb kihasználása adta a terméstöbbletet, ami a városok kialakulásához vezetett."
+        },
+        {
+          "question": "Mi volt a céh?",
+          "options": [
+            "Azonos mesterséget űző kézművesek érdekvédelmi szervezete",
+            "Kereskedelmi hajóstársaság",
+            "Királyi adóhivatal",
+            "Egyházi bíróság"
+          ],
+          "answer": 0,
+          "explanation": "A céh szabályozta a minőséget, az árakat és a mesterré válás útját is."
+        },
+        {
+          "question": "Mit jelent a merkantilizmus?",
+          "options": [
+            "Aktív kereskedelmi mérlegre törekvő gazdaságpolitikát",
+            "A céhek eltörlését",
+            "Az önellátó uradalmi gazdálkodást",
+            "A jobbágyok szabad költözését"
+          ],
+          "answer": 0,
+          "explanation": "A cél a kivitel növelése és a behozatal visszafogása volt, hogy nemesfém áramoljon az országba."
+        }
+      ]
+    },
+    {
+      "id": "history-05",
+      "title": "Középkori város és rendiség",
+      "summary": "Városi kiváltságok, rendek és a rendi gyűlések.",
+      "video": {
+        "youtubeId": "",
+        "title": "Középkori város és rendiség"
+      },
+      "slides": [
+        {
+          "title": "Városi kiváltságok",
+          "body": "A város kiváltságlevéllel vált szabaddá: **szabad bíró- és plébánosválasztás**, vásártartás, vámmentesség, sokszor **árumegállító jog**.\n\nNem véletlen a mondás: „A városi levegő szabaddá tesz.”",
+          "emotion": "confident"
+        },
+        {
+          "title": "A város képe",
+          "body": "A falakon belül szűk utcák, a főtéren templom és városháza, a kapuk közelében piac.\n\nA lakosság java kézműves és kereskedő volt, a hatalmat a vagyonos patríciusok gyakorolták.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A rendiség",
+          "body": "A rend jogilag elkülönülő csoport: **papság, nemesség, polgárság** (a jobbágyság a rendeken kívül maradt).\n\nA rendek gyűlésen képviselték érdekeiket, és az uralkodóval megosztva gyakorolták a hatalmat.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Rendi gyűlések Európában",
+          "body": "**1215: Magna Carta** Angliában, amely korlátozta a király hatalmát, majd a 13. század végén összeült a parlament.\n\nFranciaországban 1302-ben ült össze először a rendi gyűlés.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mit jelentett az árumegállító jog?",
+          "options": [
+            "Az átutazó kereskedőknek áruba kellett bocsátaniuk portékájukat a városban",
+            "A király bármikor leállíthatta a kereskedelmet",
+            "A céhek szabták meg az árakat",
+            "A város teljes vámmentességet kapott"
+          ],
+          "answer": 0,
+          "explanation": "A jog a helyi kereskedőket segítette: az átutazóknak először a városban kellett eladásra kínálniuk az árut."
+        },
+        {
+          "question": "Melyik dokumentum korlátozta 1215-ben az angol király hatalmát?",
+          "options": [
+            "A Magna Carta",
+            "Az Aranybulla",
+            "A Pragmatica Sanctio",
+            "A Szentkorona-tan"
+          ],
+          "answer": 0,
+          "explanation": "A Magna Carta a bárók jogait rögzítette. Magyarországon hét évvel később, 1222-ben született meg az Aranybulla."
+        },
+        {
+          "question": "Kik alkották a középkori rendeket?",
+          "options": [
+            "A papság, a nemesség és a polgárság",
+            "Kizárólag a nemesség",
+            "A jobbágyok és a zsellérek",
+            "A céhek és a bankházak"
+          ],
+          "answer": 0,
+          "explanation": "A rendek jogilag elkülönülő csoportok voltak; a jobbágyság nem alkotott rendet."
+        }
+      ]
+    },
+    {
+      "id": "history-06",
+      "title": "A honfoglalás",
+      "summary": "Vándorlás, 895, kalandozások és Géza fordulata.",
+      "video": {
+        "youtubeId": "",
+        "title": "Honfoglalás"
+      },
+      "slides": [
+        {
+          "title": "Vándorlás keletről",
+          "body": "A magyar törzsek a sztyeppén vándoroltak: **Levédia**, majd **Etelköz** a két ismert szállásterület.\n\nA hét törzs szövetségét a hagyomány szerint a **vérszerződés** pecsételte meg.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "895: a honfoglalás",
+          "body": "A besenyő támadás után a magyarok **Árpád fejedelem** vezetésével 895 körül keltek át a Kárpátokon.\n\nA Kárpát-medence megszállása néhány év alatt befejeződött.",
+          "emotion": "confident",
+          "mentor": "A 895-ös évszám az egyik legfontosabb dátum a magyar történelemben."
+        },
+        {
+          "title": "Kalandozások",
+          "body": "A 10. században a magyar seregek Nyugat- és Dél-Európát járták. **907-ben Pozsonynál** győztek a bajorok felett.\n\nA sorozatot a **955-ös augsburgi (Lech-mezei) vereség** zárta le nyugaton.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Géza fordulata",
+          "body": "**Géza fejedelem** nyugat felé fordult: békét kötött a Német-római Birodalommal, és papokat hívott az országba.\n\nFia, Vajk a keresztségben az István nevet kapta – vele kezdődik a keresztény magyar állam.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mikor történt a honfoglalás?",
+          "options": [
+            "895 körül",
+            "1000-ben",
+            "955-ben",
+            "1241-ben"
+          ],
+          "answer": 0,
+          "explanation": "A magyar törzsek 895 körül keltek át a Kárpátokon. 1000 az államalapítás, 955 az augsburgi vereség éve."
+        },
+        {
+          "question": "Melyik vereség vetett véget a nyugati kalandozásoknak?",
+          "options": [
+            "A 955-ös augsburgi csata",
+            "A 907-es pozsonyi csata",
+            "Az 1241-es muhi csata",
+            "Az 1526-os mohácsi csata"
+          ],
+          "answer": 0,
+          "explanation": "Augsburgnál 955-ben szenvedtek döntő vereséget a magyarok. Pozsonynál 907-ben éppen győztek."
+        },
+        {
+          "question": "Ki vezette a honfoglaló törzsszövetséget?",
+          "options": [
+            "Árpád fejedelem",
+            "Géza fejedelem",
+            "Szent István",
+            "Attila"
+          ],
+          "answer": 0,
+          "explanation": "Árpádot emelték pajzsra fejedelemmé, róla kapta nevét az Árpád-ház."
+        }
+      ]
+    },
+    {
+      "id": "history-07",
+      "title": "Az Árpád-ház",
+      "summary": "Államalapítás, Aranybulla, tatárjárás.",
+      "video": {
+        "youtubeId": "",
+        "title": "Az Árpád-ház"
+      },
+      "slides": [
+        {
+          "title": "Szent István államalapítása",
+          "body": "Istvánt **1000 karácsonyán, illetve 1001 elején** koronázták királlyá.\n\nKiépítette a **vármegyerendszert** és az egyházszervezetet (esztergomi érsekség), törvényei a keresztény rendet védték.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Az Aranybulla",
+          "body": "**1222-ben II. András** kiadta az Aranybullát, amely írásba foglalta a nemesi jogokat: adómentesség, törvénytelen letartóztatás tilalma.\n\nHíres az **ellenállási záradék**, amely feljogosította a nemeseket a törvénytelen királlyal szembeni fellépésre.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A tatárjárás",
+          "body": "**1241-ben a muhi csatában** IV. Béla serege vereséget szenvedett a mongoloktól, az ország nagy része elpusztult.\n\nA kivonulás után Béla kővárakat építtetett és betelepítéssel pótolta a lakosságot – ezért nevezik „második honalapítónak”.",
+          "emotion": "sad",
+          "mentor": "Az újjáépítés miatt kapta Béla a második honalapító nevet."
+        },
+        {
+          "title": "A dinasztia vége",
+          "body": "**III. András 1301-es halálával** az Árpád-ház férfiágon kihalt.\n\nAz országban a tartományurak, vagyis a kiskirályok osztoztak a hatalmon – rendet majd Károly Róbert tesz.",
+          "emotion": "surprised"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mikor koronázták királlyá Szent Istvánt?",
+          "options": [
+            "1000 karácsonyán, illetve 1001 elején",
+            "895-ben",
+            "1222-ben",
+            "1301-ben"
+          ],
+          "answer": 0,
+          "explanation": "A koronázás az ezredfordulón történt, a pápától kapott koronával."
+        },
+        {
+          "question": "Mit tartalmazott az 1222-es Aranybulla?",
+          "options": [
+            "A nemesi jogokat és az ellenállási záradékot",
+            "A jobbágyok felszabadítását",
+            "A városok kiváltságait",
+            "A tatárjárás utáni újjáépítés tervét"
+          ],
+          "answer": 0,
+          "explanation": "II. András a nemesség nyomására adta ki; az ellenállási záradék a törvénysértő királlyal szembeni fellépést engedte meg."
+        },
+        {
+          "question": "Melyik évben volt a muhi csata?",
+          "options": [
+            "1241",
+            "1222",
+            "1301",
+            "1456"
+          ],
+          "answer": 0,
+          "explanation": "A mongolok 1241-ben mértek vereséget IV. Béla seregére a Sajó mellett."
+        }
+      ]
+    },
+    {
+      "id": "history-08",
+      "title": "Vegyesházi királyok",
+      "summary": "Károly Róbert, Nagy Lajos és Zsigmond kora.",
+      "video": {
+        "youtubeId": "",
+        "title": "Vegyesházi királyok"
+      },
+      "slides": [
+        {
+          "title": "Károly Róbert",
+          "body": "Az Anjou-házi uralkodó letörte a kiskirályokat (1312: rozgonyi csata), és rendbe tette a pénzügyeket: **kapuadó**, harmincadvám, bányabérlet és a stabil **aranyforint**.\n\n1335-ben Visegrádon királytalálkozót hívott össze a kereskedelmi útvonalakról.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Nagy Lajos",
+          "body": "Nagy Lajos (1342–1382) idején az ország Európa tekintélyes hatalma lett, egy ideig Lengyelország királya is volt.\n\n**1351-ben** törvényei egységesítették a jobbágyterheket (kilenced), és kimondták az **ősiség** elvét.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Zsigmond kora",
+          "body": "Zsigmond hosszú uralma (1387–1437) alatt jelent meg a **török veszély**: **1396-ban Nikápolynál** vereséget szenvedett a keresztes sereg.\n\nZsigmond német-római császár is lett, és a konstanzi zsinat összehívója volt.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Rendi fejlődés",
+          "body": "A nemesi vármegye és az országgyűlés szerepe nőtt, a hatalom megosztottá vált.\n\n**1437-ben** tört ki az erdélyi parasztfelkelés, amely után a nemesség, a székelyek és a szászok szövetségre léptek (kápolnai unió).",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik uralkodó vezette be a stabil aranyforintot?",
+          "options": [
+            "Károly Róbert",
+            "Nagy Lajos",
+            "Zsigmond",
+            "Hunyadi Mátyás"
+          ],
+          "answer": 0,
+          "explanation": "Károly Róbert gazdasági reformjai (kapuadó, harmincad, aranyforint) teremtették meg a kincstár alapját."
+        },
+        {
+          "question": "Mit mondott ki az 1351-es ősiség törvénye?",
+          "options": [
+            "A nemesi birtok a családé marad, nem idegeníthető el",
+            "A jobbágyok szabadon költözhetnek",
+            "A városok adómentességet kapnak",
+            "A király szabadon adományozhat birtokot"
+          ],
+          "answer": 0,
+          "explanation": "Az ősiség a birtokot a nemzetséghez kötötte; ha a család kihalt, a birtok a koronára szállt."
+        },
+        {
+          "question": "Melyik csatában szenvedett vereséget Zsigmond a törököktől 1396-ban?",
+          "options": [
+            "Nikápolynál",
+            "Várnánál",
+            "Mohácsnál",
+            "Muhinál"
+          ],
+          "answer": 0,
+          "explanation": "A nikápolyi vereség után vált világossá, hogy a török tartós fenyegetés a Balkánon."
+        }
+      ]
+    },
+    {
+      "id": "history-09",
+      "title": "Hunyadi János",
+      "summary": "Törökellenes harcok, kormányzóság, Nándorfehérvár.",
+      "video": {
+        "youtubeId": "",
+        "title": "Hunyadi János"
+      },
+      "slides": [
+        {
+          "title": "A törökverő",
+          "body": "Hunyadi János erdélyi vajdaként szerzett hírnevet a törökellenes harcokban.\n\nAz **1443–44-es „hosszú hadjárat”** sikerei után az **1444-es várnai csata** vereséggel és I. Ulászló király halálával végződött.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Az ország kormányzója",
+          "body": "V. László kiskorúsága idején, **1446 és 1452 között** Hunyadi volt Magyarország kormányzója.\n\nA hatalmat a rendekkel együttműködve gyakorolta.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Nándorfehérvár, 1456",
+          "body": "**1456-ban** Hunyadi és **Kapisztrán János** serege megvédte Nándorfehérvárt II. Mehmed szultán ostromától.\n\nA győzelem emlékét őrzi a déli harangszó. Hunyadi néhány héttel később pestisben halt meg.",
+          "emotion": "joyful",
+          "mentor": "A déli harangszó máig ennek a győzelemnek állít emléket."
+        },
+        {
+          "title": "Az örökség",
+          "body": "Hunyadi két fia közül Lászlót 1457-ben kivégeztették, **Mátyást** viszont 1458-ban királlyá választották.\n\nA Hunyadi-párt támogatása döntő volt a fiatal király hatalomra jutásában.",
+          "emotion": "surprised"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik évben volt a nándorfehérvári diadal?",
+          "options": [
+            "1456",
+            "1444",
+            "1490",
+            "1526"
+          ],
+          "answer": 0,
+          "explanation": "1456-ban verték vissza II. Mehmed ostromát; ennek emlékére szól délben a harang."
+        },
+        {
+          "question": "Ki volt Hunyadi János szövetségese Nándorfehérvár védelmében?",
+          "options": [
+            "Kapisztrán János",
+            "Werbőczy István",
+            "Dózsa György",
+            "Zrínyi Miklós"
+          ],
+          "answer": 0,
+          "explanation": "Kapisztrán János ferences szerzetes keresztes sereget toborzott a vár védelmére."
+        },
+        {
+          "question": "Milyen tisztséget töltött be Hunyadi János 1446 és 1452 között?",
+          "options": [
+            "Az ország kormányzója volt",
+            "Nádor volt",
+            "Esztergomi érsek volt",
+            "Erdélyi fejedelem volt"
+          ],
+          "answer": 0,
+          "explanation": "A kiskorú V. László helyett kormányzóként irányította az országot."
+        }
+      ]
+    },
+    {
+      "id": "history-10",
+      "title": "Hunyadi Mátyás",
+      "summary": "Központosítás, fekete sereg, reneszánsz udvar.",
+      "video": {
+        "youtubeId": "",
+        "title": "Hunyadi Mátyás"
+      },
+      "slides": [
+        {
+          "title": "A központosítás",
+          "body": "Mátyás **1458-tól 1490-ig** uralkodott. Visszaszorította a bárók hatalmát, és saját híveire támaszkodott.\n\nAz állandó jövedelem érdekében megreformálta az adórendszert: a füstpénz helyébe lépő **egyforintos adó** a kincstár alapja lett.",
+          "emotion": "confident"
+        },
+        {
+          "title": "A fekete sereg",
+          "body": "Mátyás **zsoldoshadsereget** tartott fenn, amelyet később fekete seregként emlegettek.\n\nÁllandó hadseregként bármikor bevethető volt, de rengeteg pénzbe került – a királyt ezért is nevezték kemény adószedőnek.",
+          "emotion": "thinking",
+          "mentor": "Zsoldos had: drága, de nem kell megvárni a nemesi felkelést."
+        },
+        {
+          "title": "Hódítás nyugat felé",
+          "body": "Mátyás a cseh és az osztrák területek felé terjeszkedett, **1485-ben elfoglalta Bécset**, és oda tette át udvarát.\n\nA törökkel szemben inkább védekező politikát folytatott: megerősítette a déli végvárrendszert.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Reneszánsz udvar",
+          "body": "Mátyás udvara a reneszánsz kultúra központja lett: a **Corvina-könyvtár** Európa egyik leggazdagabb gyűjteménye volt.\n\nHalála (1490) után a Jagelló-királyok idején a központi hatalom gyorsan meggyengült.",
+          "emotion": "joyful"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Hogyan nevezzük Mátyás zsoldoshadseregét?",
+          "options": [
+            "Fekete sereg",
+            "Nemesi felkelés",
+            "Bandérium",
+            "Fehér sereg"
+          ],
+          "answer": 0,
+          "explanation": "A zsoldosokból álló állandó hadsereget később fekete seregnek nevezték."
+        },
+        {
+          "question": "Melyik évben foglalta el Mátyás Bécset?",
+          "options": [
+            "1485-ben",
+            "1456-ban",
+            "1490-ben",
+            "1526-ban"
+          ],
+          "answer": 0,
+          "explanation": "1485-ben vonult be Bécsbe, és haláláig ott tartotta udvarát."
+        },
+        {
+          "question": "Mi volt a Corvina?",
+          "options": [
+            "Mátyás híres könyvtára",
+            "Egy adófajta",
+            "A király testőrsége",
+            "A budai vár egyik tornya"
+          ],
+          "answer": 0,
+          "explanation": "A Bibliotheca Corviniana a reneszánsz Európa egyik legnagyobb uralkodói könyvtára volt."
+        }
+      ]
+    },
+    {
+      "id": "history-11",
+      "title": "Földrajzi felfedezések",
+      "summary": "Okok, nagy utazások és a világgazdaság születése.",
+      "video": {
+        "youtubeId": "",
+        "title": "Földrajzi felfedezések"
+      },
+      "slides": [
+        {
+          "title": "Miért indultak útnak?",
+          "body": "A törökök elzárták a keleti kereskedelmi utakat, Európának viszont kellett a **fűszer, a selyem és a nemesfém**.\n\nA technika is készen állt: karavella, iránytű, asztrolábium és pontosabb térképek.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A nagy utak",
+          "body": "• **1492:** Kolumbusz Kristóf spanyol szolgálatban eléri Amerikát\n• **1498:** Vasco da Gama Afrikát megkerülve Indiába jut\n• **1519–1522:** Magellán expedíciója körbehajózza a Földet",
+          "emotion": "surprised",
+          "mentor": "Kolumbusz haláláig azt hitte, Indiába érkezett."
+        },
+        {
+          "title": "Gyarmatok",
+          "body": "A spanyolok és a portugálok gyarmatbirodalmat építettek, az őslakos államok (azték, inka) elbuktak.\n\nMegindult a nemesfém, a cukor és később a rabszolgák szállítása az óceánon át.",
+          "emotion": "sad"
+        },
+        {
+          "title": "Következmények",
+          "body": "A beáramló nemesfém **árforradalmat** okozott Európában.\n\nA kereskedelem súlypontja a Földközi-tengerről az **Atlanti-óceánra** helyeződött át, és kialakult a világméretű kereskedelem.",
+          "emotion": "confident"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik évben érte el Kolumbusz Amerikát?",
+          "options": [
+            "1492-ben",
+            "1498-ban",
+            "1519-ben",
+            "1453-ban"
+          ],
+          "answer": 0,
+          "explanation": "1492-ben, spanyol szolgálatban. 1498 Vasco da Gama indiai útja, 1519 Magellán indulása."
+        },
+        {
+          "question": "Ki jutott el elsőként tengeri úton Indiába Afrika megkerülésével?",
+          "options": [
+            "Vasco da Gama",
+            "Kolumbusz Kristóf",
+            "Magellán",
+            "Amerigo Vespucci"
+          ],
+          "answer": 0,
+          "explanation": "Vasco da Gama 1498-ban ért Indiába, ezzel megnyitotta a portugál fűszerutat."
+        },
+        {
+          "question": "Mit jelentett az árforradalom?",
+          "options": [
+            "A beáramló nemesfém miatti tartós áremelkedést",
+            "Az árak hatósági rögzítését",
+            "A céhek árszabályozásának eltörlését",
+            "A gyarmatok adómentességét"
+          ],
+          "answer": 0,
+          "explanation": "Az Amerikából érkező arany és ezüst elértéktelenedést és tartós drágulást okozott Európában."
+        }
+      ]
+    },
+    {
+      "id": "history-12",
+      "title": "Reformáció és katolikus megújulás",
+      "summary": "Luther, Kálvin, a tridenti zsinat és a vallásbéke.",
+      "video": {
+        "youtubeId": "",
+        "title": "Reformáció és katolikus megújulás"
+      },
+      "slides": [
+        {
+          "title": "Luther fellépése",
+          "body": "**1517-ben Luther Márton** kifüggesztette 95 tételét a búcsúcédulák ellen.\n\nTanítása szerint az ember **hit által** üdvözül, a hit forrása pedig egyedül a Biblia, amelyet anyanyelvre fordított.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Kálvin és az angol út",
+          "body": "**Kálvin János** Genfben szigorú egyházat szervezett, tanításának központi eleme az **eleve elrendelés** (predestináció).\n\nAngliában VIII. Henrik politikai okból szakított Rómával, és létrehozta az anglikán egyházat.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Katolikus megújulás",
+          "body": "A katolikus egyház a **tridenti zsinaton** (1545–1563) tisztázta tanait és megreformálta működését.\n\nA megújulás élharcosa a **jezsuita rend** lett, amely iskolákat alapított és térített.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Vallásbéke",
+          "body": "A vallási megosztottság háborúkhoz vezetett. Az **1555-ös augsburgi vallásbéke** elve: „akié a föld, azé a vallás”.\n\nEz a fejedelemnek adta a döntés jogát, nem az egyes hívőnek.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik évhez kötjük Luther 95 tételét?",
+          "options": [
+            "1517",
+            "1555",
+            "1545",
+            "1492"
+          ],
+          "answer": 0,
+          "explanation": "1517-ben lépett fel a búcsúcédulák ellen; ezt tekintjük a reformáció kezdetének."
+        },
+        {
+          "question": "Melyik tanítás kötődik Kálvinhoz?",
+          "options": [
+            "Az eleve elrendelés (predestináció)",
+            "A búcsúcédulák árusítása",
+            "Az anglikán egyház megszervezése",
+            "A jezsuita rend alapítása"
+          ],
+          "answer": 0,
+          "explanation": "Kálvin szerint Isten eleve kiválasztja az üdvözülőket; a hívő a munkájában mutatott sikerből következtethet erre."
+        },
+        {
+          "question": "Mi volt a tridenti zsinat célja?",
+          "options": [
+            "A katolikus egyház tanainak tisztázása és megújítása",
+            "A reformáció elfogadása",
+            "Az anglikán egyház létrehozása",
+            "A pápaság megszüntetése"
+          ],
+          "answer": 0,
+          "explanation": "A zsinat 1545 és 1563 között ülésezett, és a katolikus megújulás programját adta."
+        }
+      ]
+    },
+    {
+      "id": "history-13",
+      "title": "Az ország három részre szakadása",
+      "summary": "Dózsa, Mohács, kettős királyválasztás, 1541.",
+      "video": {
+        "youtubeId": "",
+        "title": "Az ország három részre szakadása"
+      },
+      "slides": [
+        {
+          "title": "A Jagelló-kor",
+          "body": "Mátyás halála után gyenge királyok következtek, a bárók pedig maguk közt osztoztak a hatalmon.\n\n**1514-ben** kitört a **Dózsa György** vezette parasztháború, amelyet véresen levertek. Werbőczy Hármaskönyve rögzítette a nemesi jogokat és a jobbágyok röghöz kötését.",
+          "emotion": "sad"
+        },
+        {
+          "title": "Mohács, 1526",
+          "body": "**1526. augusztus 29-én** a mohácsi csatában a magyar sereg megsemmisítő vereséget szenvedett I. Szulejmán seregétől.\n\nA csatában életét vesztette **II. Lajos király** is.",
+          "emotion": "sad",
+          "mentor": "Mohács a magyar történelem egyik legfájdalmasabb dátuma."
+        },
+        {
+          "title": "Kettős királyválasztás",
+          "body": "A trónra ketten is igényt tartottak: **Szapolyai János** és **I. Ferdinánd** Habsburg főherceg.\n\nA belharc évtizedekre megosztotta az országot, és megkönnyítette a török előretörést.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Három részre szakadás",
+          "body": "**1541-ben a török elfoglalta Budát.** Ezzel az ország három részre szakadt:\n• a Habsburg uralom alatti **Királyi Magyarország**\n• a török **hódoltság**\n• az **Erdélyi Fejedelemség**",
+          "emotion": "surprised"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik évben volt a mohácsi csata?",
+          "options": [
+            "1526",
+            "1514",
+            "1541",
+            "1456"
+          ],
+          "answer": 0,
+          "explanation": "1526. augusztus 29-én; a csatában elesett II. Lajos király is."
+        },
+        {
+          "question": "Mi történt 1541-ben?",
+          "options": [
+            "A török elfoglalta Budát, az ország három részre szakadt",
+            "Megszületett az Aranybulla",
+            "Kitört a Dózsa-féle parasztháború",
+            "Visszafoglalták Budát a töröktől"
+          ],
+          "answer": 0,
+          "explanation": "Buda 1541-es elfoglalásával rögzült a három részre szakadt ország állapota."
+        },
+        {
+          "question": "Kik voltak a kettős királyválasztás szereplői?",
+          "options": [
+            "Szapolyai János és I. Ferdinánd",
+            "Hunyadi Mátyás és III. Frigyes",
+            "II. Lajos és I. Szulejmán",
+            "Bocskai István és Bethlen Gábor"
+          ],
+          "answer": 0,
+          "explanation": "A mohácsi vereség után a rendek egy része Szapolyait, másik része Ferdinándot választotta királlyá."
+        }
+      ]
+    },
+    {
+      "id": "history-14",
+      "title": "Az Erdélyi Fejedelemség",
+      "summary": "A három nemzet, vallási türelem, Bocskai és Bethlen.",
+      "video": {
+        "youtubeId": "",
+        "title": "Erdélyi Fejedelemség"
+      },
+      "slides": [
+        {
+          "title": "Egy sajátos állam",
+          "body": "Erdély a török fennhatóságát elismerve, **adófizetés fejében** széles önállóságot élvezett.\n\nA fejedelmet az országgyűlés választotta, a hatalom alapja a „három nemzet”: a magyar nemesség, a székelyek és a szászok.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Vallási türelem",
+          "body": "Az **1568-as tordai országgyűlés** Európában páratlan módon több felekezet szabad gyakorlását mondta ki.\n\nA bevett vallások: katolikus, református, evangélikus és unitárius.",
+          "emotion": "surprised",
+          "mentor": "Ez a döntés jóval megelőzte a korát."
+        },
+        {
+          "title": "Bocskai István",
+          "body": "A Habsburg-ellenes felkelés (1604–1606) élén Bocskai állt, támaszai a hajdúk voltak.\n\nA **bécsi béke (1606)** biztosította a protestáns vallásszabadságot és Erdély különállását.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Bethlen Gábor kora",
+          "body": "Bethlen Gábor (1613–1629) uralma a fejedelemség **aranykora**: rendezett pénzügyek, fejlődő oktatás, aktív külpolitika a harmincéves háborúban.\n\nA század második felében a szerencsétlen lengyel hadjárat után Erdély ereje megtört.",
+          "emotion": "joyful"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mit mondott ki az 1568-as tordai országgyűlés?",
+          "options": [
+            "Több felekezet szabad vallásgyakorlását",
+            "A jobbágyok felszabadítását",
+            "Erdély függetlenségét a szultántól",
+            "A székelyek kiváltságainak eltörlését"
+          ],
+          "answer": 0,
+          "explanation": "A bevett vallások szabad gyakorlása Európában egyedülálló döntés volt a korban."
+        },
+        {
+          "question": "Melyik fejedelem uralkodása számít az Erdélyi Fejedelemség aranykorának?",
+          "options": [
+            "Bethlen Gábor",
+            "Bocskai István",
+            "Báthory Gábor",
+            "II. Rákóczi Ferenc"
+          ],
+          "answer": 0,
+          "explanation": "Bethlen Gábor 1613 és 1629 között kormányzott; gazdasági és kulturális felvirágzást hozott."
+        },
+        {
+          "question": "Melyik három csoport alkotta Erdélyben a „három nemzetet”?",
+          "options": [
+            "A magyar nemesség, a székelyek és a szászok",
+            "A nemesség, a polgárság és a jobbágyság",
+            "A katolikusok, a reformátusok és az unitáriusok",
+            "A magyarok, a törökök és a Habsburgok"
+          ],
+          "answer": 0,
+          "explanation": "Ez a három rendi csoport gyakorolta a hatalmat a fejedelemségben."
+        }
+      ]
+    },
+    {
+      "id": "history-15",
+      "title": "Abszolutizmus és parlamentarizmus",
+      "summary": "XIV. Lajos Franciaországa és az angol alkotmányos monarchia.",
+      "video": {
+        "youtubeId": "",
+        "title": "Kontinentális abszolutizmus és a parlamentáris monarchia"
+      },
+      "slides": [
+        {
+          "title": "Az abszolutizmus",
+          "body": "Az abszolút uralkodó **korlátlan hatalmat** gyakorolt: nem hívott össze rendi gyűlést, hivatalnokokra és állandó hadseregre támaszkodott.\n\nMintája XIV. Lajos Franciaországa, a versailles-i udvarral.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Colbert és a merkantilizmus",
+          "body": "XIV. Lajos minisztere, Colbert a **merkantilizmus** híve volt: manufaktúrák, védővámok, gyarmatok.\n\nA cél az volt, hogy több áru menjen ki az országból, mint amennyi be – így gyűlt a nemesfém.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Az angol polgárháború",
+          "body": "Angliában a király és a parlament összecsapott: a polgárháború után **1649-ben kivégezték I. Károlyt**.\n\nCromwell köztársaságát a Stuart-restauráció követte.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Dicsőséges forradalom",
+          "body": "**1688-ban** a parlament hívására Orániai Vilmos vette át a trónt, vérontás nélkül.\n\nAz **1689-es Jognyilatkozat** a parlament jogait rögzítette: így született meg az **alkotmányos monarchia**.",
+          "emotion": "joyful",
+          "mentor": "Itt dől el, hogy Angliában a parlamenté lesz a főszerep."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik uralkodóhoz kötjük a francia abszolutizmus fénykorát?",
+          "options": [
+            "XIV. Lajos",
+            "XVI. Lajos",
+            "I. Károly",
+            "Orániai Vilmos"
+          ],
+          "answer": 0,
+          "explanation": "XIV. Lajos, a Napkirály uralkodása (17. század) az abszolutizmus mintapéldája."
+        },
+        {
+          "question": "Mi volt az 1689-es Jognyilatkozat jelentősége?",
+          "options": [
+            "Rögzítette a parlament jogait, megalapozva az alkotmányos monarchiát",
+            "Kimondta a köztársaság létrejöttét",
+            "Eltörölte a parlamentet",
+            "Vallásszabadságot adott a katolikusoknak"
+          ],
+          "answer": 0,
+          "explanation": "A dicsőséges forradalom után a király csak a parlamenttel együtt kormányozhatott."
+        },
+        {
+          "question": "Mi jellemző a merkantilista gazdaságpolitikára?",
+          "options": [
+            "A kivitel támogatása és a behozatal korlátozása",
+            "A szabadkereskedelem minden formája",
+            "Az önellátó uradalmi gazdálkodás",
+            "A céhek felszámolása"
+          ],
+          "answer": 0,
+          "explanation": "A cél az aktív kereskedelmi mérleg volt, hogy nemesfém áramoljon az országba."
+        }
+      ]
+    },
+    {
+      "id": "history-16",
+      "title": "A törökök kiűzése és a Rákóczi-szabadságharc",
+      "summary": "1686, karlócai béke, kuruc küzdelem, szatmári béke.",
+      "video": {
+        "youtubeId": "",
+        "title": "Törökök kiűzése és a Rákóczi-szabadságharc"
+      },
+      "slides": [
+        {
+          "title": "Fordulat Bécs alatt",
+          "body": "**1683-ban** a török sereg kudarcot vallott Bécs ostrománál.\n\nEzután alakult meg a pápa támogatásával a **Szent Liga**, és indult meg a felszabadító háború.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Buda visszafoglalása",
+          "body": "**1686-ban a keresztény seregek visszafoglalták Budát**, 145 év török uralom után.\n\nA harcokat az **1699-es karlócai béke** zárta le: a török kiszorult az ország nagy részéből.",
+          "emotion": "joyful"
+        },
+        {
+          "title": "A Rákóczi-szabadságharc",
+          "body": "A háború terhei, az adók és a Habsburg-kormányzat miatt **1703-ban** kitört a **II. Rákóczi Ferenc** vezette szabadságharc.\n\nA kurucok eleinte sikeresek voltak, az **1707-es ónodi országgyűlés** kimondta a Habsburgok trónfosztását.",
+          "emotion": "confident"
+        },
+        {
+          "title": "A szatmári béke",
+          "body": "A túlerő, a pénzhiány és a pestis felőrölte a szabadságharcot.\n\nAz **1711-es szatmári béke** amnesztiát és a rendi jogok megerősítését hozta, Rákóczi azonban emigrációba kényszerült.",
+          "emotion": "sad"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik évben foglalták vissza Budát a törököktől?",
+          "options": [
+            "1686-ban",
+            "1683-ban",
+            "1699-ben",
+            "1711-ben"
+          ],
+          "answer": 0,
+          "explanation": "1686-ban, a Szent Liga seregei. 1699 a karlócai béke, amely lezárta a felszabadító háborút."
+        },
+        {
+          "question": "Mi történt az 1707-es ónodi országgyűlésen?",
+          "options": [
+            "Kimondták a Habsburg-ház trónfosztását",
+            "Megkötötték a szatmári békét",
+            "Kitört a szabadságharc",
+            "Visszafoglalták Budát"
+          ],
+          "answer": 0,
+          "explanation": "Ónodon a rendek megfosztották trónjától a Habsburgokat; a béke négy évvel később, Szatmárnál született meg."
+        },
+        {
+          "question": "Mi jellemezte az 1711-es szatmári békét?",
+          "options": [
+            "Amnesztiát adott, és megerősítette a rendi jogokat",
+            "Teljes függetlenséget adott Magyarországnak",
+            "Kiűzte a törököt az országból",
+            "Rákóczit királlyá választotta"
+          ],
+          "answer": 0,
+          "explanation": "A megegyezéses béke kegyelmet adott a felkelőknek, de Rákóczi nem fogadta el, és emigrált."
+        }
+      ]
+    },
+    {
+      "id": "history-17",
+      "title": "A felvilágosodás",
+      "summary": "Észhit, hatalmi ágak, Mária Terézia és II. József.",
+      "video": {
+        "youtubeId": "",
+        "title": "Felvilágosodás"
+      },
+      "slides": [
+        {
+          "title": "Az ész évszázada",
+          "body": "A felvilágosodás gondolkodói az **észben** és a természetjogban hittek: az embernek születésénél fogva vannak jogai.\n\nBírálták a kiváltságokat, a babonát és az egyház túlhatalmát.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A nagy gondolkodók",
+          "body": "• **Locke:** a hatalom a nép megbízásából származik\n• **Montesquieu:** a hatalmi ágak szétválasztása (törvényhozás, végrehajtás, bíráskodás)\n• **Rousseau:** társadalmi szerződés és népfelség\n• **Voltaire:** türelem és sajtószabadság",
+          "emotion": "confident",
+          "mentor": "Montesquieu gondolata máig minden demokrácia alapja."
+        },
+        {
+          "title": "Felvilágosult abszolutizmus",
+          "body": "Néhány uralkodó felülről, rendeletekkel modernizált. **Mária Terézia** úrbérrendelete (1767) egységesítette a jobbágyterheket, a Ratio Educationis (1777) az oktatást szabályozta.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "II. József",
+          "body": "A „kalapos király” nem koronáztatta meg magát, és rendeletekkel kormányzott: **türelmi rendelet (1781)**, **jobbágyrendelet (1785)**, német nyelvrendelet.\n\nHalála előtt a rendek ellenállása miatt rendeleteinek nagy részét visszavonta.",
+          "emotion": "surprised"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Kinek a nevéhez fűződik a hatalmi ágak szétválasztásának elve?",
+          "options": [
+            "Montesquieu",
+            "Rousseau",
+            "Voltaire",
+            "Locke"
+          ],
+          "answer": 0,
+          "explanation": "Montesquieu A törvények szelleméről című művében fejtette ki a három hatalmi ág elkülönítését."
+        },
+        {
+          "question": "Melyik rendeletet adta ki II. József 1781-ben?",
+          "options": [
+            "A türelmi rendeletet",
+            "Az úrbérrendeletet",
+            "A Ratio Educationist",
+            "Az Aranybullát"
+          ],
+          "answer": 0,
+          "explanation": "A türelmi rendelet a protestánsok és az ortodoxok szabad vallásgyakorlását engedte meg."
+        },
+        {
+          "question": "Mit szabályozott Mária Terézia 1767-es úrbérrendelete?",
+          "options": [
+            "A jobbágyok szolgáltatásait egységesítette",
+            "Az oktatás rendjét",
+            "A vallásgyakorlást",
+            "A hivatalos nyelv kérdését"
+          ],
+          "answer": 0,
+          "explanation": "A rendelet országos szinten szabta meg a jobbágyi terheket, korlátozva a földesúri önkényt."
+        }
+      ]
+    },
+    {
+      "id": "history-18",
+      "title": "Az USA létrejötte",
+      "summary": "A 13 gyarmat, 1776 és az amerikai alkotmány.",
+      "video": {
+        "youtubeId": "",
+        "title": "USA létrejötte és alkotmánya"
+      },
+      "slides": [
+        {
+          "title": "A 13 gyarmat",
+          "body": "Az észak-amerikai angol gyarmatok gyorsan fejlődtek, saját gyűléseik voltak.\n\nA londoni adók ellen a jelszó ez lett: **„Nincs adózás képviselet nélkül.”** 1773-ban ezt jelképezte a bostoni teadélután.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A függetlenségi háború",
+          "body": "**1776. július 4-én** fogadták el a **Függetlenségi nyilatkozatot**, amely az ember elidegeníthetetlen jogairól szólt.\n\nA háborút George Washington vezetésével, francia segítséggel nyerték meg; a függetlenséget az 1783-as párizsi béke ismerte el.",
+          "emotion": "joyful"
+        },
+        {
+          "title": "Az alkotmány",
+          "body": "Az **1787-es alkotmány** szövetségi államot hozott létre: a tagállamok és a központi kormány között megosztott hatáskörökkel.\n\nMegvalósult a **hatalmi ágak szétválasztása**: elnök, kongresszus, legfelsőbb bíróság.",
+          "emotion": "confident",
+          "mentor": "Itt látszik, hogyan lesz a felvilágosodás elméletéből működő állam."
+        },
+        {
+          "title": "Fékek és ellensúlyok",
+          "body": "Az alkotmány a hatalmi ágakat egymás ellenőrzésére is felhatalmazta (vétó, felülvizsgálat).\n\nAz első elnök **George Washington** lett; az alapjogokat a későbbi kiegészítések rögzítették.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mikor fogadták el a Függetlenségi nyilatkozatot?",
+          "options": [
+            "1776. július 4-én",
+            "1783-ban",
+            "1787-ben",
+            "1789-ben"
+          ],
+          "answer": 0,
+          "explanation": "1776. július 4-e azóta is az Egyesült Államok nemzeti ünnepe."
+        },
+        {
+          "question": "Mit vezetett be az 1787-es amerikai alkotmány?",
+          "options": [
+            "A szövetségi államot és a hatalmi ágak szétválasztását",
+            "Az abszolút monarchiát",
+            "A rabszolgaság azonnali eltörlését",
+            "Az egypárti kormányzást"
+          ],
+          "answer": 0,
+          "explanation": "A föderális berendezkedés és a fékek-ellensúlyok rendszere a felvilágosodás elveire épült."
+        },
+        {
+          "question": "Mit jelentett a „nincs adózás képviselet nélkül” jelszó?",
+          "options": [
+            "A gyarmatok csak olyan adót fogadtak el, amelyről képviselőik is dönthettek",
+            "A gyarmatokon eltörölték az adókat",
+            "Csak a földbirtokosok adóztak",
+            "Az adókat a király szedte be közvetlenül"
+          ],
+          "answer": 0,
+          "explanation": "A gyarmatoknak nem volt képviseletük a londoni parlamentben, ezért az ott kivetett adókat jogtalannak tartották."
+        }
+      ]
+    },
+    {
+      "id": "history-19",
+      "title": "Napóleon kora",
+      "summary": "A forradalomtól a császárságig és a bécsi kongresszusig.",
+      "video": {
+        "youtubeId": "",
+        "title": "Napóleon"
+      },
+      "slides": [
+        {
+          "title": "A forradalom öröksége",
+          "body": "Az **1789-es francia forradalom** eltörölte a rendi kiváltságokat, és kimondta az emberi és polgári jogokat.\n\nA zűrzavaros évek után a rend iránti igény hozta helyzetbe a fiatal tábornokot, **Bonaparte Napóleont**.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Császárság és törvénykönyv",
+          "body": "Napóleon **1804-ben császárrá koronáztatta magát**.\n\nA **Code civil**, vagyis a polgári törvénykönyv rögzítette a törvény előtti egyenlőséget és a tulajdon szentségét – hatása egész Európára kiterjedt.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Háborúk Európában",
+          "body": "A szárazföldön Napóleon sorra győzött (1805: Austerlitz), a tengeren viszont a britek bizonyultak erősebbnek (Trafalgar).\n\nA **kontinentális zárlattal** akarta Angliát térdre kényszeríteni, de az **1812-es oroszországi hadjárat** katasztrófával végződött.",
+          "emotion": "surprised",
+          "mentor": "Az orosz tél és a felperzselt föld taktikája döntött."
+        },
+        {
+          "title": "Bukás és új rend",
+          "body": "A lipcsei „népek csatája” (1813) után **1815-ben Waterloónál** végleg vereséget szenvedett.\n\nA **bécsi kongresszus** a legitimitás és az egyensúly elve alapján rendezte át Európát, és létrehozta a Szent Szövetséget.",
+          "emotion": "sad"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik csatában szenvedett Napóleon végső vereséget?",
+          "options": [
+            "Waterloónál, 1815-ben",
+            "Austerlitznél, 1805-ben",
+            "Lipcsénél, 1813-ban",
+            "Trafalgarnál, 1805-ben"
+          ],
+          "answer": 0,
+          "explanation": "Waterloo után végleg száműzték. Lipcse fontos vereség volt, de még nem a végső."
+        },
+        {
+          "question": "Mi volt a Code civil?",
+          "options": [
+            "Napóleon polgári törvénykönyve",
+            "A kontinentális zárlat rendelete",
+            "A bécsi kongresszus záróokmánya",
+            "A francia alkotmány 1791-ből"
+          ],
+          "answer": 0,
+          "explanation": "A törvénykönyv rögzítette a törvény előtti egyenlőséget és a tulajdon védelmét, és Európa több államának mintája lett."
+        },
+        {
+          "question": "Milyen elvek alapján rendezte át Európát a bécsi kongresszus?",
+          "options": [
+            "A legitimitás és az egyensúly elve alapján",
+            "A népek önrendelkezése alapján",
+            "A gyarmatok felosztása alapján",
+            "A vallásszabadság alapján"
+          ],
+          "answer": 0,
+          "explanation": "A régi uralkodóházakat állították vissza, és ügyeltek arra, hogy egyik nagyhatalom se kerüljön fölénybe."
+        }
+      ]
+    },
+    {
+      "id": "history-20",
+      "title": "Az ipari forradalom",
+      "summary": "Gőzgép, gyárak, városiasodás, második hullám.",
+      "video": {
+        "youtubeId": "",
+        "title": "Az ipari forradalom hullámai és hatásai"
+      },
+      "slides": [
+        {
+          "title": "Miért Angliában?",
+          "body": "A 18. század második felében Angliában adott volt minden: **tőke, szabad munkaerő, szén és vasérc, gyarmati piac** és találmányok iránti nyitottság.\n\nA mezőgazdasági fejlődés felszabadította a munkaerőt a gyárak számára.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A gőz kora",
+          "body": "**Watt gőzgépe** a bányáktól a textilgyárakig mindenütt megjelent.\n\nA közlekedést a **gőzmozdony és a gőzhajó** forradalmasította: az áru és az ember is gyorsabban jutott célba.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Társadalmi hatások",
+          "body": "A gyárak köré városok nőttek, tömegek költöztek be vidékről.\n\nMegjelent a **munkásság** mint új társadalmi réteg: napi 12–14 óra munka, gyermekmunka, zsúfolt lakások. Válaszul születtek a szakszervezetek.",
+          "emotion": "sad",
+          "mentor": "Az ipari forradalom nemcsak gépekről szól, hanem emberi sorsokról is."
+        },
+        {
+          "title": "A második hullám",
+          "body": "A 19. század végén új korszak kezdődött: **villamos energia, robbanómotor, vegyipar, acél**.\n\nMegjelent a futószalagos tömegtermelés, és az USA meg Németország az élre tört.",
+          "emotion": "confident"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik országban indult az ipari forradalom?",
+          "options": [
+            "Angliában",
+            "Franciaországban",
+            "Németországban",
+            "Az Egyesült Államokban"
+          ],
+          "answer": 0,
+          "explanation": "A tőke, a nyersanyag, a szabad munkaerő és a gyarmati piac együtt Angliában állt rendelkezésre a 18. század második felében."
+        },
+        {
+          "question": "Mi jellemzi a második ipari forradalmat?",
+          "options": [
+            "A villamos energia és a robbanómotor elterjedése",
+            "A gőzgép feltalálása",
+            "A hármas nyomásos gazdálkodás",
+            "A manufaktúrák megjelenése"
+          ],
+          "answer": 0,
+          "explanation": "A 19. század végén az elektromosság, a robbanómotor és a vegyipar hozott újabb fordulatot."
+        },
+        {
+          "question": "Milyen társadalmi következménye volt az iparosodásnak?",
+          "options": [
+            "A városok gyors növekedése és a munkásság megjelenése",
+            "A jobbágyrendszer megerősödése",
+            "A céhek felvirágzása",
+            "A népesség csökkenése"
+          ],
+          "answer": 0,
+          "explanation": "A gyárak köré költöző tömegek új társadalmi réteget, a munkásságot hozták létre."
+        }
+      ]
+    },
+    {
+      "id": "history-21",
+      "title": "A 19. század eszméi",
+      "summary": "Liberalizmus, nacionalizmus, konzervativizmus, szocializmus.",
+      "video": {
+        "youtubeId": "",
+        "title": "A XIX. század uralkodó eszméi"
+      },
+      "slides": [
+        {
+          "title": "Liberalizmus",
+          "body": "A szabadelvűség a **polgári szabadságjogokat** tartja a legfőbb értéknek: szólás-, sajtó- és vallásszabadság, jogegyenlőség.\n\nGazdaságban a piaci versenyt, politikában a képviseleti rendszert támogatja.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Nacionalizmus",
+          "body": "A nemzeti eszme a **közös nyelvet, kultúrát és történelmet** emeli a közösség alapjává.\n\nCélja a nemzeti egység és az önrendelkezés – ez egyszerre mozgatta az olasz és a német egyesítést, és feszítette szét a soknemzetiségű birodalmakat.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Konzervativizmus",
+          "body": "A konzervatívok a **fokozatos változásban** hisznek: a hagyomány, a vallás és a tekintély megtartó erő.\n\nNem a változást tagadják, hanem a hirtelen, gyökeres átalakítást tartják veszélyesnek.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Szocializmus",
+          "body": "Az ipari nyomorra adott válasz. Az **utópikus szocialisták** mintatelepekben gondolkodtak.\n\n**Marx és Engels** 1848-as Kommunista kiáltványa osztályharcról és a munkásság forradalmáról szólt. Megjelent a keresztényszocializmus és az anarchizmus is.",
+          "emotion": "surprised",
+          "mentor": "Ezek az eszmék máig a politikai gondolkodás alapszínei."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mit tart a legfőbb értéknek a liberalizmus?",
+          "options": [
+            "A polgári szabadságjogokat és a jogegyenlőséget",
+            "A hagyomány és a tekintély védelmét",
+            "A közösségi tulajdont",
+            "Az uralkodó korlátlan hatalmát"
+          ],
+          "answer": 0,
+          "explanation": "A liberalizmus az egyén szabadságából indul ki, és ehhez igazítja az állam szerepét."
+        },
+        {
+          "question": "Kik írták a Kommunista kiáltványt?",
+          "options": [
+            "Marx és Engels",
+            "Owen és Fourier",
+            "Locke és Montesquieu",
+            "Bakunyin és Proudhon"
+          ],
+          "answer": 0,
+          "explanation": "A kiáltvány 1848-ban jelent meg, és a tudományos szocializmus alapszövege lett."
+        },
+        {
+          "question": "Mi jellemző a konzervatív gondolkodásra?",
+          "options": [
+            "A fokozatos változás és a hagyomány tisztelete",
+            "A forradalmi átalakítás",
+            "A magántulajdon eltörlése",
+            "A nemzeti határok megszüntetése"
+          ],
+          "answer": 0,
+          "explanation": "A konzervativizmus a szerves fejlődést részesíti előnyben a hirtelen fordulatokkal szemben."
+        }
+      ]
+    },
+    {
+      "id": "history-22",
+      "title": "A reformkor",
+      "summary": "Széchenyi és Kossuth, nyelvkérdés, jobbágykérdés.",
+      "video": {
+        "youtubeId": "",
+        "title": "Reformkor"
+      },
+      "slides": [
+        {
+          "title": "Indulás",
+          "body": "Az **1825-ös országgyűlésen** Széchenyi István birtokainak egyévi jövedelmét ajánlotta fel egy tudós társaságra: így jött létre a **Magyar Tudományos Akadémia**.\n\nEzt az időszakot nevezzük reformkornak.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Széchenyi programja",
+          "body": "**Hitel** című műve (1830) a gazdasági elmaradottság okait vizsgálta: hitel nélkül nincs fejlődés, az ősiség pedig gátolja a hitelezést.\n\nNevéhez fűződik a Lánchíd, a gőzhajózás és a Vaskapu szabályozása.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Kossuth útja",
+          "body": "Kossuth Lajos a **Pesti Hírlap** szerkesztőjeként érte el a közvéleményt.\n\nAz **érdekegyesítés** híve volt: a nemesség és a polgárság, sőt a jobbágyság érdekeit is közös nevezőre hozná, akár gyorsabb ütemben is, mint Széchenyi.",
+          "emotion": "surprised",
+          "mentor": "Széchenyi a fokozatosságot, Kossuth a gyorsabb átalakítást sürgette."
+        },
+        {
+          "title": "A reformok kérdései",
+          "body": "• **nyelvkérdés:** 1844-től a magyar lett a hivatalos nyelv\n• **jobbágykérdés:** önkéntes, majd kötelező **örökváltság**\n• **közteherviselés:** a nemesség is adózzon\n\nEzek a követelések érnek majd be 1848 tavaszán.",
+          "emotion": "confident"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik intézmény alapításához vezetett Széchenyi 1825-ös felajánlása?",
+          "options": [
+            "A Magyar Tudományos Akadémiához",
+            "A Nemzeti Múzeumhoz",
+            "A Lánchídhoz",
+            "A Nemzeti Színházhoz"
+          ],
+          "answer": 0,
+          "explanation": "Birtokai egyévi jövedelmét ajánlotta fel egy tudós társaság céljaira."
+        },
+        {
+          "question": "Melyik lap élén állt Kossuth Lajos?",
+          "options": [
+            "Pesti Hírlap",
+            "Hitel",
+            "Nemzeti Újság",
+            "Vasárnapi Újság"
+          ],
+          "answer": 0,
+          "explanation": "A Pesti Hírlap vezércikkeivel Kossuth teremtett először igazi politikai közvéleményt."
+        },
+        {
+          "question": "Mit jelentett az örökváltság?",
+          "options": [
+            "A jobbágy megválthatta a földjét és a szolgáltatásai alól felszabadult",
+            "A nemesi birtok öröklésének rendjét",
+            "A városok adómentességét",
+            "A katonai szolgálat megváltását"
+          ],
+          "answer": 0,
+          "explanation": "A reformkor egyik kulcskérdése volt, hogy ez önkéntes vagy kötelező és állami kárpótlással történjen."
+        }
+      ]
+    },
+    {
+      "id": "history-23",
       "title": "Az 1848–49-es forradalom és szabadságharc",
       "summary": "Március 15., az áprilisi törvények és a szabadságharc vége.",
-      "video": { "youtubeId": "", "title": "Az 1848–49-es forradalom és szabadságharc" },
+      "video": {
+        "youtubeId": "",
+        "title": "Az 1848–49-es forradalom és szabadságharc"
+      },
       "slides": [
         {
           "title": "A pesti forradalom",
@@ -32,8 +1504,7 @@
         {
           "title": "Az első felelős kormány",
           "body": "Miniszterelnök: **gróf Batthyány Lajos**.\n\nA kormány tagja volt többek között Kossuth Lajos (pénzügy), Széchenyi István (közlekedés), Deák Ferenc (igazságügy) és Eötvös József (vallás- és közoktatásügy).",
-          "emotion": "happy",
-          "mentor": "Micsoda csapat! A reformkor nagyjai egy kormányban."
+          "emotion": "happy"
         },
         {
           "title": "A szabadságharc vége",
@@ -45,13 +1516,23 @@
       "quiz": [
         {
           "question": "Melyik napon tört ki a pesti forradalom?",
-          "options": ["1848. április 11.", "1848. március 15.", "1849. augusztus 13.", "1849. október 6."],
+          "options": [
+            "1848. április 11.",
+            "1848. március 15.",
+            "1849. augusztus 13.",
+            "1849. október 6."
+          ],
           "answer": 1,
           "explanation": "1848. március 15-én nyomtatták ki a 12 pontot és a Nemzeti dalt. Április 11-én az áprilisi törvényeket szentesítették."
         },
         {
           "question": "Ki volt az első felelős magyar kormány miniszterelnöke?",
-          "options": ["Kossuth Lajos", "Széchenyi István", "gróf Batthyány Lajos", "Deák Ferenc"],
+          "options": [
+            "Kossuth Lajos",
+            "Széchenyi István",
+            "gróf Batthyány Lajos",
+            "Deák Ferenc"
+          ],
           "answer": 2,
           "explanation": "Batthyány Lajos vezette a kormányt. Kossuth a pénzügyi, Széchenyi a közlekedési, Deák az igazságügyi tárcát kapta."
         },
@@ -79,8 +1560,742 @@
         }
       ]
     },
-    { "id": "history-02", "title": "A kiegyezés", "comingSoon": true },
-    { "id": "history-03", "title": "A dualizmus kora", "comingSoon": true },
-    { "id": "history-04", "title": "Az első világháború", "comingSoon": true }
+    {
+      "id": "history-24",
+      "title": "Kiegyezés és dualizmus",
+      "summary": "1867, a közös ügyek és a boldog békeidők.",
+      "video": {
+        "youtubeId": "",
+        "title": "Kiegyezés és dualizmus"
+      },
+      "slides": [
+        {
+          "title": "Út a kiegyezésig",
+          "body": "A szabadságharc leverése után következett a megtorlás, majd a Bach-korszak önkényuralma.\n\nA birodalom külpolitikai vereségei (1859, 1866) és **Deák Ferenc** politikája nyitotta meg az utat a megegyezéshez.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A kiegyezés, 1867",
+          "body": "Létrejött **Ausztria–Magyarország**: két önálló állam, közös uralkodóval.\n\n**Közös ügyek:** a kül-, a had- és az ezeket finanszírozó pénzügy. Ferenc Józsefet magyar királlyá koronázták.",
+          "emotion": "confident",
+          "mentor": "Két állam, egy uralkodó – ez a dualizmus lényege."
+        },
+        {
+          "title": "Gazdasági fellendülés",
+          "body": "Kiépült a **vasúthálózat**, felfutott a malom- és az élelmiszeripar, megindult a bankrendszer fejlődése.\n\n**1873-ban** Pest, Buda és Óbuda egyesítésével megszületett **Budapest**, amely világvárossá nőtt.",
+          "emotion": "joyful"
+        },
+        {
+          "title": "Feszültségek",
+          "body": "Az **1868-as nemzetiségi törvény** egyéni jogokat adott, de nem ismert el nemzeti közösségeket – a nemzetiségi kérdés végig feszítette a korszakot.\n\nA horvátokkal külön kiegyezés született. A millennium (1896) a korszak csúcspontja volt.",
+          "emotion": "surprised"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik évben jött létre a kiegyezés?",
+          "options": [
+            "1867-ben",
+            "1848-ban",
+            "1873-ban",
+            "1896-ban"
+          ],
+          "answer": 0,
+          "explanation": "1867-ben született meg a megegyezés, és ekkor koronázták magyar királlyá Ferenc Józsefet."
+        },
+        {
+          "question": "Melyek voltak a közös ügyek?",
+          "options": [
+            "A külügy, a hadügy és az ezeket fedező pénzügy",
+            "Az oktatás és az egészségügy",
+            "A vasút és a posta",
+            "A vallás- és közoktatásügy"
+          ],
+          "answer": 0,
+          "explanation": "Minden más ügyben a két állam önállóan döntött, saját kormánnyal és országgyűléssel."
+        },
+        {
+          "question": "Mi történt 1873-ban?",
+          "options": [
+            "Pest, Buda és Óbuda egyesítésével létrejött Budapest",
+            "Megkötötték a kiegyezést",
+            "Kitört a szabadságharc",
+            "Megnyílt az első vasútvonal"
+          ],
+          "answer": 0,
+          "explanation": "Az egyesítés után Budapest gyors fejlődésnek indult, és Európa egyik legdinamikusabb városa lett."
+        }
+      ]
+    },
+    {
+      "id": "history-25",
+      "title": "A gyarmatosítás",
+      "summary": "Imperializmus, Afrika felosztása, következmények.",
+      "video": {
+        "youtubeId": "",
+        "title": "A gyarmatosítás folyamata"
+      },
+      "slides": [
+        {
+          "title": "Miért gyarmatosítottak?",
+          "body": "Az iparosodó országoknak **nyersanyag, piac és befektetési lehetőség** kellett.\n\nEmellett szerepet játszott a nagyhatalmi presztízs, a stratégiai pontok megszerzése és a „civilizációs küldetés” hamis eszméje.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Afrika felosztása",
+          "body": "A 19. század végén a nagyhatalmak szinte teljesen felosztották Afrikát.\n\nA **berlini konferencia (1884–85)** szabályokat adott a versenyhez: a határokat gyakran vonalzóval húzták meg, a helyi közösségekre tekintet nélkül.",
+          "emotion": "sad"
+        },
+        {
+          "title": "A nagy birodalmak",
+          "body": "A legnagyobb gyarmatbirodalmat **Nagy-Britannia** építette ki (Indiától Afrikáig), utána Franciaország következett.\n\nA későn érkező Németország és Olaszország kevesebbel maradt – ez is növelte a feszültséget.",
+          "emotion": "surprised",
+          "mentor": "A gyarmati verseny egyenes úton vezetett a világháború felé."
+        },
+        {
+          "title": "Következmények",
+          "body": "A gyarmatokon kizsákmányolás, kényszermunka és a hagyományos társadalmak felbomlása járt a „fejlesztéssel”.\n\nAz önkényesen húzott határok konfliktusai máig hatnak.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mit rendezett az 1884–85-ös berlini konferencia?",
+          "options": [
+            "Afrika felosztásának szabályait a nagyhatalmak között",
+            "Az első világháború lezárását",
+            "Az európai integrációt",
+            "A rabszolgaság eltörlését Amerikában"
+          ],
+          "answer": 0,
+          "explanation": "A konferencia a gyarmatszerzés versenyét próbálta mederbe terelni a nagyhatalmak között."
+        },
+        {
+          "question": "Melyik ország építette ki a legnagyobb gyarmatbirodalmat?",
+          "options": [
+            "Nagy-Britannia",
+            "Németország",
+            "Olaszország",
+            "Oroszország"
+          ],
+          "answer": 0,
+          "explanation": "A brit birodalomról mondták, hogy benne sosem nyugszik le a nap."
+        },
+        {
+          "question": "Mi volt a gyarmatosítás egyik fő gazdasági oka?",
+          "options": [
+            "Nyersanyagra és új piacokra volt szükség",
+            "Túl sok volt a munkanélküli gyarmatokon",
+            "A gyarmatok kérték a csatlakozást",
+            "Az európai országokban nem volt mezőgazdaság"
+          ],
+          "answer": 0,
+          "explanation": "Az iparosodó gazdaságoknak olcsó nyersanyag és felvevőpiac kellett a növekedéshez."
+        }
+      ]
+    },
+    {
+      "id": "history-26",
+      "title": "Az első világháború",
+      "summary": "Szövetségi rendszerek, állóháború, 1918.",
+      "video": {
+        "youtubeId": "",
+        "title": "I. világháború"
+      },
+      "slides": [
+        {
+          "title": "A kirobbanás",
+          "body": "A nagyhatalmak két táborra szakadtak: **antant** (Anglia, Franciaország, Oroszország) és **központi hatalmak** (Németország, Ausztria–Magyarország).\n\nA szikra **1914. június 28-án** a szarajevói merénylet volt: megölték Ferenc Ferdinánd trónörököst.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Állóháború",
+          "body": "A gyors győzelem reménye szertefoszlott: a nyugati fronton **lövészárkok** hálózata alakult ki.\n\nA **verduni és a somme-i csata** (1916) százezrek életét követelte, a frontvonal alig mozdult.",
+          "emotion": "sad",
+          "mentor": "Ezért hívják állóháborúnak: hónapokig méterekért folyt a harc."
+        },
+        {
+          "title": "Új fegyverek",
+          "body": "Megjelent a **géppuska, a harckocsi, a harci gáz és a repülőgép**, a tengeren a tengeralattjáró.\n\nA háború totálissá vált: az egész gazdaság és a hátország is a hadviselést szolgálta.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Fordulat és vég",
+          "body": "**1917:** az Egyesült Államok belépett a háborúba, Oroszországban forradalom tört ki, és kilépett a harcokból.\n\nA központi hatalmak kifulladtak: **1918. november 11-én** aláírták a fegyverszünetet.",
+          "emotion": "confident"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mi robbantotta ki az első világháborút 1914-ben?",
+          "options": [
+            "A szarajevói merénylet",
+            "Lengyelország lerohanása",
+            "A Lusitania elsüllyesztése",
+            "Az orosz forradalom"
+          ],
+          "answer": 0,
+          "explanation": "1914. június 28-án Szarajevóban meggyilkolták Ferenc Ferdinánd trónörököst és feleségét."
+        },
+        {
+          "question": "Mit jelent az állóháború?",
+          "options": [
+            "A frontvonal hónapokig alig mozdult, a lövészárkokban folyt a harc",
+            "A hadviselő felek fegyverszünetet kötöttek",
+            "A háború csak a tengeren zajlott",
+            "A katonák nem használtak fegyvert"
+          ],
+          "answer": 0,
+          "explanation": "A géppuska és a tüzérség fölénye miatt a támadások hatalmas veszteséggel, minimális eredménnyel jártak."
+        },
+        {
+          "question": "Mikor ért véget az első világháború?",
+          "options": [
+            "1918. november 11-én",
+            "1917 októberében",
+            "1919. június 4-én",
+            "1920-ban"
+          ],
+          "answer": 0,
+          "explanation": "A compiègne-i fegyverszünettel. 1919. június 4-e a trianoni békeszerződés aláírása."
+        }
+      ]
+    },
+    {
+      "id": "history-27",
+      "title": "Magyarország az első világháborúban és Trianon",
+      "summary": "A Monarchia összeomlása, forradalmak, a békeszerződés.",
+      "video": {
+        "youtubeId": "",
+        "title": "Magyarország az első világháborúban és Trianon"
+      },
+      "slides": [
+        {
+          "title": "A háborús évek",
+          "body": "A Monarchia három fronton harcolt, a magyar katonák nagy veszteségeket szenvedtek.\n\nA hátországban élelmiszerhiány, jegyrendszer és növekvő elégedetlenség: 1918 őszére az ország kimerült.",
+          "emotion": "sad"
+        },
+        {
+          "title": "Forradalmak",
+          "body": "**1918 októberében** az őszirózsás forradalom **Károlyi Mihályt** juttatta hatalomra, kikiáltották a népköztársaságot.\n\n**1919 márciusában** a kommunisták vették át az irányítást: a **Tanácsköztársaság** 133 napig tartott, majd összeomlott.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "A trianoni békeszerződés",
+          "body": "**1920. június 4-én** írták alá a trianoni békét.\n\nMagyarország területe és lakossága mintegy **kétharmadával csökkent**, és nagyjából **3,2 millió magyar** került a határokon túlra. A hadsereg létszámát 35 ezer főben korlátozták.",
+          "emotion": "sad",
+          "mentor": "Ez a döntés határozta meg a következő évtizedek magyar politikáját."
+        },
+        {
+          "title": "Következmények",
+          "body": "A szomszédos államok területe jelentősen nőtt, a magyar gazdaság elveszítette nyersanyagforrásainak nagy részét.\n\nA **revízió**, vagyis a békeszerződés módosításának igénye a két háború közti politika központi kérdése lett.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mikor írták alá a trianoni békeszerződést?",
+          "options": [
+            "1920. június 4-én",
+            "1918. november 11-én",
+            "1919. március 21-én",
+            "1921-ben"
+          ],
+          "answer": 0,
+          "explanation": "1920. június 4-e a trianoni békeszerződés aláírásának napja, ma a nemzeti összetartozás napja."
+        },
+        {
+          "question": "Ki állt az őszirózsás forradalom után hatalomra került kormány élén?",
+          "options": [
+            "Károlyi Mihály",
+            "Kun Béla",
+            "Horthy Miklós",
+            "Tisza István"
+          ],
+          "answer": 0,
+          "explanation": "Károlyi Mihály vezette az 1918 őszén alakult kormányt; a Tanácsköztársaság 1919 márciusában következett."
+        },
+        {
+          "question": "Mekkora volt a Trianon utáni veszteség?",
+          "options": [
+            "Az ország területe és lakossága mintegy kétharmadával csökkent",
+            "Az ország területe alig változott",
+            "Csak a lakosság csökkent",
+            "Az ország területe nőtt"
+          ],
+          "answer": 0,
+          "explanation": "A történelmi Magyarország területének nagyjából egyharmada maradt, több mint hárommillió magyar került határon túlra."
+        }
+      ]
+    },
+    {
+      "id": "history-28",
+      "title": "A Horthy-korszak",
+      "summary": "Konszolidáció, revízió, a háború felé sodródás.",
+      "video": {
+        "youtubeId": "",
+        "title": "Horthy-korszak"
+      },
+      "slides": [
+        {
+          "title": "Az új rend",
+          "body": "A forradalmak után **1920-ban Horthy Miklóst kormányzóvá választották**: a királyság maradt az államforma, király nélkül.\n\nA korszakot a tekintélyelvű, de parlamentáris keretek jellemezték.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Bethleni konszolidáció",
+          "body": "**Bethlen István** miniszterelnöksége (1921–1931) stabilizálta az országot: megegyezés a szociáldemokratákkal, népszövetségi kölcsön, és **1927-ben a pengő bevezetése**.\n\nA választójogot viszont szűkítették, vidéken nyílt szavazással.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Válság és jobbratolódás",
+          "body": "Az 1929-es világválság súlyosan érintette az országot.\n\nA kiutat sokan a náci Németországhoz való közeledésben látták, ami a revíziós remények miatt is vonzó volt. Megszülettek a **zsidótörvények** (1938-tól).",
+          "emotion": "sad"
+        },
+        {
+          "title": "Területi revízió",
+          "body": "Német és olasz döntőbíráskodással Magyarország területeket kapott vissza: **első bécsi döntés (1938)**, majd a **második bécsi döntés (1940)** Észak-Erdélyről.\n\nAz ár a német szövetség és a háborúba sodródás lett.",
+          "emotion": "surprised",
+          "mentor": "A visszakapott területek ára a katonai elkötelezettség volt."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Milyen tisztséget töltött be Horthy Miklós 1920-tól?",
+          "options": [
+            "Kormányzó volt",
+            "Király volt",
+            "Miniszterelnök volt",
+            "Köztársasági elnök volt"
+          ],
+          "answer": 0,
+          "explanation": "Az államforma királyság maradt, de király nélkül: az államfői jogokat a kormányzó gyakorolta."
+        },
+        {
+          "question": "Melyik évben vezették be a pengőt?",
+          "options": [
+            "1927-ben",
+            "1920-ban",
+            "1938-ban",
+            "1946-ban"
+          ],
+          "answer": 0,
+          "explanation": "A bethleni konszolidáció részeként, a korona helyett. A forint 1946-ban váltotta fel a pengőt."
+        },
+        {
+          "question": "Mit eredményezett az 1938-as első bécsi döntés?",
+          "options": [
+            "Magyarország visszakapta a Felvidék déli, magyar többségű sávját",
+            "Észak-Erdély visszatérését",
+            "A Délvidék megszállását",
+            "Az ország háborúba lépését"
+          ],
+          "answer": 0,
+          "explanation": "A második bécsi döntés (1940) szólt Észak-Erdélyről, a Délvidékre 1941-ben került sor."
+        }
+      ]
+    },
+    {
+      "id": "history-29",
+      "title": "Fasizmus és nácizmus",
+      "summary": "A totális diktatúrák működése Olaszországban és Németországban.",
+      "video": {
+        "youtubeId": "",
+        "title": "Fasizmus és nácizmus"
+      },
+      "slides": [
+        {
+          "title": "A válság talaján",
+          "body": "Az első világháború utáni csalódottság, a gazdasági válság és a félelem a kommunizmustól kedvezett a szélsőségeknek.\n\nA szélsőjobboldali mozgalmak erős vezetőt, nemzeti nagyságot és rendet ígértek.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Olasz fasizmus",
+          "body": "**Mussolini 1922-ben** a „marcia su Roma” után került hatalomra.\n\nFelszámolta a többpártrendszert, a államot a párt alá rendelte, és a korporációs rendszerrel szervezte újjá a gazdaságot.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "A náci Németország",
+          "body": "**1933-ban Hitler kancellár lett**, majd rövid idő alatt felszámolta a demokráciát.\n\nA rendszer alapja a Führer-elv, a propaganda és a terror volt; az **1935-ös nürnbergi törvények** fosztották meg jogaitól a zsidókat.",
+          "emotion": "sad",
+          "mentor": "Fontos látni, milyen gyorsan számolható fel egy demokrácia."
+        },
+        {
+          "title": "A totális diktatúra",
+          "body": "Közös vonások: **egypártrendszer**, vezérkultusz, az élet minden területének ellenőrzése, ellenségkép, titkosrendőrség és táborok.\n\nA sajtó és az oktatás a propaganda eszközévé vált.",
+          "emotion": "nervous"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik évben lett Hitler Németország kancellárja?",
+          "options": [
+            "1933-ban",
+            "1922-ben",
+            "1939-ben",
+            "1935-ben"
+          ],
+          "answer": 0,
+          "explanation": "1933 januárjában nevezték ki kancellárrá, és hónapokon belül felszámolta a jogállamot."
+        },
+        {
+          "question": "Mit mondtak ki az 1935-ös nürnbergi törvények?",
+          "options": [
+            "Megfosztották jogaiktól a zsidó származású állampolgárokat",
+            "Betiltották a háborús propagandát",
+            "Bevezették a nyolcórás munkaidőt",
+            "Létrehozták a Népszövetséget"
+          ],
+          "answer": 0,
+          "explanation": "A faji alapú törvények kizárták a zsidókat az állampolgári jogok gyakorlásából."
+        },
+        {
+          "question": "Mi jellemzi a totális diktatúrát?",
+          "options": [
+            "Egypártrendszer, vezérkultusz és az élet minden területének ellenőrzése",
+            "Több párt versengése",
+            "A hatalmi ágak szétválasztása",
+            "A sajtószabadság védelme"
+          ],
+          "answer": 0,
+          "explanation": "A totális diktatúra nemcsak a politikát, hanem a magánéletet és a gondolkodást is ellenőrizni akarja."
+        }
+      ]
+    },
+    {
+      "id": "history-30",
+      "title": "A második világháború",
+      "summary": "1939-től 1945-ig: fordulópontok és a holokauszt.",
+      "video": {
+        "youtubeId": "",
+        "title": "II. világháború"
+      },
+      "slides": [
+        {
+          "title": "A kirobbanás",
+          "body": "**1939. szeptember 1-jén** Németország lerohanta Lengyelországot, mire Anglia és Franciaország hadat üzent.\n\nA **villámháború** (Blitzkrieg) taktikája gyors sikereket hozott: 1940-ben Franciaország is elesett.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "A háború kiterjedése",
+          "body": "**1941. június 22-én** Németország megtámadta a Szovjetuniót, decemberben pedig a japán támadás után az **Egyesült Államok** is belépett a háborúba.\n\nA konfliktus valóban világméretűvé vált.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Fordulópontok",
+          "body": "• **Sztálingrád** (1942–43): a német előrenyomulás megtörik\n• **El-Alamein**: fordulat Észak-Afrikában\n• **1944. június 6.:** normandiai partraszállás\n\n**1945. május 8-án** Németország kapitulált, szeptemberben – az atombombák után – Japán is.",
+          "emotion": "confident"
+        },
+        {
+          "title": "A holokauszt",
+          "body": "A náci Németország ipari módszerekkel gyilkolta meg Európa zsidóságának nagy részét: mintegy **hatmillió** áldozat.\n\nMagyarországról 1944-ben, a német megszállás után néhány hónap alatt több százezer embert deportáltak.",
+          "emotion": "sad",
+          "mentor": "Erre a fejezetre külön figyelj: az emlékezés is a tananyag része."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik eseménnyel kezdődött a második világháború Európában?",
+          "options": [
+            "Lengyelország lerohanásával 1939. szeptember 1-jén",
+            "A Szovjetunió megtámadásával",
+            "Pearl Harbor bombázásával",
+            "Az anschlussal"
+          ],
+          "answer": 0,
+          "explanation": "A lengyel támadás után üzent hadat Anglia és Franciaország Németországnak."
+        },
+        {
+          "question": "Melyik csata jelentette a keleti front fordulópontját?",
+          "options": [
+            "Sztálingrád",
+            "El-Alamein",
+            "Midway",
+            "Normandia"
+          ],
+          "answer": 0,
+          "explanation": "A sztálingrádi vereség (1942–43) után a német hadsereg védekezésbe szorult a keleti fronton."
+        },
+        {
+          "question": "Mi történt 1944. június 6-án?",
+          "options": [
+            "A szövetségesek partra szálltak Normandiában",
+            "Németország kapitulált",
+            "Ledobták az első atombombát",
+            "Kitört a varsói felkelés"
+          ],
+          "answer": 0,
+          "explanation": "A D-nap a nyugati front megnyitását jelentette; Németország 1945. május 8-án kapitulált."
+        }
+      ]
+    },
+    {
+      "id": "history-31",
+      "title": "A hidegháború",
+      "summary": "Kétpólusú világ, tömbök, válságok, enyhülés.",
+      "video": {
+        "youtubeId": "",
+        "title": "Hidegháború"
+      },
+      "slides": [
+        {
+          "title": "Kétpólusú világ",
+          "body": "A háború után két szuperhatalom maradt: az **Egyesült Államok** és a **Szovjetunió**.\n\nEurópát kettéosztotta a „vasfüggöny”: nyugaton piacgazdaság és demokrácia, keleten egypárti diktatúrák.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Szembenálló tömbök",
+          "body": "Az amerikai **Marshall-terv** (1947) újjáépítési segélyt adott Nyugat-Európának.\n\nKatonailag **1949-ben a NATO**, válaszul **1955-ben a Varsói Szerződés** jött létre.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Válságok",
+          "body": "• berlini blokád (1948–49), majd Németország kettéosztása\n• koreai háború (1950–53)\n• a **berlini fal** felépítése **1961-ben**\n• a **kubai rakétaválság 1962-ben**, amikor a világ az atomháború szélére került",
+          "emotion": "nervous",
+          "mentor": "1962-ben tényleg hajszálon múlt a béke."
+        },
+        {
+          "title": "Enyhülés és vég",
+          "body": "A hetvenes években enyhülés következett (leszerelési tárgyalások, helsinki záróokmány).\n\n**1989-ben** leomlott a berlini fal, a keleti blokk összeomlott, **1991-ben** pedig megszűnt a Szovjetunió.",
+          "emotion": "joyful"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik évben alakult meg a NATO?",
+          "options": [
+            "1949-ben",
+            "1945-ben",
+            "1955-ben",
+            "1961-ben"
+          ],
+          "answer": 0,
+          "explanation": "A NATO 1949-ben jött létre, a Varsói Szerződés pedig válaszul 1955-ben."
+        },
+        {
+          "question": "Mikor épült fel a berlini fal?",
+          "options": [
+            "1961-ben",
+            "1949-ben",
+            "1953-ban",
+            "1968-ban"
+          ],
+          "answer": 0,
+          "explanation": "A fal 1961-ben zárta el Kelet-Berlint; 1989-ben bontották le."
+        },
+        {
+          "question": "Miről szólt az 1962-es kubai rakétaválság?",
+          "options": [
+            "Szovjet rakéták telepítéséről Kubába, ami atomháborúval fenyegetett",
+            "Kuba csatlakozásáról a NATO-hoz",
+            "Az amerikai gazdasági segélyről",
+            "A berlini fal lebontásáról"
+          ],
+          "answer": 0,
+          "explanation": "A válságot tárgyalások zárták le: a szovjetek kivonták a rakétákat, az USA pedig garanciát adott."
+        }
+      ]
+    },
+    {
+      "id": "history-32",
+      "title": "A kommunista diktatúra születése",
+      "summary": "1917, a bolsevik hatalomátvétel és a sztálini rendszer.",
+      "video": {
+        "youtubeId": "",
+        "title": "Kommunista diktatúra"
+      },
+      "slides": [
+        {
+          "title": "1917: a cárizmus bukása",
+          "body": "A háborús kimerültség **1917 februárjában** forradalomhoz vezetett Oroszországban: a cár lemondott.\n\nKettős hatalom alakult ki: az Ideiglenes Kormány és a munkás-, katonatanácsok, vagyis a **szovjetek**.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "A bolsevik hatalomátvétel",
+          "body": "**Lenin** áprilisi tézisei „békét, földet, kenyeret” ígértek.\n\n**1917 novemberében** a bolsevikok átvették a hatalmat, majd polgárháború következett. A hadikommunizmus után a NEP átmenetileg engedett a piacnak.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Sztálin rendszere",
+          "body": "Lenin halála után **Sztálin** került az élre: **tervgazdaság**, erőltetett nehézipari fejlesztés és a mezőgazdaság **kollektivizálása**.\n\nAz erőszakos begyűjtés éhínséget okozott, milliók haltak meg.",
+          "emotion": "sad"
+        },
+        {
+          "title": "Terror",
+          "body": "A rendszert a félelem tartotta fenn: titkosrendőrség, koncepciós perek, kényszermunkatáborok (**GULAG**).\n\nAz 1930-as évek végi „nagy tisztogatás” a párt és a hadsereg vezetőit is elérte.",
+          "emotion": "nervous",
+          "mentor": "A tervgazdaság és a terror ugyanannak a rendszernek a két arca."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Ki vezette az 1917 novemberi bolsevik hatalomátvételt?",
+          "options": [
+            "Lenin",
+            "Sztálin",
+            "Kerenszkij",
+            "Trockij"
+          ],
+          "answer": 0,
+          "explanation": "Lenin vezetésével vették át a hatalmat a bolsevikok; Kerenszkij az Ideiglenes Kormány feje volt."
+        },
+        {
+          "question": "Mit jelentett a kollektivizálás?",
+          "options": [
+            "A parasztok földjeinek egyesítését állami és szövetkezeti gazdaságokba",
+            "A gyárak magánosítását",
+            "A szabad piaci verseny bevezetését",
+            "A földosztást a parasztok között"
+          ],
+          "answer": 0,
+          "explanation": "A kollektivizálás erőszakkal számolta fel a paraszti magángazdaságokat, és súlyos éhínséghez vezetett."
+        },
+        {
+          "question": "Mi volt a GULAG?",
+          "options": [
+            "A szovjet kényszermunkatáborok rendszere",
+            "A tervgazdaság irányító hivatala",
+            "A bolsevik párt ifjúsági szervezete",
+            "A szovjet alkotmány neve"
+          ],
+          "answer": 0,
+          "explanation": "A táborrendszerbe politikai okokból is milliókat hurcoltak."
+        }
+      ]
+    },
+    {
+      "id": "history-33",
+      "title": "A Rákosi-korszak és 1956",
+      "summary": "Szalámitaktika, diktatúra, forradalom és megtorlás.",
+      "video": {
+        "youtubeId": "",
+        "title": "Rákosi-korszak és az 56-os forradalom"
+      },
+      "slides": [
+        {
+          "title": "A hatalomátvétel",
+          "body": "1945 után a kommunisták a szovjet jelenlétre támaszkodva szorították ki ellenfeleiket: ez a **szalámitaktika**.\n\n**1948, a „fordulat éve”** után egypárti diktatúra épült ki Rákosi Mátyás vezetésével.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A diktatúra évei",
+          "body": "Államosítás, erőltetett nehézipar, a parasztságtól **beszolgáltatás**, a falvakban kényszerű szövetkezetesítés.\n\nAz **ÁVH** terrorja, koncepciós perek és kitelepítések jellemezték a korszakot.",
+          "emotion": "nervous"
+        },
+        {
+          "title": "1956. október 23.",
+          "body": "A diákok követeléseiből tömegtüntetés, majd fegyveres **forradalom** lett.\n\nNagy Imre alakított kormányt, kimondták a többpártrendszert és a semlegességet, a szovjet csapatok kivonultak Budapestről.",
+          "emotion": "joyful",
+          "mentor": "Október 23. ma nemzeti ünnep."
+        },
+        {
+          "title": "Megtorlás",
+          "body": "**November 4-én** a szovjet hadsereg támadást indított, és leverte a forradalmat.\n\nSokan emigráltak, több százan kaptak halálos ítéletet; **Nagy Imrét 1958-ban kivégezték**. Kádár János rendszere hosszú évtizedekre berendezkedett.",
+          "emotion": "sad"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mikor tört ki az 1956-os forradalom?",
+          "options": [
+            "Október 23-án",
+            "November 4-én",
+            "Március 15-én",
+            "Október 6-án"
+          ],
+          "answer": 0,
+          "explanation": "1956. október 23-án a diáktüntetésből országos forradalom lett."
+        },
+        {
+          "question": "Mit jelent a szalámitaktika?",
+          "options": [
+            "Az ellenzéki erők fokozatos, szeletenkénti kiszorítását",
+            "A mezőgazdaság kollektivizálását",
+            "A beszolgáltatási rendszert",
+            "A tervgazdaság bevezetését"
+          ],
+          "answer": 0,
+          "explanation": "Rákosi maga használta a képet: az ellenfeleket egyesével, szeletenként számolták fel."
+        },
+        {
+          "question": "Mi történt 1956. november 4-én?",
+          "options": [
+            "A szovjet csapatok támadást indítottak és leverték a forradalmat",
+            "Nagy Imre kormányt alakított",
+            "Kikiáltották a semlegességet",
+            "Megalakult a Varsói Szerződés"
+          ],
+          "answer": 0,
+          "explanation": "A szovjet beavatkozás után kezdődött a megtorlás időszaka."
+        }
+      ]
+    },
+    {
+      "id": "history-34",
+      "title": "Az ENSZ és az európai integráció",
+      "summary": "A világszervezet és az Európai Unió útja.",
+      "video": {
+        "youtubeId": "",
+        "title": "EU és ENSZ"
+      },
+      "slides": [
+        {
+          "title": "Az ENSZ",
+          "body": "A második világháború után, **1945-ben** jött létre az Egyesült Nemzetek Szervezete a béke és a biztonság fenntartására.\n\nFő szervei: a Közgyűlés és a **Biztonsági Tanács**, amelynek öt állandó tagja vétójoggal rendelkezik.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Az integráció okai",
+          "body": "Európában a háború után a cél a **tartós béke** és a gazdasági újjáépítés volt.\n\nA francia–német megbékélés a nehézipar közös ellenőrzésével indult: 1951-ben megalakult a Montánunió.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Fokozatok",
+          "body": "• **szabadkereskedelmi övezet:** nincsenek belső vámok\n• **vámunió:** közös külső vámok is\n• **egységes belső piac:** a **négy szabadság** (áru, szolgáltatás, tőke, munkaerő)\n• **gazdasági és pénzügyi unió:** közös valuta",
+          "emotion": "surprised",
+          "mentor": "A négy szabadságot érdemes fejből tudni."
+        },
+        {
+          "title": "Az Európai Unió",
+          "body": "Az 1957-es római szerződésekkel létrejött közösségekből a **maastrichti szerződéssel (1993)** lett Európai Unió.\n\nAz eurót 1999-től számolták el, készpénzben 2002-től. **Magyarország 2004-ben** csatlakozott.",
+          "emotion": "joyful"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik évben alakult meg az ENSZ?",
+          "options": [
+            "1945-ben",
+            "1919-ben",
+            "1949-ben",
+            "1957-ben"
+          ],
+          "answer": 0,
+          "explanation": "A második világháború végén, a Népszövetség kudarca után jött létre."
+        },
+        {
+          "question": "Mit jelent a négy szabadság az EU egységes belső piacán?",
+          "options": [
+            "Az áruk, a szolgáltatások, a tőke és a munkaerő szabad áramlását",
+            "A szólás, a sajtó, a vallás és a gyülekezés szabadságát",
+            "A négy alapító állam jogait",
+            "A vámmentességet négy termékcsoportra"
+          ],
+          "answer": 0,
+          "explanation": "Ez a közös piac lényege: a határok nem állítják meg az árut, a szolgáltatást, a tőkét és a munkavállalót."
+        },
+        {
+          "question": "Mikor csatlakozott Magyarország az Európai Unióhoz?",
+          "options": [
+            "2004-ben",
+            "1999-ben",
+            "1993-ban",
+            "2007-ben"
+          ],
+          "answer": 0,
+          "explanation": "Magyarország kilenc másik országgal együtt 2004. május 1-jén lett tagállam."
+        }
+      ]
+    }
   ]
 }

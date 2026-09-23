@@ -29,8 +29,9 @@ ugyanúgy, mint a Wix oldalon.
 Minden tananyag a `src/data/` mappa JSON-fájljaiban van, kódot nem kell hozzá írni.
 Mentés után a `npm test` jelzi, ha valami hibás (pl. nem létező helyes válasz vagy elírt érzelemnév).
 
-- `math.json`, `history.json`, `economics.json`: egy-egy tárgy a leckéivel
-  (a matek mind a 13 felkészítő témakört tartalmazza, a `Math/Slide PDFs` diasorai alapján)
+- `math.json`, `history.json`, `economics.json`: egy-egy tárgy a leckéivel. A matek 13, a
+  történelem 34 témakört tartalmaz, a `Math/Slide PDFs` és a `History/Slide PDFs` diasorai alapján
+  (a diasorok maguk nem kerülnek a repóba)
 - `characters.json`: a karakterek neve, titulusa és a reakció-mondataik
 - `intro.json`: Csery bemutatkozása a kezdőképernyőn
 
@@ -58,7 +59,7 @@ Egy lecke felépítése:
   HTML nem használható.
 - **Érzelmek** (`emotion`): `neutral`, `happy`, `joyful`, `confident`, `thinking`, `surprised`,
   `sad`, `nervous`, `angry`.
-- **Készülő lecke:** `{ "id": "math-02", "title": "…", "comingSoon": true }`. A leckelistában
+- **Készülő lecke:** `{ "id": "math-02", "title": "…", "comingSoon": true }`. A tárgy térképén
   „Hamarosan” jelzéssel, zárva jelenik meg.
 
 A leckék sorban nyílnak meg. A teljesítés feltétele a kvíz legalább 50%-os eredménye.
@@ -68,7 +69,10 @@ Az XP-jutalmak, a szintküszöbök, a szintnevek és a sorrendiség (`SEQUENTIAL
 ## Képernyők
 
 Kezdőképernyő (a kalauz köszöntője) → tárgyválasztó (matek, töri, közgazdaságtan) →
-az adott tárgy leckelistája → lecke (videó, diák, kvíz, eredmény).
+az adott tárgy **térképe** a leckékkel → lecke (videó, diák, kvíz, eredmény).
+
+Minden tárgynak saját arculati színe van (matek: piros, töri: türkiz, közgazdaságtan: zöld),
+amely a tárgy képernyőin jelenik meg. A helyes/hibás visszajelzés szándékosan marad kék–fekete.
 
 ## Karakterek és sprite-ok
 

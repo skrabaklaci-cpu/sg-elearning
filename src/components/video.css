@@ -20,18 +20,18 @@ sg-video {
 }
 
 .video__frame--empty {
-  --dither-color: var(--sg-blue-deep);
+  --dither-color: var(--subject-deep);
   background-image: conic-gradient(var(--dither-color) 25%, transparent 0);
   background-size: calc(var(--px) * 2) calc(var(--px) * 2);
-  box-shadow: inset 0 0 0 var(--px) var(--sg-blue-deep);
+  box-shadow: inset 0 0 0 var(--px) var(--subject-deep);
 }
 
 .video__facade {
   cursor: pointer;
-  background-color: var(--sg-blue-deep);
+  background-color: var(--subject-deep);
   background-image:
-    linear-gradient(to right, var(--sg-blue-dark) var(--px), transparent var(--px)),
-    linear-gradient(to bottom, var(--sg-blue-dark) var(--px), transparent var(--px));
+    linear-gradient(to right, var(--subject-dark) var(--px), transparent var(--px)),
+    linear-gradient(to bottom, var(--subject-dark) var(--px), transparent var(--px));
   background-size: calc(var(--px) * 12) calc(var(--px) * 12);
 }
 
@@ -45,14 +45,14 @@ sg-video {
   place-items: center;
   width: 72px;
   height: 72px;
-  background: var(--sg-blue);
-  color: var(--sg-black);
+  background: var(--subject-strong);
+  color: var(--subject-ink);
   clip-path: var(--notch-2);
-  box-shadow: inset 0 calc(var(--px) * -2) 0 var(--sg-blue-dark);
+  box-shadow: inset 0 calc(var(--px) * -2) 0 var(--subject-dark);
 }
 
 .video__facade:hover .video__play {
-  background: var(--sg-blue-bright);
+  background: var(--subject);
 }
 
 .video__play .icon {
@@ -64,8 +64,8 @@ sg-video {
 .video__tv {
   width: 60px;
   height: 54px;
-  color: var(--sg-blue);
-  --icon-accent: var(--sg-blue-deep);
+  color: var(--subject);
+  --icon-accent: var(--subject-deep);
 }
 
 .video__heading {

@@ -15,6 +15,10 @@
   font-size: var(--text-2xl);
 }
 
+.subject .kicker {
+  color: var(--subject-dark);
+}
+
 .subjects__list {
   display: flex;
   flex-direction: column;
@@ -33,13 +37,13 @@
 }
 
 .subject:hover {
-  background: var(--sg-blue-pale);
+  background: var(--subject-pale);
 }
 
 .subject:focus-visible {
   outline: none;
   box-shadow:
-    inset 0 0 0 calc(var(--px) * 2) var(--sg-blue),
+    inset 0 0 0 calc(var(--px) * 2) var(--subject),
     inset 0 calc(var(--px) * -2) 0 var(--sg-light-shade);
 }
 
@@ -51,9 +55,9 @@
   position: relative;
   width: 92px;
   height: 92px;
-  background: var(--sg-blue-deep);
+  background: var(--subject-deep);
   clip-path: var(--notch-2);
-  box-shadow: inset 0 0 0 var(--px) var(--sg-blue-dark);
+  box-shadow: inset 0 0 0 var(--px) var(--subject-dark);
 }
 
 .subject__body {
@@ -98,7 +102,7 @@
 .subject__fill {
   display: block;
   height: 100%;
-  background: var(--sg-blue);
+  background: var(--subject);
 }
 
 .subject__count {
@@ -112,7 +116,7 @@
   display: grid;
   place-items: center;
   width: 32px;
-  color: var(--sg-blue-dark);
+  color: var(--subject-dark);
 }
 
 .subject__go .icon {

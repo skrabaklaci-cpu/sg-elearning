@@ -7,7 +7,7 @@
 
 import { isDateString } from '../lib/date.js';
 
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 3;
 
 export function createInitialState() {
   return {
@@ -40,15 +40,26 @@ function migrate(raw) {
   // math-* azonosítók már más leckét jelentenek. Az ezekhez tartozó haladást eldobjuk, az XP és a
   // sorozat marad.
   if (data.version === 1) {
-    const lessons = { ...(data.lessons ?? {}) };
-    for (const id of Object.keys(lessons)) {
-      if (id.startsWith('math-')) delete lessons[id];
-    }
-    data.lessons = lessons;
+    data.lessons = dropLessons(data.lessons, 'math-');
     data.version = 2;
   }
 
+  // v2 → v3: ugyanez a történelem leckéivel, amikor a teljes tematika (34 témakör) bekerült.
+  if (data.version === 2) {
+    data.lessons = dropLessons(data.lessons, 'history-');
+    data.version = 3;
+  }
+
   return data;
+}
+
+/** A megadott előtagú leckék haladásának eldobása (tárgy újraszabásakor). */
+function dropLessons(lessons, prefix) {
+  const out = { ...(lessons ?? {}) };
+  for (const id of Object.keys(out)) {
+    if (id.startsWith(prefix)) delete out[id];
+  }
+  return out;
 }
 
 /**

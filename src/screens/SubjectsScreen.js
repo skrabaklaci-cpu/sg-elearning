@@ -45,7 +45,7 @@ function SubjectCard(world, state) {
 
   return h(
     'a',
-    { class: 'subject panel', href: `#/subject/${world.id}` },
+    { class: 'subject panel', href: `#/subject/${world.id}`, dataset: { subject: world.id } },
     h(
       'span',
       { class: 'subject__portrait' },

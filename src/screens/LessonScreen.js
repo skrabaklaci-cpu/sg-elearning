@@ -30,6 +30,7 @@ export function LessonScreen(root, { id }) {
       title: lesson.title,
       kicker: world.title,
       back: backHref,
+      subject: world.id,
     });
   }
 
@@ -50,7 +51,7 @@ export function LessonScreen(root, { id }) {
   root.append(
     h(
       'main',
-      { class: 'screen lesson' },
+      { class: 'screen lesson', dataset: { subject: world.id } },
       h('sg-hud', { back: backHref, 'back-label': 'Vissza a leckékhez' }),
       h(
         'header',
@@ -223,12 +224,12 @@ function resumeStep(p) {
 }
 
 /** Zárt, hiányzó vagy még készülő lecke: a karakter elmondja, mi a helyzet. */
-function renderMessage(root, { character, event, title, kicker, back }) {
+function renderMessage(root, { character, event, title, kicker, back, subject }) {
   const dialog = h('sg-dialog', { character });
   root.append(
     h(
       'main',
-      { class: 'screen lesson' },
+      { class: 'screen lesson', dataset: subject ? { subject } : null },
       h('sg-hud', { back, 'back-label': 'Vissza a leckékhez' }),
       h(
         'div',

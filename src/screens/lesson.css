@@ -63,7 +63,7 @@
 
 .steps__done {
   display: none;
-  color: var(--sg-blue);
+  color: var(--subject-light);
 }
 
 .steps__done .icon {
@@ -76,12 +76,17 @@
 }
 
 .steps__tab.is-current {
-  background: var(--sg-blue);
-  color: var(--sg-black);
+  background: var(--subject-strong);
+  color: var(--subject-ink);
+}
+
+.steps__tab.is-current .steps__num {
+  background: var(--sg-black);
+  color: var(--sg-light);
 }
 
 .steps__tab.is-current .steps__done {
-  color: var(--sg-black);
+  color: var(--subject-ink);
 }
 
 .steps__tab:focus-visible {
@@ -139,7 +144,7 @@
 }
 
 .summary__icon.is-passed {
-  color: var(--sg-blue);
+  color: var(--subject-dark);
 }
 
 .summary__score {

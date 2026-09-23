@@ -65,7 +65,7 @@ sg-slides {
   top: 0.6em;
   width: calc(var(--px) * 2);
   height: calc(var(--px) * 2);
-  background: var(--sg-blue);
+  background: var(--subject);
 }
 
 .slides__card.is-from-right {
@@ -117,12 +117,12 @@ sg-slides {
 }
 
 .slides__dot.is-seen {
-  background: var(--sg-blue-dark);
+  background: var(--subject-dark);
   box-shadow: none;
 }
 
 .slides__dot.is-current {
-  background: var(--sg-blue);
+  background: var(--subject);
   box-shadow: none;
 }
 

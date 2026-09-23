@@ -35,6 +35,11 @@
   --sg-black: #231f20; /* Process Black */
   --sg-light: #f0f0ff; /* „Sprite” */
 
+  /* Szekciószínek: tárgyanként egy-egy arculati szín, csak az adott tárgy felületein */
+  --sg-math: #da291c; /* Matek Red */
+  --sg-history: #00b2a2; /* Töris Patina */
+  --sg-economics: #81cc45; /* KGreen */
+
   /* Csak a három színből kevert árnyalatok */
   --sg-blue-dark: color-mix(in srgb, var(--sg-blue) 62%, var(--sg-black));
   --sg-blue-deep: color-mix(in srgb, var(--sg-blue) 22%, var(--sg-black));
@@ -103,6 +108,56 @@
   --ease-pixel: steps(4, end);
   --dur-fast: 120ms;
   --dur: 200ms;
+
+  /*
+   * Tárgyszín-változók. Alapértelmezésben az SG Blue: a tárgyaktól független felületek
+   * (kezdőképernyő, HUD, szintlépés) ezt használják. A tárgy képernyőin a data-subject
+   * attribútum írja felül őket.
+   *  --subject        a tárgy alapszíne (kitöltés, ösvény, keret)
+   *  --subject-strong sötétített változat, amin olvasható a --subject-ink szöveg
+   *  --subject-ink    a --subject-strong-on olvasható szövegszín
+   *  --subject-dark   sötét árnyalat világos panelen lévő szöveghez
+   *  --subject-deep   nagyon sötét árnyalat háttérhez
+   *  --subject-pale   világos árnyalat halvány kiemeléshez
+   *  --subject-light  sötét háttéren olvasható, világosított árnyalat (kis szöveghez)
+   */
+  --subject: var(--sg-blue);
+  --subject-strong: var(--sg-blue);
+  --subject-ink: var(--sg-black);
+  --subject-dark: var(--sg-blue-dark);
+  --subject-deep: var(--sg-blue-deep);
+  --subject-pale: var(--sg-blue-pale);
+  --subject-light: var(--sg-blue);
+}
+
+[data-subject='math'] {
+  --subject: var(--sg-math);
+  --subject-strong: color-mix(in srgb, var(--sg-math) 84%, var(--sg-black));
+  --subject-ink: var(--sg-light);
+  --subject-dark: color-mix(in srgb, var(--sg-math) 62%, var(--sg-black));
+  --subject-deep: color-mix(in srgb, var(--sg-math) 22%, var(--sg-black));
+  --subject-pale: color-mix(in srgb, var(--sg-math) 14%, var(--sg-light));
+  --subject-light: color-mix(in srgb, var(--sg-math) 70%, var(--sg-light));
+}
+
+[data-subject='history'] {
+  --subject: var(--sg-history);
+  --subject-strong: var(--sg-history);
+  --subject-ink: var(--sg-black);
+  --subject-dark: color-mix(in srgb, var(--sg-history) 55%, var(--sg-black));
+  --subject-deep: color-mix(in srgb, var(--sg-history) 22%, var(--sg-black));
+  --subject-pale: color-mix(in srgb, var(--sg-history) 18%, var(--sg-light));
+  --subject-light: color-mix(in srgb, var(--sg-history) 70%, var(--sg-light));
+}
+
+[data-subject='economics'] {
+  --subject: var(--sg-economics);
+  --subject-strong: var(--sg-economics);
+  --subject-ink: var(--sg-black);
+  --subject-dark: color-mix(in srgb, var(--sg-economics) 45%, var(--sg-black));
+  --subject-deep: color-mix(in srgb, var(--sg-economics) 22%, var(--sg-black));
+  --subject-pale: color-mix(in srgb, var(--sg-economics) 20%, var(--sg-light));
+  --subject-light: color-mix(in srgb, var(--sg-economics) 70%, var(--sg-light));
 }
 
 @media (min-width: 600px) {
