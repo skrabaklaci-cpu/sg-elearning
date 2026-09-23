@@ -1,9 +1,11 @@
-// Hash-alapú router: #/ (kezdőképernyő), #/map (térkép), #/lesson/:id (lecke).
+// Hash-alapú router: #/ (kezdőképernyő), #/subjects (tárgyválasztó),
+// #/subject/:id (egy tárgy leckéi), #/lesson/:id (lecke).
 // A GitHub Pages nem ad SPA-fallbacket, és a Wix-iframe-ben is ez a megbízható megoldás.
 
 const ROUTES = [
   { name: 'start', pattern: /^\/?$/ },
-  { name: 'map', pattern: /^\/map\/?$/ },
+  { name: 'subjects', pattern: /^\/subjects\/?$/ },
+  { name: 'subject', pattern: /^\/subject\/([\w-]+)\/?$/, keys: ['id'] },
   { name: 'lesson', pattern: /^\/lesson\/([\w-]+)\/?$/, keys: ['id'] },
 ];
 
@@ -21,7 +23,7 @@ export function parseRoute(hash) {
       return { name: route.name, params };
     }
   }
-  return { name: 'map', params: {} };
+  return { name: 'subjects', params: {} };
 }
 
 let render = null;

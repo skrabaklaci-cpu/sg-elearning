@@ -16,12 +16,21 @@ const STEPS = [
 /** Lecke: videó → diák → kvíz → összegzés. A mentor minden lépésre reagál. */
 export function LessonScreen(root, { id }) {
   const found = findLesson(id);
-  if (!found) return renderMessage(root, { character: 'guide', event: 'missing', title: 'Nincs ilyen lecke' });
+  if (!found) {
+    return renderMessage(root, { character: 'guide', event: 'missing', title: 'Nincs ilyen lecke', back: '#/subjects' });
+  }
 
   const { world, lesson, index } = found;
+  const backHref = `#/subject/${world.id}`;
   const status = lessonStatus(store.getState(), world, id);
   if (status === 'locked' || status === 'soon') {
-    return renderMessage(root, { character: world.mentor, event: status, title: lesson.title, kicker: world.title });
+    return renderMessage(root, {
+      character: world.mentor,
+      event: status,
+      title: lesson.title,
+      kicker: world.title,
+      back: backHref,
+    });
   }
 
   const progress = () => getLessonProgress(store.getState(), id);
@@ -42,7 +51,7 @@ export function LessonScreen(root, { id }) {
     h(
       'main',
       { class: 'screen lesson' },
-      h('sg-hud', { back: '#/map', 'back-label': 'Vissza a térképre' }),
+      h('sg-hud', { back: backHref, 'back-label': 'Vissza a leckékhez' }),
       h(
         'header',
         { class: 'lesson__header' },
@@ -177,7 +186,11 @@ export function LessonScreen(root, { id }) {
     else if (attempts > 1) xpNote = h('p', { class: 'summary__note' }, 'Új XP a korábbi legjobb eredményed javításáért jár.');
 
     const again = h('button', { class: result.passed ? 'btn btn--ghost-dark' : 'btn', type: 'button', onClick: () => go('quiz') }, 'Újra a kvízt');
-    const toMap = h('button', { class: result.passed ? 'btn' : 'btn btn--ghost-dark', type: 'button', onClick: () => navigate('/map') }, 'Vissza a térképre');
+    const toList = h(
+      'button',
+      { class: result.passed ? 'btn' : 'btn btn--ghost-dark', type: 'button', onClick: () => navigate(`/subject/${world.id}`) },
+      'Vissza a leckékhez',
+    );
 
     const heading = h('h2', { class: 'summary__score', tabindex: '-1' }, `${result.correct} / ${result.total}`);
     stage.replaceChildren(
@@ -190,7 +203,7 @@ export function LessonScreen(root, { id }) {
         h('p', { class: 'summary__label' }, 'helyes válasz'),
         xpNote,
         !result.passed && h('p', { class: 'summary__note' }, `A lecke teljesítéséhez legalább ${needed} helyes válasz kell.`),
-        h('div', { class: 'actions summary__actions' }, again, toMap),
+        h('div', { class: 'actions summary__actions' }, again, toList),
       ),
     );
     scroller.scrollTop = 0;
@@ -210,13 +223,13 @@ function resumeStep(p) {
 }
 
 /** Zárt, hiányzó vagy még készülő lecke: a karakter elmondja, mi a helyzet. */
-function renderMessage(root, { character, event, title, kicker }) {
+function renderMessage(root, { character, event, title, kicker, back }) {
   const dialog = h('sg-dialog', { character });
   root.append(
     h(
       'main',
       { class: 'screen lesson' },
-      h('sg-hud', { back: '#/map', 'back-label': 'Vissza a térképre' }),
+      h('sg-hud', { back, 'back-label': 'Vissza a leckékhez' }),
       h(
         'div',
         { class: 'screen__scroll grid-bg' },
@@ -226,7 +239,7 @@ function renderMessage(root, { character, event, title, kicker }) {
           kicker && h('p', { class: 'kicker' }, kicker),
           h('h1', { class: 'lesson__title', tabindex: '-1' }, title),
           dialog,
-          h('a', { class: 'btn', href: '#/map' }, icon('arrowLeft'), 'Vissza a térképre'),
+          h('a', { class: 'btn', href: back }, icon('arrowLeft'), 'Vissza a leckékhez'),
         ),
       ),
     ),

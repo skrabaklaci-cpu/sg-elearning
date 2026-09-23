@@ -64,7 +64,7 @@ export function StartScreen(root) {
           else playIntro(index + 1);
         },
       },
-      isLast ? 'Irány a térkép!' : 'Tovább',
+      isLast ? 'Válasszunk tárgyat!' : 'Tovább',
       icon('arrowRight'),
     );
     actions.replaceChildren(
@@ -81,7 +81,7 @@ export function StartScreen(root) {
 
   function finishIntro() {
     store.markIntroSeen();
-    navigate('/map');
+    navigate('/subjects');
   }
 
   function welcomeBack() {
@@ -102,7 +102,7 @@ export function StartScreen(root) {
       h(
         'div',
         { class: 'actions' },
-        h('button', { class: 'btn', type: 'button', onClick: () => navigate('/map') }, 'Tovább a térképre', icon('arrowRight')),
+        h('button', { class: 'btn', type: 'button', onClick: () => navigate('/subjects') }, 'Tovább a tárgyakhoz', icon('arrowRight')),
       ),
       h(
         'div',

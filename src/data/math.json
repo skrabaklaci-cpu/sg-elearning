@@ -5,39 +5,234 @@
   "title": "Matematika",
   "realm": "A Számok Birodalma",
   "mentor": "math",
-  "description": "Egyenletek, függvények, valószínűség – lépésről lépésre.",
+  "description": "A teljes felkészítő tematika: halmazoktól a valószínűségszámításig.",
   "lessons": [
     {
       "id": "math-01",
-      "title": "A másodfokú egyenlet",
-      "summary": "Megoldóképlet, diszkrimináns és ellenőrzés.",
-      "video": { "youtubeId": "", "title": "A másodfokú egyenlet megoldóképlete" },
+      "title": "Halmazok és logika",
+      "summary": "Halmazműveletek, logikai szita és az állítások tagadása.",
+      "video": { "youtubeId": "", "title": "Halmazok és logika" },
       "slides": [
         {
-          "title": "Mi az a másodfokú egyenlet?",
-          "body": "Az általános alakja:\n**ax² + bx + c = 0**, ahol **a ≠ 0**.\n\nHa a = 0 lenne, eltűnne az x²-es tag, és elsőfokú egyenletet kapnánk.",
+          "title": "Mi az a halmaz?",
+          "body": "A halmaz **alapfogalom**, ezért nem definiáljuk. Akkor beszélhetünk halmazról, ha minden dologról egyértelműen eldönthető, hogy eleme-e.\n\nMegadhatjuk az elemek felsorolásával, utasítással, képlettel vagy Venn-diagrammal.",
           "emotion": "thinking"
         },
         {
-          "title": "A megoldóképlet",
-          "body": "**x₁,₂ = (−b ± √(b² − 4ac)) / (2a)**\n\nA függvénytáblában is megtalálod, de érdemes fejből tudni: az érettségin rengetegszer előkerül.",
+          "title": "Részhalmaz és számosság",
+          "body": "**Részhalmaz:** ha A minden eleme B-nek is eleme.\n**Számosság:** a halmaz elemeinek száma, jele |A|.\n\nEgy **n elemű halmaznak 2 az n-ediken** részhalmaza van (az üres halmazt és önmagát is beleértve).",
           "emotion": "confident",
-          "mentor": "Ezt a képletet tényleg megéri megtanulni!"
+          "mentor": "A 2 az n-ediken képlet nagyon gyakran előkerül!"
         },
         {
-          "title": "A diszkrimináns dönt",
-          "body": "A gyökjel alatti kifejezés a diszkrimináns: **D = b² − 4ac**.\n• D > 0: két különböző valós gyök\n• D = 0: egy (kétszeres) valós gyök\n• D < 0: nincs valós gyök",
+          "title": "Halmazműveletek",
+          "body": "• **Unió:** ami legalább az egyik halmaznak eleme\n• **Metszet:** ami mindkettőnek eleme\n• **Különbség:** ami A-nak eleme, de B-nek nem\n• **Komplementer:** az alaphalmaz azon elemei, amelyek nem elemei A-nak",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A logikai szita",
+          "body": "Két halmazra:\n**|A unió B| = |A| + |B| − |A metszet B|**\n\nA közös részt kétszer számolnánk, ezért egyszer le kell vonni. Három halmaznál a páronkénti metszeteket levonjuk, a hármas metszetet pedig visszaadjuk.",
           "emotion": "surprised",
-          "mentor": "Érdemes mindig a diszkriminánssal kezdeni."
+          "mentor": "Szöveges feladatoknál szinte mindig a szita a kulcs."
         },
         {
-          "title": "Egy példa lépésről lépésre",
-          "body": "**x² − 5x + 6 = 0**, tehát a = 1, b = −5, c = 6.\n\nD = (−5)² − 4 · 1 · 6 = 25 − 24 = 1\nx₁,₂ = (5 ± 1) / 2, így **x₁ = 3** és **x₂ = 2**.",
-          "emotion": "happy"
+          "title": "Logika: állítások és tagadás",
+          "body": "Az **állítás** olyan kijelentő mondat, amelyről eldönthető, hogy igaz vagy hamis.\n\nA „minden…” típusú állítás tagadása „van olyan…”, és fordítva. Kétszeres tagadás visszaadja az eredeti állítást.",
+          "emotion": "confident"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Hány részhalmaza van egy 5 elemű halmaznak?",
+          "options": ["10", "25", "32", "120"],
+          "answer": 2,
+          "explanation": "Egy n elemű halmaznak 2 az n-ediken részhalmaza van, tehát 2 az ötödiken = 32. Ebben benne van az üres halmaz és maga a halmaz is."
         },
         {
-          "title": "Ellenőrzés",
-          "body": "Helyettesítsd vissza a gyököket!\n3² − 5 · 3 + 6 = 9 − 15 + 6 = 0\n2² − 5 · 2 + 6 = 4 − 10 + 6 = 0\n\nA visszahelyettesítéssel kiszűrheted a számolási hibákat. A vizsgán is jó szokás.",
+          "question": "Egy osztályból 18-an járnak angolra, 12-en németre, 5-en mindkettőre. Hányan tanulnak legalább az egyik nyelvből?",
+          "options": ["23", "25", "30", "35"],
+          "answer": 1,
+          "explanation": "Logikai szita: 18 + 12 − 5 = 25. Az 5 fő mindkét csoportban szerepel, ezért egyszer le kell vonni őket."
+        },
+        {
+          "question": "Mi a tagadása ennek: „Minden diák megoldotta a feladatot.”?",
+          "options": [
+            "Egyetlen diák sem oldotta meg a feladatot.",
+            "Van olyan diák, aki nem oldotta meg a feladatot.",
+            "Minden diák hibázott.",
+            "A diákok fele oldotta meg a feladatot."
+          ],
+          "answer": 1,
+          "explanation": "A „minden” tagadása „van olyan”. Ahhoz, hogy az állítás hamis legyen, elég egyetlen ellenpélda."
+        },
+        {
+          "question": "Melyik állítás igaz bármely A és B halmazra?",
+          "options": [
+            "A metszet mindig részhalmaza A-nak.",
+            "A mindig részhalmaza a metszetnek.",
+            "Az unió mindig részhalmaza A-nak.",
+            "A különbség felcserélhető: A \\ B ugyanaz, mint B \\ A."
+          ],
+          "answer": 0,
+          "explanation": "A metszet elemei mindkét halmaznak elemei, tehát A-nak is. Az unió ezzel szemben bővebb, a különbség pedig nem felcserélhető."
+        }
+      ]
+    },
+    {
+      "id": "math-02",
+      "title": "Számelmélet",
+      "summary": "Oszthatóság, prímek, osztók száma és számrendszerek.",
+      "video": { "youtubeId": "", "title": "Számelmélet" },
+      "slides": [
+        {
+          "title": "Oszthatóság",
+          "body": "Az a egész szám osztója b-nek, ha van olyan c egész, amelyre **a · c = b**.\n\n**Prímszám:** pontosan két osztója van. **Összetett szám:** kettőnél több osztója van.\n\nAz 1 se nem prím, se nem összetett, mert csak egy osztója van.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Oszthatósági szabályok",
+          "body": "• **3-mal és 9-cel:** a számjegyek összege osztható 3-mal, illetve 9-cel\n• **4-gyel:** az utolsó két jegyből alkotott szám osztható 4-gyel\n• **8-cal:** az utolsó három jegyből alkotott szám osztható 8-cal\n• **5-tel:** 0-ra vagy 5-re végződik",
+          "emotion": "confident"
+        },
+        {
+          "title": "Összetett osztók",
+          "body": "Ha egy számot két **relatív prím** osztójára bontunk, a szabályok összerakhatók.\n\nPéldául 36 = 4 · 9, és a 4 meg a 9 relatív prím, ezért egy szám akkor osztható 36-tal, ha 4-gyel és 9-cel is osztható.",
+          "emotion": "surprised",
+          "mentor": "Ez a trükk a 12-re, 15-re, 18-ra is működik."
+        },
+        {
+          "title": "A számelmélet alaptétele",
+          "body": "Minden összetett szám felírható prímszámok szorzataként, és ez a felbontás a sorrendtől eltekintve egyértelmű.\n\nA **kanonikus alakból** az osztók száma is megkapható: a kitevőkhöz 1-et adunk, és összeszorozzuk őket. Például 72 = 2³ · 3², így (3+1) · (2+1) = 12 osztója van.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Számrendszerek",
+          "body": "Tízes számrendszerből másikba **maradékos osztással** váltunk, és a maradékokat visszafelé olvassuk le.\n\nPéldául 948 hetes számrendszerben: 948 = 2523, mert 2 · 343 + 5 · 49 + 2 · 7 + 3 = 948.",
+          "emotion": "confident"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Hány osztója van a 72-nek?",
+          "options": ["6", "8", "10", "12"],
+          "answer": 3,
+          "explanation": "72 = 2³ · 3², ezért az osztók száma (3+1) · (2+1) = 12."
+        },
+        {
+          "question": "Mennyi a 24 és a 36 legnagyobb közös osztója?",
+          "options": ["4", "12", "6", "72"],
+          "answer": 1,
+          "explanation": "24 = 2³ · 3, 36 = 2² · 3². A közös prímtényezők a kisebb kitevővel: 2² · 3 = 12."
+        },
+        {
+          "question": "Melyik szám prímszám?",
+          "options": ["51", "57", "61", "91"],
+          "answer": 2,
+          "explanation": "51 = 3 · 17, 57 = 3 · 19, 91 = 7 · 13. A 61-nek csak az 1 és önmaga az osztója."
+        },
+        {
+          "question": "Melyik állítás igaz az 1-re?",
+          "options": [
+            "Se nem prím, se nem összetett szám.",
+            "A legkisebb prímszám.",
+            "Összetett szám, mert osztható önmagával.",
+            "Minden számnak többszöröse."
+          ],
+          "answer": 0,
+          "explanation": "Az 1-nek pontosan egy osztója van, ezért nem prím (ahhoz kettő kellene) és nem is összetett."
+        }
+      ]
+    },
+    {
+      "id": "math-03",
+      "title": "Egyszerűsítések, átalakítások",
+      "summary": "Nevezetes azonosságok, szorzattá alakítás, gyöktelenítés.",
+      "video": { "youtubeId": "", "title": "Egyszerűsítések, átalakítások" },
+      "slides": [
+        {
+          "title": "Műveleti sorrend",
+          "body": "1. zárójelen belüli műveletek\n2. hatványozás\n3. szorzás, osztás\n4. összeadás, kivonás\n\nAz egyenrangú műveleteket balról jobbra végezzük, a zárójeleket belülről kifelé bontjuk.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Nevezetes azonosságok",
+          "body": "**(a + b)² = a² + 2ab + b²**\n**(a − b)² = a² − 2ab + b²**\n**a² − b² = (a + b)(a − b)**\n\nKöbre: (a + b)³ = a³ + 3a²b + 3ab² + b³",
+          "emotion": "thinking",
+          "mentor": "Ezt a hármat érdemes fejből tudni, oda-vissza."
+        },
+        {
+          "title": "Szorzattá alakítás",
+          "body": "Először mindig **emelj ki**, amit lehet!\n\nMásodfokú kifejezés gyöktényezős alakja:\nax² + bx + c = a(x − x₁)(x − x₂)\n\nPéldául x² − 5x + 6 = (x − 2)(x − 3).",
+          "emotion": "confident"
+        },
+        {
+          "title": "Törtek és kikötések",
+          "body": "A nevező soha nem lehet 0, ezért a kikötést mindig írd ki!\n\nHasznos trükk: (−1)-gyel bővítve a nevező előjele megfordítható, így közös nevezőre hozhatók az olyan törtek, mint x/(x − 2) és x/(2 − x).",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Gyöktelenítés, teljes négyzet",
+          "body": "**Gyöktelenítés:** szorozz a nevező konjugáltjával, így a nevezőből eltűnik a gyök.\n\n**Teljes négyzetté alakítás:** x² − 8x + 9 = (x − 4)² − 7, mert (x − 4)² = x² − 8x + 16.",
+          "emotion": "surprised"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mivel egyenlő (a − b)²?",
+          "options": ["a² − b²", "a² − 2ab + b²", "a² + 2ab + b²", "a² − ab + b²"],
+          "answer": 1,
+          "explanation": "A négyzetre emelésnél a kereszttag kétszeresen jelenik meg, a kivonás miatt negatív előjellel: a² − 2ab + b²."
+        },
+        {
+          "question": "Alakítsd szorzattá: x² − 9",
+          "options": ["(x − 3)(x + 3)", "(x − 9)(x + 1)", "(x − 3)²", "x(x − 9)"],
+          "answer": 0,
+          "explanation": "Ez két négyzet különbsége: a² − b² = (a + b)(a − b), ahol a = x és b = 3."
+        },
+        {
+          "question": "Mi a 4x² − 12x + 9 szorzat alakja?",
+          "options": ["(2x − 3)²", "(2x + 3)²", "(4x − 3)(x − 3)", "(2x − 9)(2x − 1)"],
+          "answer": 0,
+          "explanation": "(2x − 3)² = 4x² − 12x + 9, tehát teljes négyzetről van szó."
+        },
+        {
+          "question": "Mit kapunk, ha az x² + 6x + 1 kifejezést teljes négyzetté alakítjuk?",
+          "options": ["(x + 3)² − 8", "(x + 3)² + 8", "(x + 6)² − 35", "(x + 3)² − 1"],
+          "answer": 0,
+          "explanation": "(x + 3)² = x² + 6x + 9, ebből 9-et le kell vonni, majd hozzáadni az eredeti 1-et: −9 + 1 = −8."
+        }
+      ]
+    },
+    {
+      "id": "math-04",
+      "title": "Egyenletek, értelmezési tartomány",
+      "summary": "Kikötések, megoldási módszerek és a másodfokú egyenlet.",
+      "video": { "youtubeId": "", "title": "Értelmezési tartomány, értékkészlet, egyenletek" },
+      "slides": [
+        {
+          "title": "Alapkikötések",
+          "body": "• **Tört:** a nevező nem lehet 0\n• **Páros gyök:** a gyök alatti kifejezés nem lehet negatív\n• **Logaritmus:** az alap pozitív és nem 1, a numerus pozitív\n• **Tangens:** a nevezőben álló koszinusz nem lehet 0",
+          "emotion": "thinking",
+          "mentor": "A kikötés nem sallang: nélküle hamis gyök csúszhat be."
+        },
+        {
+          "title": "Értékkészlet-vizsgálat",
+          "body": "Néhány kifejezés értéke eleve korlátos:\n• |x| ≥ 0 és x² ≥ 0\n• négyzetgyök értéke nem negatív\n• −1 ≤ sin x ≤ 1 és −1 ≤ cos x ≤ 1\n\nEz néha önmagában megadja a megoldást.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Megoldási módszerek",
+          "body": "• **Mérlegelv:** mindkét oldalon ugyanazt csináljuk\n• **Szorzattá alakítás:** a szorzat pontosan akkor 0, ha valamelyik tényezője 0\n• **Új ismeretlen bevezetése:** visszavezetés alacsonyabb fokszámra\n• **Grafikus megoldás:** a metszéspontok x koordinátái",
+          "emotion": "confident"
+        },
+        {
+          "title": "Hamis gyök és gyökvesztés",
+          "body": "**Négyzetre emelésnél** bővül az értelmezési tartomány, ezért hamis gyök keletkezhet.\n\n**Ismeretlennel való osztásnál** szűkül, ezért gyököt veszíthetünk. Osztás helyett emelj ki!\n\nEzért kell a végén **ellenőrizni**.",
+          "emotion": "nervous"
+        },
+        {
+          "title": "A másodfokú egyenlet",
+          "body": "**ax² + bx + c = 0** (a ≠ 0) megoldóképlete:\n**x₁,₂ = (−b ± √(b² − 4ac)) / (2a)**\n\nA diszkrimináns D = b² − 4ac dönt: D > 0 két gyök, D = 0 egy (kétszeres) gyök, D < 0 nincs valós gyök.\n\nViète-formulák: x₁ + x₂ = −b/a és x₁ · x₂ = c/a.",
           "emotion": "confident"
         }
       ],
@@ -54,27 +249,599 @@
           "explanation": "D = 4² − 4 · 1 · 4 = 0, ezért egy kétszeres gyök van: x = −2."
         },
         {
-          "question": "Mennyi az x² − 7x + 10 = 0 egyenlet diszkriminánsa?",
-          "options": ["49", "−9", "9", "89"],
-          "answer": 2,
-          "explanation": "D = (−7)² − 4 · 1 · 10 = 49 − 40 = 9."
+          "question": "Mi az értelmezési tartománya az 1/(x − 3) kifejezésnek?",
+          "options": [
+            "Minden valós szám",
+            "Minden valós szám a 3 kivételével",
+            "Csak a 3-nál nagyobb számok",
+            "Csak a pozitív számok"
+          ],
+          "answer": 1,
+          "explanation": "A nevező nem lehet 0, tehát x − 3 ≠ 0, vagyis x ≠ 3. Minden más valós szám jó."
         },
         {
           "question": "Melyik számpár az x² − x − 6 = 0 egyenlet két megoldása?",
           "options": ["x₁ = −3, x₂ = 2", "x₁ = 3, x₂ = −2", "x₁ = 6, x₂ = −1", "x₁ = 2, x₂ = 3"],
           "answer": 1,
-          "explanation": "D = 1 + 24 = 25, így x₁,₂ = (1 ± 5) / 2, azaz x₁ = 3 és x₂ = −2. Ellenőrzés: 9 − 3 − 6 = 0."
+          "explanation": "D = 1 + 24 = 25, így x = (1 ± 5) / 2, azaz 3 és −2. Ellenőrzés: 9 − 3 − 6 = 0."
         },
         {
-          "question": "Milyen feltétel mellett másodfokú az ax² + bx + c = 0 egyenlet?",
-          "options": ["a ≠ 0", "b ≠ 0", "c ≠ 0", "a > 0"],
+          "question": "Mikor kell mindenképpen ellenőrizni a kapott gyököket?",
+          "options": [
+            "Ha mindkét oldalt négyzetre emeltük",
+            "Ha mindkét oldalhoz ugyanazt a számot adtuk",
+            "Ha csak a mérlegelvet használtuk",
+            "Soha nem szükséges"
+          ],
           "answer": 0,
-          "explanation": "Ha a = 0, eltűnik az x²-es tag. Az a lehet negatív is, csak nulla nem."
+          "explanation": "A négyzetre emelés nem ekvivalens átalakítás: bővíti az értelmezési tartományt, így hamis gyök keletkezhet."
         }
       ]
     },
-    { "id": "math-02", "title": "A Viète-formulák", "comingSoon": true },
-    { "id": "math-03", "title": "Másodfokú egyenlőtlenségek", "comingSoon": true },
-    { "id": "math-04", "title": "Szöveges feladatok", "comingSoon": true }
+    {
+      "id": "math-05",
+      "title": "Exponenciális és logaritmusos kifejezések",
+      "summary": "Hatványazonosságok, logaritmus és a megoldás menete.",
+      "video": { "youtubeId": "", "title": "Exponenciális, logaritmusos kifejezések" },
+      "slides": [
+        {
+          "title": "Hatványazonosságok",
+          "body": "• azonos alap szorzásakor a kitevők összeadódnak: a^m · a^n = a^(m+n)\n• osztásnál kivonódnak: a^m / a^n = a^(m−n)\n• hatvány hatványa: (a^m)^n = a^(m·n)\n• törtkitevő: a^(m/n) az a^m n-edik gyöke\n\nTovábbá a⁰ = 1 és a^(−n) = 1 / a^n.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Az exponenciális függvény",
+          "body": "f(x) = a^x, ahol a > 0 és a ≠ 1.\n\nÉrtelmezési tartománya minden valós szám, értékkészlete a **pozitív** számok. Ha a > 1, szigorúan növekvő; ha 0 < a < 1, szigorúan csökkenő.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Exponenciális egyenletek",
+          "body": "Hozd **közös alapra** a két oldalt, majd a szigorú monotonitás miatt a kitevők egyenlők.\n\nPélda: 2^(x+1) + 2^(x+2) = 6. Az új ismeretlen a = 2^x jelöléssel 2a + 4a = 6, tehát a = 1, azaz 2^x = 1, ebből x = 0.",
+          "emotion": "surprised",
+          "mentor": "Az „új ismeretlen bevezetése” itt majdnem mindig működik."
+        },
+        {
+          "title": "A logaritmus",
+          "body": "A logaritmus a **hiányzó kitevőt** keresi: az a alapú logaritmusa b-nek az a kitevő, amelyre a-t emelve b-t kapunk.\n\nKikötés: az alap pozitív és nem 1, a numerus pozitív. A tízes alapút lg-vel, a természetes alapút ln-nel jelöljük.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Logaritmus-azonosságok",
+          "body": "• szorzat logaritmusa: a tagok logaritmusának összege\n• hányados logaritmusa: a logaritmusok különbsége\n• hatvány logaritmusa: a kitevő szorozva a logaritmussal\n\nA megoldás menete: kikötés, azonosságok, közös alap, majd a szigorú monotonitás miatt a numerusok egyenlők.",
+          "emotion": "confident"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mennyi 2³ · 2⁴ értéke?",
+          "options": ["128", "64", "256", "49"],
+          "answer": 0,
+          "explanation": "Azonos alap esetén a kitevők összeadódnak: 2³ · 2⁴ = 2⁷ = 128."
+        },
+        {
+          "question": "Oldd meg: 3^x = 81",
+          "options": ["x = 3", "x = 4", "x = 9", "x = 27"],
+          "answer": 1,
+          "explanation": "81 = 3⁴, és az exponenciális függvény szigorú monotonitása miatt a kitevők egyenlők: x = 4."
+        },
+        {
+          "question": "Mennyi a 2 alapú logaritmusa a 8-nak?",
+          "options": ["2", "3", "4", "16"],
+          "answer": 1,
+          "explanation": "Azt a kitevőt keressük, amire 2-t emelve 8-at kapunk: 2³ = 8, tehát az érték 3."
+        },
+        {
+          "question": "Milyen feltételek mellett értelmezzük a logaritmust?",
+          "options": [
+            "Az alap pozitív és nem 1, a numerus pozitív.",
+            "Az alap pozitív, a numerus bármilyen szám lehet.",
+            "Az alap bármilyen valós szám lehet.",
+            "Csak tízes alap esetén értelmezzük."
+          ],
+          "answer": 0,
+          "explanation": "Ezek a kikötések. Ezért kell logaritmusos egyenletnél mindig az elején kikötést tenni, a végén pedig ellenőrizni."
+        }
+      ]
+    },
+    {
+      "id": "math-06",
+      "title": "Trigonometria",
+      "summary": "Szögfüggvények, nevezetes szögek, szinusz- és koszinusztétel.",
+      "video": { "youtubeId": "", "title": "Trigonometria" },
+      "slides": [
+        {
+          "title": "Szögfüggvények derékszögű háromszögben",
+          "body": "• **sin** = szöggel szemközti befogó / átfogó\n• **cos** = szög melletti befogó / átfogó\n• **tg** = szemközti befogó / melletti befogó\n\nEzek csak derékszögű háromszögben, a hegyesszögekre érvényesek így.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Nevezetes szögek",
+          "body": "sin 30° = 1/2, sin 45° = √2/2, sin 60° = √3/2\ncos 30° = √3/2, cos 45° = √2/2, cos 60° = 1/2\ntg 45° = 1\n\nA koszinusz értékei ugyanezek, csak fordított sorrendben.",
+          "emotion": "confident",
+          "mentor": "Ezt a táblázatot érdemes fejből tudni."
+        },
+        {
+          "title": "Fok és radián",
+          "body": "Egy feladaton belül ne keverd a kettőt!\n\n180° = π radián, tehát fokból radiánba a π/180 szorzóval, radiánból fokba a 180/π szorzóval váltunk. Ha az alaphalmaz a valós számok, radiánban számolunk.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Összefüggések",
+          "body": "**sin²x + cos²x = 1** (a Pitagorasz-tétel az egységkörön)\n\ntg x = sin x / cos x, ha cos x ≠ 0.\n\nNegatív szögekre: sin(−x) = −sin x, viszont cos(−x) = cos x.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Szinusz- és koszinusztétel",
+          "body": "**Szinusztétel:** bármely háromszögben az oldalak aránya megegyezik a velük szemközti szögek szinuszának arányával.\n\n**Koszinusztétel:** c² = a² + b² − 2ab · cos(gamma). Ha a szög 90°, visszakapjuk a Pitagorasz-tételt.",
+          "emotion": "confident"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mennyi sin 30° értéke?",
+          "options": ["1/2", "√2/2", "√3/2", "1"],
+          "answer": 0,
+          "explanation": "A 30°-os szög szinusza 1/2. Érdemes a nevezetes szögek táblázatát fejből tudni."
+        },
+        {
+          "question": "Mivel egyenlő sin²x + cos²x?",
+          "options": ["0", "1", "2", "x"],
+          "answer": 1,
+          "explanation": "Ez a trigonometria alapazonossága: az egységkörön ez éppen a Pitagorasz-tétel."
+        },
+        {
+          "question": "Hány radián a 180°?",
+          "options": ["π/2", "π", "2π", "360"],
+          "answer": 1,
+          "explanation": "A teljes kör 2π radián, tehát a félkör, vagyis 180° éppen π radián."
+        },
+        {
+          "question": "Egy háromszög két oldala 5 és 7 egység, a közbezárt szög 60°. Mekkora a harmadik oldal?",
+          "options": ["√39, kb. 6,24", "√74, kb. 8,60", "√109, kb. 10,44", "12"],
+          "answer": 0,
+          "explanation": "Koszinusztétel: c² = 25 + 49 − 2 · 5 · 7 · cos 60° = 74 − 35 = 39, tehát c = √39."
+        }
+      ]
+    },
+    {
+      "id": "math-07",
+      "title": "Sorozatok, kamatos kamat",
+      "summary": "Számtani és mértani sorozat, összegképletek, kamatszámítás.",
+      "video": { "youtubeId": "", "title": "Sorozatok, kamatos kamat" },
+      "slides": [
+        {
+          "title": "Mi a sorozat?",
+          "body": "A sorozat olyan **függvény**, amelyet a pozitív egész számokon értelmezünk.\n\nMegadható képlettel (explicit alak), rekurzív módon (az előző tagokból), vagy a képzési szabály leírásával.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Számtani sorozat",
+          "body": "Bármely tag és az előző tag **különbsége állandó**: ez a differencia (d).\n\n**n-edik tag:** a(n) = a(1) + (n − 1) · d\n**Összeg:** S(n) = n · (a(1) + a(n)) / 2",
+          "emotion": "confident"
+        },
+        {
+          "title": "Mértani sorozat",
+          "body": "Bármely tag és az előző tag **hányadosa állandó**: ez a kvóciens (q).\n\n**n-edik tag:** a(n) = a(1) · q^(n−1)\n**Összeg (q ≠ 1):** S(n) = a(1) · (q^n − 1) / (q − 1)",
+          "emotion": "thinking",
+          "mentor": "A mértani sorozat a kamatos kamat matematikája."
+        },
+        {
+          "title": "Kamatos kamat",
+          "body": "A kamat is kamatozik tovább, ezért mértani sorozatot kapunk:\n\n**a(n) = a(0) · (1 + p/100)^n**, ahol a(0) az alaptőke, p a kamatláb százalékban, n az évek száma.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Példa",
+          "body": "100 000 Ft évi 5%-os kamatos kamattal 3 év alatt:\n\n100 000 · 1,05³ = **115 762,5 Ft**\n\nEgyszerű kamattal csak 115 000 Ft lenne: a különbség a kamat kamata.",
+          "emotion": "joyful"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Egy számtani sorozat első tagja 3, differenciája 4. Mennyi a 10. tag?",
+          "options": ["39", "40", "43", "36"],
+          "answer": 0,
+          "explanation": "a(10) = 3 + 9 · 4 = 39. Figyelj: az első tagtól a tizedikig kilenc lépést teszünk."
+        },
+        {
+          "question": "Egy mértani sorozat első tagja 2, kvóciense 3. Mennyi a 4. tag?",
+          "options": ["18", "24", "54", "162"],
+          "answer": 2,
+          "explanation": "a(4) = 2 · 3³ = 2 · 27 = 54."
+        },
+        {
+          "question": "200 000 Ft-ot teszünk bankba évi 4%-os kamatos kamatra. Mennyi lesz 2 év múlva?",
+          "options": ["208 000 Ft", "216 320 Ft", "216 000 Ft", "224 000 Ft"],
+          "answer": 1,
+          "explanation": "200 000 · 1,04² = 200 000 · 1,0816 = 216 320 Ft. A 216 000 Ft az egyszerű kamat eredménye lenne."
+        },
+        {
+          "question": "Mennyi az első 100 pozitív egész szám összege?",
+          "options": ["5050", "5000", "10 100", "1000"],
+          "answer": 0,
+          "explanation": "Számtani sorozat összege: 100 · (1 + 100) / 2 = 5050."
+        }
+      ]
+    },
+    {
+      "id": "math-08",
+      "title": "Síkgeometria",
+      "summary": "Háromszögek, nevezetes vonalak, terület és hasonlóság.",
+      "video": { "youtubeId": "", "title": "Síkgeometria I." },
+      "slides": [
+        {
+          "title": "A háromszög alapjai",
+          "body": "A belső szögek összege **180°**, a külső szögeké 360°.\n\n**Háromszög-egyenlőtlenség:** bármely két oldal összege nagyobb a harmadiknál.\n\nDerékszögű háromszögben érvényes a **Pitagorasz-tétel**: a² + b² = c².",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Nevezetes vonalak",
+          "body": "• **oldalfelező merőlegesek** metszéspontja: a körülírt kör középpontja\n• **szögfelezők** metszéspontja: a beírt kör középpontja\n• **magasságvonalak** metszéspontja: a magasságpont\n• **súlyvonalak** metszéspontja: a súlypont",
+          "emotion": "confident"
+        },
+        {
+          "title": "Súlypont és Thalész",
+          "body": "A súlypont a súlyvonalat **2:1 arányban** osztja, a csúcshoz közelebbi rész a nagyobb.\n\n**Thalész-tétel:** ha egy kör átmérőjének két végpontját összekötjük a kör egy másik pontjával, derékszögű háromszöget kapunk.",
+          "emotion": "surprised",
+          "mentor": "A Thalész-tétel szinte minden geometriai feladatban felbukkan."
+        },
+        {
+          "title": "Területképletek",
+          "body": "• T = oldal · hozzá tartozó magasság / 2\n• T = két oldal szorzata · a közbezárt szög szinusza / 2\n• T = kerület fele · a beírt kör sugara\n• Hérón-képlet a három oldalból",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Hasonlóság",
+          "body": "Két háromszög hasonló, ha a megfelelő szögeik egyenlők (vagy az oldalak aránya azonos).\n\nHa a hasonlóság aránya k, akkor a **kerületek aránya k**, a **területeké k²**.",
+          "emotion": "confident"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mekkora egy háromszög belső szögeinek összege?",
+          "options": ["90°", "180°", "270°", "360°"],
+          "answer": 1,
+          "explanation": "Bármely háromszög belső szögeinek összege 180°. A külső szögeké 360°."
+        },
+        {
+          "question": "Egy derékszögű háromszög befogói 6 és 8 cm. Mekkora az átfogó?",
+          "options": ["10 cm", "12 cm", "14 cm", "48 cm"],
+          "answer": 0,
+          "explanation": "Pitagorasz-tétel: 6² + 8² = 36 + 64 = 100, tehát az átfogó √100 = 10 cm."
+        },
+        {
+          "question": "Milyen arányban osztja a súlypont a súlyvonalat?",
+          "options": [
+            "2:1 arányban, a csúcshoz közelebbi rész a nagyobb",
+            "1:1 arányban",
+            "3:1 arányban",
+            "2:1 arányban, a csúcshoz közelebbi rész a kisebb"
+          ],
+          "answer": 0,
+          "explanation": "A súlypont a csúcstól számítva a súlyvonal kétharmadánál van."
+        },
+        {
+          "question": "Két hasonló háromszög hasonlósági aránya 3. Hányszorosa a nagyobb területe a kisebbének?",
+          "options": ["3-szorosa", "6-szorosa", "9-szerese", "27-szerese"],
+          "answer": 2,
+          "explanation": "A területek aránya a hasonlósági arány négyzete: 3² = 9. A kerületeké viszont csak 3."
+        }
+      ]
+    },
+    {
+      "id": "math-09",
+      "title": "Térgeometria",
+      "summary": "Térelemek, hasáb, henger, gúla, kúp és gömb.",
+      "video": { "youtubeId": "", "title": "Térgeometria" },
+      "slides": [
+        {
+          "title": "Térelemek",
+          "body": "Két egyenes lehet **metsző**, **párhuzamos** vagy **kitérő** (ha nincsenek egy síkban).\n\nA térelemek távolsága mindig a legrövidebb, merőleges szakasz hossza.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Hasáb és henger",
+          "body": "**Térfogat = alapterület · magasság**\n\nHenger esetén az alap egy kör, így V = r²π · m, a felszín pedig A = 2r²π + 2rπ · m (két alapkör és a palást).",
+          "emotion": "confident"
+        },
+        {
+          "title": "Gúla és kúp",
+          "body": "**Térfogat = alapterület · magasság / 3**\n\nA kúp térfogata tehát V = r²π · m / 3, palástjának területe rπ · a, ahol a az alkotó hossza.",
+          "emotion": "surprised",
+          "mentor": "A harmadolás a gúlaszerű testek közös vonása."
+        },
+        {
+          "title": "A gömb",
+          "body": "**Térfogat:** V = 4r³π / 3\n**Felszín:** A = 4r²π\n\nEzek a függvénytáblában is benne vannak, de a jelölésekre figyelj: r a sugár, nem az átmérő.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Tippek",
+          "body": "Készíts ábrát, és jelöld be az adatokat!\n\nA testátlót és a testek belső szakaszait többnyire **Pitagorasz-tétellel** kapod meg. Figyelj a mértékegységekre: 1 dm³ = 1000 cm³.",
+          "emotion": "confident"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mennyi egy 3 cm élű kocka térfogata?",
+          "options": ["9 cm³", "18 cm³", "27 cm³", "54 cm³"],
+          "answer": 2,
+          "explanation": "A kocka térfogata az él köbe: 3³ = 27 cm³. (A felszíne lenne 54 cm².)"
+        },
+        {
+          "question": "Melyik képlet adja meg a gömb térfogatát?",
+          "options": ["4r³π / 3", "4r²π", "r²π · m", "r³π"],
+          "answer": 0,
+          "explanation": "A gömb térfogata 4r³π / 3, a felszíne pedig 4r²π."
+        },
+        {
+          "question": "Egy henger alapkörének sugara 2 cm, magassága 5 cm. Mekkora a térfogata?",
+          "options": ["20π cm³, kb. 62,8 cm³", "10π cm³", "40π cm³", "100π cm³"],
+          "answer": 0,
+          "explanation": "V = r²π · m = 4π · 5 = 20π, ami kb. 62,8 cm³."
+        },
+        {
+          "question": "Hányad része a kúp térfogata az azonos alapú és magasságú hengerének?",
+          "options": ["Fele", "Harmada", "Negyede", "Ugyanakkora"],
+          "answer": 1,
+          "explanation": "A kúpszerű testek térfogatában szerepel az 1/3 szorzó, tehát a kúp a henger térfogatának harmada."
+        }
+      ]
+    },
+    {
+      "id": "math-10",
+      "title": "Vektorok",
+      "summary": "Műveletek vektorokkal, koordináták és skaláris szorzat.",
+      "video": { "youtubeId": "", "title": "Vektorok" },
+      "slides": [
+        {
+          "title": "Mi a vektor?",
+          "body": "A vektor **irányított szakasz**: van állása, iránya és hossza.\n\nA vektor hossza az abszolútértéke. A nullvektor hossza 0, iránya tetszőleges.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Összeadás és kivonás",
+          "body": "**Paralelogramma-módszer:** közös kezdőpontból induló vektorok összege az általuk kifeszített paralelogramma átlója.\n\n**Láncmódszer:** egymás után fűzve az első kezdőpontjából az utolsó végpontjába mutat az összeg.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Szorzás számmal",
+          "body": "A vektor számszorosa a **hosszát** változtatja: ha a szorzó 1-nél nagyobb, hosszabb lesz, ha 0 és 1 közötti, rövidebb.\n\nNegatív szorzó esetén az irány az ellenkezőjére fordul.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Koordináták",
+          "body": "A helyvektor kezdőpontja az origó. Az a(a₁; a₂) vektor hossza **√(a₁² + a₂²)**.\n\nKét pont közötti vektor koordinátái: a végpont mínusz a kezdőpont koordinátái.",
+          "emotion": "thinking",
+          "mentor": "A hossz képlete valójában a Pitagorasz-tétel."
+        },
+        {
+          "title": "Skaláris szorzat",
+          "body": "**a · b = |a| · |b| · cos(szög)**, az eredmény egy szám (skalár).\n\nKoordinátákkal: a megfelelő koordináták szorzatának összege. Két nem nulla vektor pontosan akkor merőleges, ha a skaláris szorzatuk 0.",
+          "emotion": "confident"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mekkora az a(3; 4) vektor hossza?",
+          "options": ["5", "7", "12", "25"],
+          "answer": 0,
+          "explanation": "|a| = √(3² + 4²) = √25 = 5. Ez a jól ismert 3-4-5 derékszögű háromszög."
+        },
+        {
+          "question": "Mennyi az a(2; 3) és a b(4; −1) vektorok skaláris szorzata?",
+          "options": ["5", "8", "11", "−5"],
+          "answer": 0,
+          "explanation": "2 · 4 + 3 · (−1) = 8 − 3 = 5."
+        },
+        {
+          "question": "Mikor merőleges egymásra két nem nulla vektor?",
+          "options": [
+            "Ha a skaláris szorzatuk 0",
+            "Ha a hosszuk egyenlő",
+            "Ha a koordinátáik megegyeznek",
+            "Ha az összegük nullvektor"
+          ],
+          "answer": 0,
+          "explanation": "A skaláris szorzatban cos 90° = 0 szerepel, ezért merőleges vektorok esetén az eredmény 0."
+        },
+        {
+          "question": "Az A(1; 2) és B(5; 8) pontok esetén mik az AB vektor koordinátái?",
+          "options": ["(4; 6)", "(6; 10)", "(−4; −6)", "(5; 16)"],
+          "answer": 0,
+          "explanation": "A végpontból kivonjuk a kezdőpontot: (5 − 1; 8 − 2) = (4; 6)."
+        }
+      ]
+    },
+    {
+      "id": "math-11",
+      "title": "Kör a koordinátasíkon",
+      "summary": "A kör egyenlete, középpont és sugár leolvasása.",
+      "video": { "youtubeId": "", "title": "Kör a koordinátasíkon" },
+      "slides": [
+        {
+          "title": "A kör definíciója",
+          "body": "A kör azon pontok halmaza a síkon, amelyek a sík egy adott pontjától (a **középponttól**) egyenlő, **sugárnyi** távolságra vannak.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A kör egyenlete",
+          "body": "**(x − u)² + (y − v)² = r²**, ahol a középpont O(u; v), a sugár pedig r.\n\nHa a középpont az origó, az egyenlet egyszerűbb: x² + y² = r².",
+          "emotion": "confident",
+          "mentor": "Figyelj az előjelekre: a (x − 2)² alak középpontja +2."
+        },
+        {
+          "title": "Adatok kiolvasása",
+          "body": "Ha az egyenlet nem alapalakban van, **teljes négyzetté alakítunk**.\n\nPélda: x² + y² − 6x + 4y − 3 = 0 átírva (x − 3)² + (y + 2)² = 16, tehát a középpont (3; −2), a sugár 4.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Pont és kör helyzete",
+          "body": "Helyettesítsd be a pont koordinátáit az egyenletbe!\n\nHa a bal oldal éppen r², a pont a körön van; ha kisebb, belül; ha nagyobb, kívül.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Tippek",
+          "body": "A feladat megoldása előtt mindenképp készíts **ábrát**!\n\nAz ábra jó ellenőrzés, de a számítást nem helyettesíti. A végén nézd meg, arra válaszoltál-e, amit kérdeztek.",
+          "emotion": "confident"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mi az origó középpontú, 5 egység sugarú kör egyenlete?",
+          "options": ["x² + y² = 25", "x² + y² = 5", "(x − 5)² + (y − 5)² = 25", "x + y = 5"],
+          "answer": 0,
+          "explanation": "Az egyenlet jobb oldalán a sugár négyzete áll: 5² = 25."
+        },
+        {
+          "question": "Mi a középpontja az (x − 2)² + (y + 3)² = 9 egyenletű körnek?",
+          "options": ["(2; −3)", "(−2; 3)", "(2; 3)", "(3; 9)"],
+          "answer": 0,
+          "explanation": "Az alapalakban (x − u) és (y − v) szerepel, így u = 2 és v = −3. A sugár 3."
+        },
+        {
+          "question": "Rajta van-e a (3; 4) pont az x² + y² = 25 körön?",
+          "options": [
+            "Igen, mert 9 + 16 = 25",
+            "Nem, mert 3 + 4 nem 25",
+            "Csak akkor, ha a sugár 7",
+            "Ebből nem dönthető el"
+          ],
+          "answer": 0,
+          "explanation": "Behelyettesítve 3² + 4² = 25, ami pontosan a jobb oldal, tehát a pont a körvonalon van."
+        },
+        {
+          "question": "Mekkora a sugara az x² + y² = 36 egyenletű körnek?",
+          "options": ["6", "18", "36", "√6"],
+          "answer": 0,
+          "explanation": "A jobb oldal a sugár négyzete, tehát r = √36 = 6."
+        }
+      ]
+    },
+    {
+      "id": "math-12",
+      "title": "Kombinatorika és gráfok",
+      "summary": "Permutáció, variáció, kombináció és a fokszámtétel.",
+      "video": { "youtubeId": "", "title": "Kombinatorika, gráfok" },
+      "slides": [
+        {
+          "title": "Permutáció",
+          "body": "n különböző elem **sorrendjeinek** száma: n! (n faktoriális).\n\nHa vannak egyforma elemek, ismétléses permutációról beszélünk: ilyenkor az azonos elemek faktoriálisaival osztunk.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Variáció",
+          "body": "n elemből **k darabot választunk ki, és számít a sorrend**.\n\nIsmétlés nélkül: n · (n−1) · … · (n−k+1). Ismétléssel (ugyanaz többször is jöhet): n a k-adikon.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Kombináció",
+          "body": "n elemből k darabot választunk, és **nem számít a sorrend**: ez az „n alatt a k” binomiális együttható.\n\nPélda: 10 emberből 3 fős csapat 120-féleképpen állítható össze.",
+          "emotion": "surprised",
+          "mentor": "Két kérdés dönt: számít-e a sorrend, és lehet-e ismétlés?"
+        },
+        {
+          "title": "Gráfok alapjai",
+          "body": "A gráf **csúcsokból** és az őket összekötő **élekből** áll. Egy csúcs fokszáma a belőle induló élek száma.\n\nAz izolált pont fokszáma 0, a hurokél viszont duplán számít.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Fokszámtétel",
+          "body": "A fokszámok összege az **élek számának kétszerese**, tehát mindig páros.\n\nEgy n pontú **teljes gráf** éleinek száma n · (n − 1) / 2, mert minden pontpárt pontosan egy él köt össze.",
+          "emotion": "confident"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Hányféle sorrendben ülhet le 5 ember egy padra?",
+          "options": ["25", "60", "120", "720"],
+          "answer": 2,
+          "explanation": "Ez ismétlés nélküli permutáció: 5! = 5 · 4 · 3 · 2 · 1 = 120."
+        },
+        {
+          "question": "Hányféleképpen választhatunk ki 10 emberből 3 főt, ha a sorrend nem számít?",
+          "options": ["120", "720", "30", "1000"],
+          "answer": 0,
+          "explanation": "Ismétlés nélküli kombináció: (10 · 9 · 8) / (3 · 2 · 1) = 120. Ha a sorrend is számítana, 720 lenne."
+        },
+        {
+          "question": "Hány éle van egy 6 pontú teljes gráfnak?",
+          "options": ["12", "15", "30", "36"],
+          "answer": 1,
+          "explanation": "n · (n − 1) / 2 = 6 · 5 / 2 = 15."
+        },
+        {
+          "question": "Mit mondhatunk egy gráf fokszámainak összegéről?",
+          "options": [
+            "Mindig páros, az élek számának kétszerese",
+            "Mindig páratlan",
+            "Megegyezik az élek számával",
+            "Megegyezik a csúcsok számával"
+          ],
+          "answer": 0,
+          "explanation": "Minden élnek két végpontja van, ezért minden él két fokszámhoz ad hozzá egyet. Ha páratlan összeget kapsz, elszámoltad."
+        }
+      ]
+    },
+    {
+      "id": "math-13",
+      "title": "Valószínűségszámítás",
+      "summary": "Klasszikus modell, események és a komplementer trükk.",
+      "video": { "youtubeId": "", "title": "Valószínűségszámítás" },
+      "slides": [
+        {
+          "title": "Események",
+          "body": "A **kísérlet** a véletlen jelenség megfigyelése (például egy kockadobás).\n\nAz **eseménytér** az összes lehetséges kimenetel. A biztos esemény valószínűsége 1, a lehetetlené 0.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Klasszikus modell",
+          "body": "Ha az elemi események egyformán valószínűek:\n\n**P(A) = kedvező esetek száma / összes eset száma**\n\nA valószínűség mindig 0 és 1 közötti szám.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Műveletek eseményekkel",
+          "body": "• **Komplementer:** P(A) + P(nem A) = 1\n• **Egymást kizáró** események: a valószínűségek összeadódnak\n• **Általános eset:** P(A vagy B) = P(A) + P(B) − P(A és B)\n\nAz utolsó képlet a halmazoknál tanult szita párja.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Visszatevéses és visszatevés nélküli",
+          "body": "**Visszatevéses** mintavételnél a kísérletek függetlenek, a valószínűség nem változik (binomiális eloszlás).\n\n**Visszatevés nélkül** minden húzás után változik az arány: ilyenek a tipikus „selejtes termék” feladatok.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Tippek",
+          "body": "A „**legalább egy**” típusú kérdéseknél szinte mindig a komplementer az egyszerűbb út: 1 − P(egy sem).\n\nFeltételes valószínűségnél rajzolj fagráfot, és figyelj a kerekítésre!",
+          "emotion": "confident",
+          "mentor": "A komplementer trükk rengeteg számolást megspórol."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mennyi a valószínűsége, hogy egy szabályos dobókockával páros számot dobunk?",
+          "options": ["1/2", "1/3", "2/3", "1/6"],
+          "answer": 0,
+          "explanation": "Három kedvező eset (2, 4, 6) a hat lehetségesből: 3/6 = 1/2."
+        },
+        {
+          "question": "Két szabályos kockával dobunk. Mennyi a valószínűsége, hogy a dobott számok összege 12?",
+          "options": ["1/36", "1/12", "1/6", "2/36"],
+          "answer": 0,
+          "explanation": "Összesen 36 lehetséges dobáspár van, és csak egy adja a 12-t: a 6 és a 6."
+        },
+        {
+          "question": "Egy esemény valószínűsége 0,3. Mennyi a komplementer eseményé?",
+          "options": ["0,7", "0,3", "1,3", "0"],
+          "answer": 0,
+          "explanation": "A két valószínűség összege 1, tehát 1 − 0,3 = 0,7."
+        },
+        {
+          "question": "Egy dobozban 5 piros és 3 kék golyó van. Mennyi a valószínűsége, hogy elsőre pirosat húzunk?",
+          "options": ["5/8", "3/8", "1/2", "5/3"],
+          "answer": 0,
+          "explanation": "Összesen 8 golyó van, ebből 5 piros: 5/8. Valószínűség sosem lehet 1-nél nagyobb, ezért az 5/3 biztosan rossz."
+        }
+      ]
+    }
   ]
 }

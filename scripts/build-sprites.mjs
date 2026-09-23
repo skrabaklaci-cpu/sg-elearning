@@ -25,6 +25,16 @@ const PREVIEW_DIR = path.join(ROOT, '.sprite-preview');
 const MANIFEST = path.join(OUT_DIR, 'sprites.json');
 const GRID = 3;
 
+/**
+ * Közös cellamagasság art-pixelben.
+ *
+ * A négy forráskép eltérő felbontású (egy art-pixel 7,7–9,8 képpont), ezért natív méretben a
+ * karakterek azonos nagyításnál is különböző méretűek lennének: Zsófi cellája 82, Ferkóé 110
+ * art-pixel magas volt. A mintavételi rácsot ehhez a közös magassághoz igazítjuk, a képarányt
+ * megtartva, így minden karakter ugyanakkorának látszik. `null` = natív méret.
+ */
+const TARGET_CELL_HEIGHT = 108;
+
 const args = process.argv.slice(2);
 const wantPreview = args.includes('--preview');
 const only = args.filter((a) => !a.startsWith('--'));
@@ -359,10 +369,22 @@ async function processSheet(file) {
     pitchY = estimatePitch(profilesY);
   }
 
+  // A rács kezdetét (fázist) mindig a valódi, natív osztásból számoljuk: a közös méretre igazítás
+  // csak a lépésközt (pitch) változtatja, a rács így a rajz szélétől indul.
+  const phases = rects.map((r, k) =>
+    native ? { x: 0, y: 0 } : { x: estimatePhase(profilesX[k], pitchX), y: estimatePhase(profilesY[k], pitchY) },
+  );
+
+  let resampleFactor = 1;
+  if (!native && TARGET_CELL_HEIGHT) {
+    const sourceHeight = rows.reduce((sum, [y0, y1]) => sum + (y1 - y0), 0) / rows.length;
+    resampleFactor = TARGET_CELL_HEIGHT / (sourceHeight / pitchY);
+    pitchX /= resampleFactor;
+    pitchY /= resampleFactor;
+  }
+
   const cells = rects.map((r, k) =>
-    native
-      ? sampleCell(img, r, 1, 1, 0, 0)
-      : sampleCell(img, r, pitchX, pitchY, estimatePhase(profilesX[k], pitchX), estimatePhase(profilesY[k], pitchY)),
+    native ? sampleCell(img, r, 1, 1, 0, 0) : sampleCell(img, r, pitchX, pitchY, phases[k].x, phases[k].y),
   );
   if (!native) {
     for (const c of cells) {
@@ -400,7 +422,7 @@ async function processSheet(file) {
     }
   });
 
-  return { sheet, sheetW, sheetH, cellWidth, cellHeight, pitchX, pitchY, shifts, crop };
+  return { sheet, sheetW, sheetH, cellWidth, cellHeight, pitchX, pitchY, shifts, crop, resampleFactor };
 }
 
 /** A cellát eltolja, és egységes w×h méretű pufferbe teszi. */
@@ -468,7 +490,8 @@ async function main() {
     };
     console.log(
       `${id.padEnd(10)} cella ${r.cellWidth}×${r.cellHeight}  sheet ${r.sheetW}×${r.sheetH}  ` +
-        `pitch ${r.pitchX}×${r.pitchY}  eltolások ${r.shifts.map((s) => `${s.dx},${s.dy}`).join(' ')}  ` +
+        `közös méretre ×${r.resampleFactor.toFixed(2)}  ` +
+        `eltolások ${r.shifts.map((s) => `${s.dx},${s.dy}`).join(' ')}  ` +
         `vágás b${r.crop.left} j${r.crop.right} a${r.crop.bottom}`,
     );
 

@@ -6,3 +6,8 @@ dist/
 coverage/
 # a sprite-szkript --preview kimenete
 .sprite-preview/
+
+# A felkészítő eredeti diasorai (forrásanyag a leckékhez). A repó nyilvános, ezért ezek nem
+# kerülnek fel; ha mégis meg kell osztani őket, azt külön döntés után, tudatosan tegyük.
+Math/
+

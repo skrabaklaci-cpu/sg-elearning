@@ -5,7 +5,7 @@ import { icon } from './icons.js';
 import './hud.css';
 
 /**
- * <sg-hud back="#/map" back-label="Vissza a térképre">
+ * <sg-hud back="#/subjects" back-label="Vissza a tárgyakhoz">
  *
  * Felső sáv: szint, XP-sáv, napi sorozat. Feliratkozik a store-ra, és XP-szerzéskor
  * felúszó „+10 XP” jelzést mutat.

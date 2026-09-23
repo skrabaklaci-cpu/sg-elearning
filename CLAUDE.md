@@ -30,9 +30,10 @@ sprites/                  nyers karakterképek (NEM kerülnek a buildbe)
 scripts/build-sprites.mjs nyers képek → natív felbontású, átlátszó PNG + cellaméretek
 iframe-test.html          csak dev: az appot telefonméretű, cross-site iframe-be ágyazza
 .github/workflows/        deploy.yml: lint + teszt + build → GitHub Pages
+Math/Slide PDFs/          a felkészítő eredeti diasorai (forrásanyag, NEM verziókövetett)
 src/
   main.js                 indítás: állapot betöltése, globális rétegek (szintlépés, toast), router
-  router.js               hash-router: #/, #/map, #/lesson/:id
+  router.js               hash-router: #/, #/subjects, #/subject/:id, #/lesson/:id
   config/                 játékmenet-beállítások (fejlesztő szerkeszti)
     emotions.js           érzelem → rácscella, esemény → érzelem
     characters.js         karakter → sprite sheet, cellaméret, portré-kivágás
@@ -51,7 +52,8 @@ src/
     schema.js             alapállapot, sémaverzió, migráció
     progress.js           XP, szint, streak, feloldás (tiszta függvények)
   components/             <sg-*> custom elementek + a saját .css-fájljuk, icons.js (pixel-ikonok)
-  screens/                StartScreen, MapScreen, LessonScreen + a saját .css-fájljuk
+  screens/                StartScreen, SubjectsScreen (tárgyválasztó), SubjectScreen (leckelista),
+                          LessonScreen + a saját .css-fájljuk
   styles/                 tokens.css (színek, betű, pixel-egység), base.css, pixel.css
   assets/fonts/           RocketSans (woff2)
   assets/sprites/         GENERÁLT PNG-k + sprites.json (kézzel ne szerkeszd)
@@ -88,6 +90,10 @@ src/
   rájuk, így hibás tartalom (pl. nem létező helyes válasz vagy érzelemnév) nem jut ki deployra.
 - A szövegekben nincs HTML. Tartalmat `innerHTML`-lel beszúrni tilos; `textContent` vagy `h()`.
 - Új lecke = JSON-szerkesztés. Kódot csak új feladattípushoz kell írni.
+- A leckék sorrendben nyílnak meg. Ha szabad témakör-választás kell, a
+  `src/config/progression.js`-ben a `SEQUENTIAL_LESSONS` értékét állítsd `false`-ra.
+- Ha egy meglévő lecke azonosítója más témakört kap, a mentett haladás félrecsúszik: ilyenkor
+  sémaverziót emelünk, és a `src/state/schema.js` `migrate()`-jében eldobjuk az érintett leckéket.
 
 ### 3. Arculat
 
@@ -133,8 +139,8 @@ src/
   Széles kijelzőn a tartalom középre kerül, legfeljebb kb. 720 px szélesen.
 - Az app kitölti az iframe-et (`html, body, #app { height: 100% }`) és **belül görget**;
   a szülőoldal görgetésére nem számítunk.
-- Hash-alapú routing (`#/map`, `#/lesson/:id`): a GitHub Pages nem ad SPA-fallbacket, és
-  iframe-ben is ez a megbízható.
+- Hash-alapú routing (`#/subjects`, `#/subject/:id`, `#/lesson/:id`): a GitHub Pages nem ad
+  SPA-fallbacket, és iframe-ben is ez a megbízható.
 - Tilos: `alert`/`confirm`/`prompt`, `window.top` navigáció, `target="_top"`.
   Külső link: `target="_blank" rel="noopener"`.
 - YouTube: `youtube-nocookie.com`, és csak kattintásra töltődik be (előtte saját, arculati

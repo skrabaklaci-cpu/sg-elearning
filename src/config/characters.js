@@ -11,12 +11,12 @@ export const CHARACTER_IDS = ['guide', 'math', 'history', 'economics'];
 
 /**
  * A „portrait” kivágás magassága natív pixelben: a cella felső része (fej és váll), a szűkebb
- * helyekre (párbeszédablak, térkép). A cellák eltérő arányai miatt karakterenként állítjuk be.
+ * helyekre (párbeszédablak, leckelista). Karakterenként állítjuk be.
  */
 const PORTRAIT_HEIGHT = {
-  guide: 66,
-  math: 62,
-  history: 84,
+  guide: 86,
+  math: 80,
+  history: 82,
   economics: 80,
 };
 

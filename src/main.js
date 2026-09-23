@@ -9,10 +9,11 @@ import { h } from './lib/dom.js';
 import { startRouter } from './router.js';
 import { store } from './state/store.js';
 import { LessonScreen } from './screens/LessonScreen.js';
-import { MapScreen } from './screens/MapScreen.js';
 import { StartScreen } from './screens/StartScreen.js';
+import { SubjectScreen } from './screens/SubjectScreen.js';
+import { SubjectsScreen } from './screens/SubjectsScreen.js';
 
-const SCREENS = { start: StartScreen, map: MapScreen, lesson: LessonScreen };
+const SCREENS = { start: StartScreen, subjects: SubjectsScreen, subject: SubjectScreen, lesson: LessonScreen };
 
 const root = document.getElementById('app');
 let cleanup = null;
@@ -21,7 +22,7 @@ function render(route) {
   cleanup?.();
   cleanup = null;
   root.replaceChildren();
-  const screen = SCREENS[route.name] ?? MapScreen;
+  const screen = SCREENS[route.name] ?? SubjectsScreen;
   cleanup = screen(root, route.params) ?? null;
   // A képernyőolvasók az új nézet címénél folytassák.
   root.querySelector('h1')?.focus({ preventScroll: true });

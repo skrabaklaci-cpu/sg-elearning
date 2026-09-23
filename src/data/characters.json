@@ -5,7 +5,7 @@
     "lines": {
       "welcomeBack": [
         "Újra itt vagy! Folytassuk ott, ahol abbahagytuk?",
-        "Szia! A térkép már vár rád.",
+        "Szia! A tárgyaid már várnak rád.",
         "Jó újra látni! Gyűjtsünk ma is pár XP-t?"
       ],
       "levelUp": [
@@ -16,7 +16,7 @@
       "streakStart": ["Megvan a mai tanulás! Gyere vissza holnap is, és elindul a sorozatod."],
       "streak": ["{n} napos sorozat! Holnap is várlak.", "Már {n} napja tanulsz egymás után. Ne szakítsd meg!"],
       "resetConfirm": ["Biztosan törlöd a haladásodat? Az XP, a szint és a sorozat is elvész, és ez nem vonható vissza."],
-      "missing": ["Hoppá, ezt a leckét nem találom. Nézzünk szét inkább a térképen!"]
+      "missing": ["Hoppá, ezt a leckét nem találom. Válasszunk inkább a tárgyak közül!"]
     }
   },
   "math": {

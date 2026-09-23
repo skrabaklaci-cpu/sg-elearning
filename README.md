@@ -29,7 +29,8 @@ ugyanúgy, mint a Wix oldalon.
 Minden tananyag a `src/data/` mappa JSON-fájljaiban van, kódot nem kell hozzá írni.
 Mentés után a `npm test` jelzi, ha valami hibás (pl. nem létező helyes válasz vagy elírt érzelemnév).
 
-- `math.json`, `history.json`, `economics.json`: egy-egy világ a leckéivel
+- `math.json`, `history.json`, `economics.json`: egy-egy tárgy a leckéivel
+  (a matek mind a 13 felkészítő témakört tartalmazza, a `Math/Slide PDFs` diasorai alapján)
 - `characters.json`: a karakterek neve, titulusa és a reakció-mondataik
 - `intro.json`: Csery bemutatkozása a kezdőképernyőn
 
@@ -57,17 +58,26 @@ Egy lecke felépítése:
   HTML nem használható.
 - **Érzelmek** (`emotion`): `neutral`, `happy`, `joyful`, `confident`, `thinking`, `surprised`,
   `sad`, `nervous`, `angry`.
-- **Készülő lecke:** `{ "id": "math-02", "title": "…", "comingSoon": true }`. A térképen
+- **Készülő lecke:** `{ "id": "math-02", "title": "…", "comingSoon": true }`. A leckelistában
   „Hamarosan” jelzéssel, zárva jelenik meg.
 
 A leckék sorban nyílnak meg. A teljesítés feltétele a kvíz legalább 50%-os eredménye.
-Az XP-jutalmak, a szintküszöbök és a szintnevek a `src/config/progression.js`-ben állíthatók.
+Az XP-jutalmak, a szintküszöbök, a szintnevek és a sorrendiség (`SEQUENTIAL_LESSONS`) a
+`src/config/progression.js`-ben állíthatók.
+
+## Képernyők
+
+Kezdőképernyő (a kalauz köszöntője) → tárgyválasztó (matek, töri, közgazdaságtan) →
+az adott tárgy leckelistája → lecke (videó, diák, kvíz, eredmény).
 
 ## Karakterek és sprite-ok
 
 A `sprites/` mappában vannak a nyers, 3×3-as érzelemrácsok (guide, math, history, economics).
 Az `npm run sprites` ezekből natív felbontású, átlátszó hátterű PNG-t készít a `src/assets/sprites/`
 mappába: kivágja a cellákat, megkeresi a pixelrácsot, és eltávolítja a magenta hátteret.
+
+A négy forráskép eltérő felbontású, ezért a szkript közös cellamagasságra hozza őket
+(`TARGET_CELL_HEIGHT`): így minden karakter ugyanakkorának látszik a felületen.
 
 Az érzelmek sorrendje a rácsban: `src/config/emotions.js` (`EMOTION_GRID`). Az is ott állítható
 (`REACTIONS`), hogy melyik esemény (helyes válasz, hiba, szintlépés stb.) melyik arcot váltja ki.

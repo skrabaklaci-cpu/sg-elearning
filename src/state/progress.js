@@ -2,7 +2,7 @@
 // Csak tiszta függvények: bemenet az állapot (+ a mai nap), kimenet az új állapot és az események.
 // Az események ({ type: 'xp' | 'levelup' | 'streak' | 'lesson-complete', … }) alapján a felület animál.
 
-import { LEVELS, PASS_RATIO, XP_REWARDS } from '../config/progression.js';
+import { LEVELS, PASS_RATIO, SEQUENTIAL_LESSONS, XP_REWARDS } from '../config/progression.js';
 import { daysBetween } from '../lib/date.js';
 import { clamp } from '../lib/util.js';
 import { createLessonProgress } from './schema.js';
@@ -85,7 +85,7 @@ export function lessonStatuses(state, world) {
     let status = 'locked';
     if (lesson.comingSoon) status = 'soon';
     else if (done) status = 'completed';
-    else if (previousDone) status = 'available';
+    else if (previousDone || !SEQUENTIAL_LESSONS) status = 'available';
     previousDone = done;
     return status;
   });

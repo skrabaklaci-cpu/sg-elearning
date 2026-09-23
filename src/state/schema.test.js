@@ -35,6 +35,20 @@ describe('normalizeState', () => {
     expect(state).not.toHaveProperty('hacker');
   });
 
+  it('v1-es mentésből eldobja a matek leckék haladását, az XP-t megtartja', () => {
+    const state = normalizeState({
+      version: 1,
+      xp: 120,
+      lessons: {
+        'math-01': { completedAt: '2026-09-22', quizBest: 3, quizTotal: 4 },
+        'history-01': { completedAt: '2026-09-22', quizBest: 4, quizTotal: 4 },
+      },
+    });
+    expect(state.version).toBe(SCHEMA_VERSION);
+    expect(state.xp).toBe(120);
+    expect(Object.keys(state.lessons)).toEqual(['history-01']);
+  });
+
   it('JSON-oda-vissza alakítás után ugyanaz marad', () => {
     const state = normalizeState({ xp: 10, flags: { introSeen: true } });
     expect(normalizeState(JSON.parse(JSON.stringify(state)))).toEqual(state);

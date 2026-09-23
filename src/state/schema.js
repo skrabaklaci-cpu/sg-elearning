@@ -7,7 +7,7 @@
 
 import { isDateString } from '../lib/date.js';
 
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 
 export function createInitialState() {
   return {
@@ -35,7 +35,19 @@ export function createLessonProgress() {
 /** Régebbi sémájú mentés felhozása az aktuálisra. */
 function migrate(raw) {
   const data = { ...raw };
-  // Példa a jövőre: if (data.version === 1) { …átalakítás…; data.version = 2; }
+
+  // v1 → v2: a matek leckéit a felkészítő diasorai alapján újraszabtuk (13 témakör), így a régi
+  // math-* azonosítók már más leckét jelentenek. Az ezekhez tartozó haladást eldobjuk, az XP és a
+  // sorozat marad.
+  if (data.version === 1) {
+    const lessons = { ...(data.lessons ?? {}) };
+    for (const id of Object.keys(lessons)) {
+      if (id.startsWith('math-')) delete lessons[id];
+    }
+    data.lessons = lessons;
+    data.version = 2;
+  }
+
   return data;
 }
 

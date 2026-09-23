@@ -15,6 +15,12 @@ export const XP_REWARDS = {
 /** A lecke teljesítéséhez (és a következő feloldásához) szükséges helyes válaszarány, 0–1. */
 export const PASS_RATIO = 0.5;
 
+/**
+ * Igaz: a leckék sorban nyílnak meg (az előzőt teljesíteni kell).
+ * Hamis: minden kész lecke azonnal elérhető, a tanuló szabadon választ témakört.
+ */
+export const SEQUENTIAL_LESSONS = true;
+
 /** Ennyi egymást követő helyes válasz után a mentor külön megdicsér. */
 export const CORRECT_STREAK_PRAISE = 3;
 

@@ -12,22 +12,22 @@
       "file": "guide.png",
       "columns": 3,
       "rows": 3,
-      "cellWidth": 64,
-      "cellHeight": 84
+      "cellWidth": 83,
+      "cellHeight": 109
     },
     "history": {
       "file": "history.png",
       "columns": 3,
       "rows": 3,
-      "cellWidth": 71,
-      "cellHeight": 110
+      "cellWidth": 70,
+      "cellHeight": 108
     },
     "math": {
       "file": "math.png",
       "columns": 3,
       "rows": 3,
-      "cellWidth": 57,
-      "cellHeight": 82
+      "cellWidth": 72,
+      "cellHeight": 105
     }
   }
 }

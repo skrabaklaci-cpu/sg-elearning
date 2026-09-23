@@ -1,0 +1,137 @@
+.subjects__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-lg);
+  padding-block: var(--gap-lg) calc(var(--gap-lg) * 2);
+}
+
+.subjects__header {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--px) * 2);
+}
+
+.subjects__title {
+  font-size: var(--text-2xl);
+}
+
+.subjects__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  list-style: none;
+}
+
+.subject {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: calc(var(--px) * 4);
+  padding: calc(var(--px) * 3);
+  color: var(--sg-black);
+  text-decoration: none;
+}
+
+.subject:hover {
+  background: var(--sg-blue-pale);
+}
+
+.subject:focus-visible {
+  outline: none;
+  box-shadow:
+    inset 0 0 0 calc(var(--px) * 2) var(--sg-blue),
+    inset 0 calc(var(--px) * -2) 0 var(--sg-light-shade);
+}
+
+.subject:active {
+  translate: 0 var(--px);
+}
+
+.subject__portrait {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  background: var(--sg-blue-deep);
+  clip-path: var(--notch-2);
+  box-shadow: inset 0 0 0 var(--px) var(--sg-blue-dark);
+}
+
+.subject__body {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--px) * 0.5);
+  min-width: 0;
+}
+
+.subject__title {
+  font-size: var(--text-xl);
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.subject__mentor {
+  color: var(--sg-ink-muted);
+  font-size: var(--text-sm);
+}
+
+.subject__lead {
+  margin-top: var(--px);
+  font-size: var(--text-sm);
+  line-height: 1.35;
+}
+
+.subject__progress {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--px) * 2);
+  margin-top: calc(var(--px) * 2);
+}
+
+.subject__bar {
+  flex: 1;
+  height: calc(var(--px) * 3);
+  background: var(--sg-light-shade);
+}
+
+.subject__fill {
+  display: block;
+  height: 100%;
+  background: var(--sg-blue);
+}
+
+.subject__count {
+  flex: none;
+  font-size: 0.75rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.subject__go {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  color: var(--sg-blue-dark);
+}
+
+.subject__go .icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 600px) {
+  .subject {
+    gap: calc(var(--px) * 5);
+    padding: calc(var(--px) * 4);
+  }
+
+  .subject__portrait {
+    width: 176px;
+    height: 176px;
+  }
+
+  .subject__lead {
+    font-size: var(--text-md);
+  }
+}
