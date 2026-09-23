@@ -41,7 +41,7 @@ describe('normalizeState', () => {
       lessons: {
         'math-01': { completedAt: '2026-09-22', quizBest: 3, quizTotal: 4 },
         'history-01': { completedAt: '2026-09-22', quizBest: 4, quizTotal: 4 },
-        'economics-01': { completedAt: '2026-09-22', quizBest: 4, quizTotal: 4 },
+        'physics-01': { completedAt: '2026-09-22', quizBest: 4, quizTotal: 4 },
       },
     };
 
@@ -49,11 +49,11 @@ describe('normalizeState', () => {
     const fromV1 = normalizeState({ ...saved, version: 1 });
     expect(fromV1.version).toBe(SCHEMA_VERSION);
     expect(fromV1.xp).toBe(120);
-    expect(Object.keys(fromV1.lessons)).toEqual(['economics-01']);
+    expect(Object.keys(fromV1.lessons)).toEqual(['physics-01']);
 
     // v2-es mentés: már csak a történelem
     const fromV2 = normalizeState({ ...saved, version: 2 });
-    expect(Object.keys(fromV2.lessons).sort()).toEqual(['economics-01', 'math-01']);
+    expect(Object.keys(fromV2.lessons).sort()).toEqual(['math-01', 'physics-01']);
   });
 
   it('JSON-oda-vissza alakítás után ugyanaz marad', () => {

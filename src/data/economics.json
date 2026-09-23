@@ -5,81 +5,1414 @@
   "title": "Közgazdaságtan",
   "realm": "A Piacok Völgye",
   "mentor": "economics",
-  "description": "Kereslet, kínálat, piacok és pénz – érthetően.",
+  "description": "A teljes felkészítő tematika: számviteltől a statisztikáig.",
   "lessons": [
     {
       "id": "economics-01",
-      "title": "Kereslet, kínálat, piaci egyensúly",
-      "summary": "Hogyan alakul ki az ár a piacon?",
-      "video": { "youtubeId": "", "title": "Kereslet és kínálat" },
+      "title": "A számviteli törvény és a vállalkozás vagyona",
+      "summary": "Alapelvek, beszámoló, eszközök és források.",
+      "video": {
+        "youtubeId": "",
+        "title": "A számviteli törvény, a vállalkozás vagyona"
+      },
       "slides": [
         {
-          "title": "A kereslet",
-          "body": "A kereslet megmutatja, hogy adott áron mennyit **akarnak és tudnak** megvásárolni a vevők.\n\nHa az ár nő, a keresett mennyiség általában csökken. Ez a **kereslet törvénye**.",
+          "title": "Mi a számvitel?",
+          "body": "A számvitel a gazdasági események **megfigyelése, mérése, feljegyzése és ellenőrzése**, valamint a beszámoló elkészítése.\n\nFunkciói: rögzítési, számbavételi, vagyonvédelmi és tájékoztatási (adatszolgáltatási) funkció.",
           "emotion": "thinking"
         },
         {
-          "title": "A kínálat",
-          "body": "A kínálat azt mutatja meg, hogy adott áron mennyit akarnak eladni a termelők.\n\nMagasabb áron többet éri meg eladni, ezért a kínálati görbe általában **emelkedő**.",
-          "emotion": "confident"
+          "title": "Számviteli alapelvek",
+          "body": "Néhány fontos alapelv:\n• **a vállalkozás folytatásának elve**\n• **teljesség** és **valódiság**\n• **óvatosság:** nem mutathatunk ki nem realizált nyereséget\n• **összemérés:** a bevételeket és a hozzájuk tartozó ráfordításokat egy időszakra számoljuk el",
+          "emotion": "confident",
+          "mentor": "Az óvatosság elve a vizsgán is visszatérő kérdés."
         },
         {
-          "title": "A piaci egyensúly",
-          "body": "Az egyensúlyi áron a keresett és a kínált mennyiség **megegyezik**: itt metszi egymást a keresleti és a kínálati görbe.\n\nEzen az áron nincs se hiány, se felesleg.",
-          "emotion": "happy",
-          "mentor": "Ez a két görbe metszéspontja. Érdemes le is rajzolni!"
+          "title": "Beszámoló és könyvvezetés",
+          "body": "Az éves beszámoló fő részei: **mérleg**, **eredménykimutatás** és **kiegészítő melléklet**.\n\nA kettős könyvvitel minden gazdasági eseményt két számlán rögzít, így a nyilvántartás önellenőrző.",
+          "emotion": "thinking"
         },
         {
-          "title": "Ha nincs egyensúly",
-          "body": "• Ha az ár az egyensúlyi **fölött** van, **túlkínálat** (felesleg) alakul ki, és az ár csökkenni kezd.\n• Ha az ár az egyensúlyi **alatt** van, **túlkereslet** (hiány) lép fel, és az ár emelkedik.",
+          "title": "A vagyon két oldala",
+          "body": "A mérleg bal oldalán az **eszközök** (befektetett eszközök, forgóeszközök), jobb oldalán a **források** (saját tőke, kötelezettségek) állnak.\n\nA kettő összege **mindig megegyezik**: ugyanazt a vagyont mutatja két nézőpontból. A tényleges állományt leltárral ellenőrizzük.",
           "emotion": "surprised"
-        },
-        {
-          "title": "Mozgás vagy eltolódás?",
-          "body": "Ha csak a termék **saját ára** változik, a görbe mentén mozgunk.\n\nHa más tényező változik – például a jövedelem, az ízlés vagy egy helyettesítő termék ára –, akkor **maga a görbe tolódik el**.",
-          "emotion": "thinking",
-          "mentor": "Ezt a különbséget a vizsgán is gyakran kérdezik."
         }
       ],
       "quiz": [
         {
-          "question": "Mi történik a keresett mennyiséggel, ha egy termék ára emelkedik (minden más változatlan)?",
-          "options": ["Általában nő", "Általában csökken", "Nem változik", "Mindig nullára esik"],
-          "answer": 1,
-          "explanation": "Ez a kereslet törvénye: magasabb áron a vevők általában kevesebbet vásárolnak."
-        },
-        {
-          "question": "Mit jelent a piaci egyensúly?",
+          "question": "Mi igaz a mérlegre?",
           "options": [
-            "A keresett és a kínált mennyiség megegyezik",
-            "Az ár a lehető legalacsonyabb",
-            "A termelők nyeresége nulla",
-            "Minden vevő ingyen jut a termékhez"
+            "Az eszközök és a források összege mindig megegyezik",
+            "Az eszközök mindig nagyobbak, mint a források",
+            "Csak a pénzeszközöket tartalmazza",
+            "Az eredményt mutatja be havi bontásban"
           ],
           "answer": 0,
-          "explanation": "Az egyensúlyi áron pontosan annyit akarnak megvenni, amennyit eladni: nincs se hiány, se felesleg."
+          "explanation": "A mérleg ugyanazt a vagyont mutatja két oldalról: mi van (eszközök), és honnan van (források)."
         },
         {
-          "question": "Mi alakul ki, ha az ár az egyensúlyi ár fölött van?",
-          "options": ["Túlkereslet (hiány)", "Piaci egyensúly", "Túlkínálat (felesleg)", "Infláció"],
-          "answer": 2,
-          "explanation": "Magas áron a termelők többet kínálnak, a vevők kevesebbet keresnek. A felesleg lefelé nyomja az árat."
-        },
-        {
-          "question": "Melyik okozza a keresleti görbe eltolódását?",
+          "question": "Melyik tartozik a befektetett eszközök közé?",
           "options": [
-            "A termék saját árának változása",
-            "A fogyasztók jövedelmének változása",
-            "A termelési költségek változása",
-            "Egyik sem, a keresleti görbe sosem tolódik el"
+            "Egy termelőgép",
+            "A vásárolt alapanyag",
+            "A vevőkövetelés",
+            "A házipénztár készpénze"
           ],
-          "answer": 1,
-          "explanation": "A saját ár változása görbe menti mozgás. A jövedelem változása az egész keresleti görbét eltolja, a termelési költség pedig a kínálati görbére hat."
+          "answer": 0,
+          "explanation": "A befektetett eszközök tartósan, egy éven túl szolgálják a tevékenységet; a készlet és a követelés forgóeszköz."
+        },
+        {
+          "question": "Mit mond ki az óvatosság elve?",
+          "options": [
+            "Nem mutatható ki nem realizált nyereség, a várható veszteséget viszont el kell számolni",
+            "Minden gazdasági eseményt kétszer kell könyvelni",
+            "A beszámolót minden hónapban el kell készíteni",
+            "A vagyont piaci áron kell nyilvántartani"
+          ],
+          "answer": 0,
+          "explanation": "Az óvatosság elve azt védi, hogy a vállalkozás ne mutassa magát a valóságosnál kedvezőbb helyzetben."
         }
       ]
     },
-    { "id": "economics-02", "title": "A rugalmasság", "comingSoon": true },
-    { "id": "economics-03", "title": "Piaci szerkezetek", "comingSoon": true },
-    { "id": "economics-04", "title": "Pénz és infláció", "comingSoon": true }
+    {
+      "id": "economics-02",
+      "title": "Könyvviteli számlák és a számlakeret",
+      "summary": "Tartozik-követel, számlaosztályok, kettős könyvvitel.",
+      "video": {
+        "youtubeId": "",
+        "title": "A könyvviteli számlák és az egységes számlakeret"
+      },
+      "slides": [
+        {
+          "title": "A könyvviteli számla",
+          "body": "A számla kétoldalú nyilvántartás: bal oldala a **tartozik (T)**, jobb oldala a **követel (K)** oldal.\n\nA számlán megjelenik a nyitó állomány, a forgalom és az egyenleg.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Eszköz- és forrásszámlák",
+          "body": "**Eszközszámlán** a növekedés a tartozik, a csökkenés a követel oldalra kerül.\n\n**Forrásszámlán** ez fordítva van: a növekedés a követel oldalon jelenik meg.",
+          "emotion": "confident",
+          "mentor": "Ezt a négy irányt érdemes fejből tudni, minden könyvelés erre épül."
+        },
+        {
+          "title": "A kettős könyvvitel",
+          "body": "Minden gazdasági eseményt **két számlán, azonos összeggel** rögzítünk: az egyiken tartozik, a másikon követel oldalon.\n\nÍgy a tartozik és a követel forgalom összege mindig egyenlő – ez a könyvelés önellenőrzése.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Az egységes számlakeret",
+          "body": "• **1–4. számlaosztály:** mérlegszámlák (1: befektetett eszközök, 2: készletek, 3: követelések és pénzeszközök, 4: források)\n• **5.:** költségnemek\n• **6–7.:** költséghelyek, költségviselők\n• **8–9.:** ráfordítások és bevételek (eredményszámlák)",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik számlaosztályba tartoznak a források?",
+          "options": [
+            "A 4. számlaosztályba",
+            "Az 1. számlaosztályba",
+            "Az 5. számlaosztályba",
+            "A 9. számlaosztályba"
+          ],
+          "answer": 0,
+          "explanation": "A 4. számlaosztály tartalmazza a saját tőkét és a kötelezettségeket. Az 1–3. osztály az eszközöké."
+        },
+        {
+          "question": "Hol jelenik meg egy eszköz növekedése?",
+          "options": [
+            "A tartozik oldalon",
+            "A követel oldalon",
+            "Mindkét oldalon",
+            "Egyik oldalon sem"
+          ],
+          "answer": 0,
+          "explanation": "Eszközszámlán a növekedés tartozik, a csökkenés követel oldalra kerül; forrásszámlán fordítva."
+        },
+        {
+          "question": "Mit jelent a kettős könyvvitel?",
+          "options": [
+            "Minden eseményt két számlán, azonos összeggel rögzítünk",
+            "Kétféle pénznemben vezetjük a könyvelést",
+            "Két beszámolót kell készíteni",
+            "Két könyvelő ellenőrzi egymást"
+          ],
+          "answer": 0,
+          "explanation": "Az azonos összegű tartozik és követel tétel miatt a rendszer folyamatosan ellenőrzi önmagát."
+        }
+      ]
+    },
+    {
+      "id": "economics-03",
+      "title": "Tárgyi eszközök elszámolása",
+      "summary": "Bekerülési érték, értékcsökkenés, kivezetés.",
+      "video": {
+        "youtubeId": "",
+        "title": "Tárgyi eszközök elszámolása"
+      },
+      "slides": [
+        {
+          "title": "Mi a tárgyi eszköz?",
+          "body": "Olyan eszköz, amely **tartósan, egy éven túl** szolgálja a vállalkozás tevékenységét: ingatlanok, műszaki gépek és berendezések, járművek.\n\nA még üzembe nem helyezett eszköz beruházásként szerepel.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Bekerülési érték",
+          "body": "A bekerülési érték a **vételár és a beszerzéshez közvetlenül kapcsolódó költségek** összege (szállítás, üzembe helyezés, vám).\n\nA levonható áfa nem része a bekerülési értéknek.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Értékcsökkenés",
+          "body": "A használat során az eszköz elhasználódik, ezt az **értékcsökkenési leírás** (écs) mutatja.\n\nLeírási módok: **lineáris** (évente azonos összeg), degresszív és teljesítményarányos. A **maradványértékig** írjuk le.",
+          "emotion": "surprised",
+          "mentor": "Lineáris écs = (bekerülési érték − maradványérték) ÷ hasznos élettartam."
+        },
+        {
+          "title": "Nettó érték és kivezetés",
+          "body": "**Nettó érték = bruttó érték − halmozott értékcsökkenés.**\n\nAz eszköz kivezetése értékesítéssel, selejtezéssel vagy apportálással történik; ilyenkor a nettó értéket vezetjük ki a könyvekből.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Egy 6 millió forintos gép hasznos élettartama 10 év, maradványértéke nulla. Mennyi az éves lineáris értékcsökkenés?",
+          "options": [
+            "600 000 Ft",
+            "60 000 Ft",
+            "1 200 000 Ft",
+            "6 000 000 Ft"
+          ],
+          "answer": 0,
+          "explanation": "6 000 000 ÷ 10 = 600 000 Ft évente, egyenlő részletekben."
+        },
+        {
+          "question": "Hogyan számoljuk a nettó értéket?",
+          "options": [
+            "Bruttó érték mínusz halmozott értékcsökkenés",
+            "Bruttó érték plusz értékcsökkenés",
+            "Vételár mínusz áfa",
+            "Piaci ár mínusz maradványérték"
+          ],
+          "answer": 0,
+          "explanation": "A nettó (könyv szerinti) érték mutatja, mennyi maradt még le nem írva az eszköz értékéből."
+        },
+        {
+          "question": "Melyik nem része a tárgyi eszköz bekerülési értékének?",
+          "options": [
+            "A levonható áfa",
+            "A vételár",
+            "A szállítási költség",
+            "Az üzembe helyezés költsége"
+          ],
+          "answer": 0,
+          "explanation": "A levonható áfát az állammal számoljuk el, ezért nem növeli az eszköz értékét."
+        }
+      ]
+    },
+    {
+      "id": "economics-04",
+      "title": "Vásárolt készletek",
+      "summary": "Beszerzés, értékelés, FIFO és leltárkülönbözet.",
+      "video": {
+        "youtubeId": "",
+        "title": "Vásárolt készletek"
+      },
+      "slides": [
+        {
+          "title": "Milyen készleteink vannak?",
+          "body": "A vásárolt készletek közé tartoznak az **anyagok** (alap-, segéd-, üzem- és fűtőanyag) és az **áruk**.\n\nA készlet forgóeszköz: a tevékenység során elhasználódik vagy továbbértékesítjük.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Bekerülési érték",
+          "body": "A készlet bekerülési értéke a **vételár és a beszerzéshez kapcsolódó költségek** (szállítás, rakodás, vám) együtt, a levonható áfa nélkül.\n\nA kapott engedmény csökkenti az értéket.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Értékelés kiadáskor",
+          "body": "Ha eltérő áron szereztük be ugyanazt az anyagot, a felhasznált készletet értékelhetjük:\n• **FIFO** módszerrel: ami először bejött, az megy ki először\n• **átlagáras** módszerrel: súlyozott átlagár alapján",
+          "emotion": "surprised",
+          "mentor": "A FIFO szó az angol „first in, first out” rövidítése."
+        },
+        {
+          "title": "Leltár és eltérések",
+          "body": "A nyilvántartást **leltározással** ellenőrizzük.\n\nHa a tényleges kevesebb: **leltárhiány**; ha több: **leltártöbblet**. A hiányt vizsgálni kell, és a könyvekben rendezni.",
+          "emotion": "nervous"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mit jelent a FIFO készletértékelés?",
+          "options": [
+            "A korábban beszerzett készlet kerül ki először",
+            "A legdrágább készlet kerül ki először",
+            "A készletet mindig átlagáron értékeljük",
+            "A legkésőbb beszerzett készlet kerül ki először"
+          ],
+          "answer": 0,
+          "explanation": "A FIFO a beszerzés sorrendjét követi: ami először bejött, az megy ki először."
+        },
+        {
+          "question": "Mi tartozik a vásárolt készlet bekerülési értékébe?",
+          "options": [
+            "A vételár és a beszerzéshez kapcsolódó költségek, a levonható áfa nélkül",
+            "Csak a vételár",
+            "A vételár és a levonható áfa",
+            "A várható eladási ár"
+          ],
+          "answer": 0,
+          "explanation": "A szállítás, a rakodás és a vám is a bekerülési értéket növeli; a levonható áfa viszont nem."
+        },
+        {
+          "question": "Mit nevezünk leltárhiánynak?",
+          "options": [
+            "Ha a tényleges készlet kevesebb a nyilvántartás szerintinél",
+            "Ha a készlet ára csökken",
+            "Ha nem készül leltár",
+            "Ha a készlet elavul"
+          ],
+          "answer": 0,
+          "explanation": "A leltárhiány okát fel kell tárni, és a különbözetet a könyvekben rendezni kell."
+        }
+      ]
+    },
+    {
+      "id": "economics-05",
+      "title": "Saját termelésű készletek",
+      "summary": "Befejezetlen termelés, önköltség, állományváltozás.",
+      "video": {
+        "youtubeId": "",
+        "title": "Saját termelésű készletek elszámolása"
+      },
+      "slides": [
+        {
+          "title": "Mi számít saját termelésűnek?",
+          "body": "A vállalkozás saját tevékenységéből származó készletek:\n• **befejezetlen termelés**\n• **félkész termék**\n• **késztermék**\n\nEzeket nem vásároltuk, hanem mi állítottuk elő.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Az értékelés alapja",
+          "body": "A saját termelésű készleteket **közvetlen önköltségen** tartjuk nyilván.\n\nEbbe csak azok a költségek tartoznak, amelyek a termékhez közvetlenül hozzárendelhetők.",
+          "emotion": "confident"
+        },
+        {
+          "title": "A közvetlen önköltség elemei",
+          "body": "• közvetlen **anyagköltség**\n• közvetlen **bérköltség és járulékai**\n• egyéb közvetlen költség (pl. gépi megmunkálás)\n\nAz általános igazgatási költség és az értékesítési költség **nem** része.",
+          "emotion": "surprised",
+          "mentor": "Amit nem lehet a termékhez kötni, az nem közvetlen költség."
+        },
+        {
+          "title": "Állományváltozás",
+          "body": "A készletek időszaki változását a **saját termelésű készletek állományváltozásaként** (STKÁV) mutatjuk ki.\n\nHa nő a készlet, az az eredményt növeli, ha csökken, akkor csökkenti – így érvényesül az összemérés elve.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik saját termelésű készlet?",
+          "options": [
+            "A késztermék",
+            "A vásárolt alapanyag",
+            "A kereskedelmi áru",
+            "Az üzemanyag"
+          ],
+          "answer": 0,
+          "explanation": "A befejezetlen termelés, a félkész termék és a késztermék a saját előállítású készletek."
+        },
+        {
+          "question": "Mi tartozik a közvetlen önköltségbe?",
+          "options": [
+            "A közvetlen anyag- és bérköltség a járulékokkal",
+            "Az igazgatási költség",
+            "Az értékesítési költség",
+            "A bankköltség"
+          ],
+          "answer": 0,
+          "explanation": "Csak a termékhez közvetlenül hozzárendelhető költségek számítanak bele."
+        },
+        {
+          "question": "Mit mutat a saját termelésű készletek állományváltozása?",
+          "options": [
+            "A készletek időszak alatti növekedését vagy csökkenését",
+            "A vásárolt készletek értékét",
+            "Az értékesítés árbevételét",
+            "A tárgyi eszközök értékcsökkenését"
+          ],
+          "answer": 0,
+          "explanation": "Az állományváltozás biztosítja, hogy a bevételek és a ráfordítások ugyanarra az időszakra kerüljenek."
+        }
+      ]
+    },
+    {
+      "id": "economics-06",
+      "title": "Jövedelemelszámolás",
+      "summary": "Bruttó bér, levonások, nettó bér és a bizonylatok.",
+      "video": {
+        "youtubeId": "",
+        "title": "Jövedelemelszámolás"
+      },
+      "slides": [
+        {
+          "title": "A bér részei",
+          "body": "A **bruttó bér** elemei: alapbér (törzsbér), **bérpótlékok**, kiegészítő fizetés, prémium és jutalom.\n\nNem számít jövedelemnek például a nyugdíj, a családi pótlék, a segély és a kártérítés.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Bruttóból nettó",
+          "body": "**Bruttó bér − levonások = nettó bér.**\n\nA fő levonások a **személyi jövedelemadó-előleg** és a **társadalombiztosítási járulék**. Ezeken kívül lehet letiltás, előleg vagy önkéntes hozzájárulás is.",
+          "emotion": "confident",
+          "mentor": "A pontos kulcsokat mindig az adott év szabályai szerint nézd meg."
+        },
+        {
+          "title": "Munkáltatói teher",
+          "body": "A munkáltató a bruttó béren felül **szociális hozzájárulási adót** fizet.\n\nA vállalkozás költsége tehát magasabb, mint a bruttó bér: ezt hívjuk teljes bérköltségnek.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Bizonylatok",
+          "body": "A bérszámfejtés bizonylatai: munkaidő-nyilvántartó lap, **bérelszámoló lap**, levonási jegyzék.\n\nA folyósításé: bérfizetési jegyzék, törzslap, bérfelosztó ív. A bizonylati fegyelem itt különösen fontos.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Hogyan kapjuk meg a nettó bért?",
+          "options": [
+            "A bruttó bérből levonjuk a járulékokat és az adóelőleget",
+            "A bruttó bérhez hozzáadjuk a szociális hozzájárulási adót",
+            "A bruttó bér és a prémium összege",
+            "Az alapbér és a bérpótlék összege"
+          ],
+          "answer": 0,
+          "explanation": "Bruttó bér mínusz levonások egyenlő nettó bér; a munkáltatói teher ezen felül jelentkezik."
+        },
+        {
+          "question": "Melyik nem számít jövedelemnek?",
+          "options": [
+            "A családi pótlék",
+            "Az alapbér",
+            "A prémium",
+            "A bérpótlék"
+          ],
+          "answer": 0,
+          "explanation": "A családi pótlék, a nyugdíj, a segély és a kártérítés nem jövedelem, ezért nem is része a bérelszámolásnak."
+        },
+        {
+          "question": "Ki fizeti a szociális hozzájárulási adót?",
+          "options": [
+            "A munkáltató, a bruttó béren felül",
+            "A munkavállaló a nettó béréből",
+            "Az állam",
+            "Senki, ez megszűnt"
+          ],
+          "answer": 0,
+          "explanation": "Ez a munkáltató terhe, ezért a teljes bérköltség magasabb a bruttó bérnél."
+        }
+      ]
+    },
+    {
+      "id": "economics-07",
+      "title": "Termékértékesítés elszámolása",
+      "summary": "Árbevétel, vevőkövetelés, áfa és az eredmény.",
+      "video": {
+        "youtubeId": "",
+        "title": "Termékértékesítés elszámolása"
+      },
+      "slides": [
+        {
+          "title": "Az értékesítés bizonylata",
+          "body": "Az értékesítést **számlával** bizonylatoljuk. A számla tartalmazza a felek adatait, a teljesítés időpontját, a nettó értéket, az áfakulcsot és a bruttó összeget.\n\nA vevő tartozása a **vevőkövetelés**.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Árbevétel és áfa",
+          "body": "Az **árbevétel nettó összeg**, vagyis áfa nélkül értendő.\n\nA számlán szereplő áfa a **fizetendő áfa**: nem a vállalkozás bevétele, hanem az állammal szemben fennálló kötelezettség.",
+          "emotion": "confident",
+          "mentor": "Az áfa csak „átfolyik” a vállalkozáson."
+        },
+        {
+          "title": "Az eladott áru értéke",
+          "body": "Kereskedelemnél az értékesítéskor kivezetjük a készletet: ez az **eladott áruk beszerzési értéke (ELÁBÉ)**.\n\nSaját termék esetén a készlet csökkenését az állományváltozás mutatja.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Az értékesítés eredménye",
+          "body": "Az eredmény a **bevételek és a ráfordítások különbsége**.\n\nÁrbevétel mínusz ELÁBÉ (vagy önköltség) és a működés költségei adják meg, mennyit keresett a vállalkozás az értékesítésen.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mit jelent az ELÁBÉ?",
+          "options": [
+            "Az eladott áruk beszerzési értékét",
+            "Az elszámolt általános bérköltséget",
+            "Az előző évi bevételt",
+            "Az elhatárolt bevételt"
+          ],
+          "answer": 0,
+          "explanation": "Az értékesítéskor ezen az összegen vezetjük ki a készletet a könyvekből."
+        },
+        {
+          "question": "Az árbevétel hogyan szerepel a könyvekben?",
+          "options": [
+            "Nettó összegben, áfa nélkül",
+            "Bruttó összegben, áfával együtt",
+            "Csak akkor, ha a vevő fizetett",
+            "A vevő által kért összegben"
+          ],
+          "answer": 0,
+          "explanation": "Az áfa nem bevétel, hanem az állammal szembeni kötelezettség, ezért az árbevétel mindig nettó."
+        },
+        {
+          "question": "Mi keletkezik, ha a vevő később fizet?",
+          "options": [
+            "Vevőkövetelés",
+            "Szállítói kötelezettség",
+            "Készlettöbblet",
+            "Értékcsökkenés"
+          ],
+          "answer": 0,
+          "explanation": "A teljesítés és a pénzügyi rendezés elválik: addig a vevő tartozása követelésként szerepel."
+        }
+      ]
+    },
+    {
+      "id": "economics-08",
+      "title": "A pénzügyi intézményrendszer",
+      "summary": "Jegybank, kereskedelmi bankok, pénzügyi szolgáltatások.",
+      "video": {
+        "youtubeId": "",
+        "title": "Pénzügyi intézményrendszer és a pénzügyi szolgáltatások"
+      },
+      "slides": [
+        {
+          "title": "Kétszintű bankrendszer",
+          "body": "Az első szint a **jegybank** (Magyarországon az MNB), a második szinten a **kereskedelmi bankok** és más pénzügyi intézmények állnak.\n\nA jegybank nem az ügyfelekkel, hanem a bankokkal és az állammal áll kapcsolatban.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A jegybank feladatai",
+          "body": "• az **árstabilitás** elérése és fenntartása (monetáris politika)\n• a bankjegy- és érmekibocsátás\n• a devizatartalékok kezelése\n• a fizetési rendszer működtetése és felvigyázása",
+          "emotion": "confident",
+          "mentor": "A jegybank elsődleges célja az árstabilitás: ezt érdemes megjegyezni."
+        },
+        {
+          "title": "Pénzügyi intézmények",
+          "body": "**Hitelintézet:** bank, szakosított hitelintézet, takarék- és hitelszövetkezet. Betétgyűjtésre csak hitelintézet jogosult.\n\n**Pénzügyi vállalkozás:** szűkebb körben nyújt szolgáltatást (például lízing, faktoring).",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Szolgáltatások és védelem",
+          "body": "Fő pénzügyi szolgáltatások: betétgyűjtés, hitel- és kölcsönnyújtás, pénzforgalmi szolgáltatás, bankkártya-kibocsátás.\n\nA betéteket az **Országos Betétbiztosítási Alap (OBA)** védi, törvényben meghatározott összeghatárig.",
+          "emotion": "surprised"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mi a jegybank elsődleges célja?",
+          "options": [
+            "Az árstabilitás elérése és fenntartása",
+            "A bankok nyereségének növelése",
+            "A lakossági hitelek folyósítása",
+            "A költségvetés elfogadása"
+          ],
+          "answer": 0,
+          "explanation": "A monetáris politika fő célja az árstabilitás; a lakossági hitelezés a kereskedelmi bankok feladata."
+        },
+        {
+          "question": "Mit jelent a kétszintű bankrendszer?",
+          "options": [
+            "A jegybank és a kereskedelmi bankok különválnak",
+            "Minden banknak két fiókja van",
+            "Kétféle pénznemben lehet számlát nyitni",
+            "A bankok két minisztérium alá tartoznak"
+          ],
+          "answer": 0,
+          "explanation": "A jegybank a bankok bankja, az ügyfelekkel a második szint, a kereskedelmi bankok állnak kapcsolatban."
+        },
+        {
+          "question": "Mi az OBA szerepe?",
+          "options": [
+            "A bankbetétek védelme meghatározott összeghatárig",
+            "A hitelek kamatának megállapítása",
+            "A tőzsde felügyelete",
+            "Az adók beszedése"
+          ],
+          "answer": 0,
+          "explanation": "Ha egy hitelintézet fizetésképtelenné válik, az OBA kártalanítja a betéteseket a törvényi értékhatárig."
+        }
+      ]
+    },
+    {
+      "id": "economics-09",
+      "title": "A pénz időértéke",
+      "summary": "Jelenérték, jövőérték, diszkontálás.",
+      "video": {
+        "youtubeId": "",
+        "title": "A pénz időértéke"
+      },
+      "slides": [
+        {
+          "title": "Miért van időértéke a pénznek?",
+          "body": "A ma kapott pénz **többet ér**, mint az ugyanakkora összeg egy év múlva: befektethető, kamatozik, és az infláció is csökkenti a későbbi összeg értékét.\n\nEzért nem lehet különböző időpontbeli összegeket közvetlenül összehasonlítani.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Jövőérték",
+          "body": "**Jövőérték = jelenérték · (1 + kamatláb) az évek számának hatványán.**\n\nPélda: 100 000 Ft évi 10%-os kamattal két év múlva 100 000 · 1,1² = **121 000 Ft**.",
+          "emotion": "confident",
+          "mentor": "Ez ugyanaz a mértani sorozat, mint a kamatos kamat a matekban."
+        },
+        {
+          "title": "Jelenérték és diszkontálás",
+          "body": "A **diszkontálás** a fordított művelet: a jövőbeli összeget számoljuk át mai értékre.\n\n**Jelenérték = jövőérték ÷ (1 + kamatláb) az évek számának hatványán.**",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Mire használjuk?",
+          "body": "Beruházások értékelésére: a jövőbeli pénzáramokat jelenértékre hozzuk, és összevetjük a befektetett összeggel.\n\nHa a jelenérték nagyobb a befektetésnél, a projekt megéri.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mennyi lesz 100 000 Ft jövőértéke 2 év múlva, évi 10%-os kamattal?",
+          "options": [
+            "121 000 Ft",
+            "120 000 Ft",
+            "110 000 Ft",
+            "112 100 Ft"
+          ],
+          "answer": 0,
+          "explanation": "100 000 · 1,1² = 100 000 · 1,21 = 121 000 Ft. A 120 000 Ft az egyszerű kamat eredménye lenne."
+        },
+        {
+          "question": "Mit jelent a diszkontálás?",
+          "options": [
+            "Egy jövőbeli összeg mai értékre számítását",
+            "Az árengedmény elszámolását",
+            "A kamat tőkésítését",
+            "Az infláció mérését"
+          ],
+          "answer": 0,
+          "explanation": "A diszkontálás a jövőérték-számítás fordítottja: a jövőbeli pénzt hozzuk mai értékre."
+        },
+        {
+          "question": "Melyik állítás igaz?",
+          "options": [
+            "A ma kapott 100 000 Ft többet ér, mint az egy év múlva kapott 100 000 Ft",
+            "A két összeg mindig egyenértékű",
+            "A jövőbeli összeg mindig többet ér",
+            "Csak infláció esetén van időértéke a pénznek"
+          ],
+          "answer": 0,
+          "explanation": "A ma kapott pénz befektethető, ezért kamattal növelhető – ez a pénz időértékének lényege."
+        }
+      ]
+    },
+    {
+      "id": "economics-10",
+      "title": "Pénzügyi piacok és termékeik",
+      "summary": "Pénzpiac, tőkepiac, részvény, kötvény, kockázat.",
+      "video": {
+        "youtubeId": "",
+        "title": "Pénzügyi piacok és termékei"
+      },
+      "slides": [
+        {
+          "title": "Pénzpiac és tőkepiac",
+          "body": "A **pénzpiacon** rövid, legfeljebb egyéves lejáratú ügyletek köttetnek (például bankbetét, kincstárjegy).\n\nA **tőkepiacon** hosszú lejáratú eszközökkel kereskednek: részvény, kötvény, hosszú lejáratú hitel.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Részvény és kötvény",
+          "body": "**Részvény:** tulajdonosi jogot testesít meg, hozama az osztalék és az árfolyamnyereség, nincs garantált hozam.\n\n**Kötvény:** hitelviszonyt jelent, a kibocsátó kamatot fizet és lejáratkor visszafizeti a tőkét.",
+          "emotion": "confident",
+          "mentor": "Részvény: társtulajdonos vagy. Kötvény: hitelezed a kibocsátót."
+        },
+        {
+          "title": "Elsődleges és másodlagos piac",
+          "body": "Az **elsődleges piacon** az értékpapír kibocsátása történik, itt jut forráshoz a kibocsátó.\n\nA **másodlagos piacon** (például a tőzsdén) a már kibocsátott papírok cserélnek gazdát.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Hozam és kockázat",
+          "body": "A magasabb várható hozam mindig **nagyobb kockázattal** jár.\n\nA kockázat csökkenthető **diverzifikációval**, vagyis a befektetés megosztásával több eszköz között.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mi a fő különbség a részvény és a kötvény között?",
+          "options": [
+            "A részvény tulajdonosi jogot, a kötvény hitelviszonyt testesít meg",
+            "A részvény mindig biztos hozamot ad",
+            "A kötvény tulajdonjogot ad a cégben",
+            "A kettő ugyanaz, csak a nevük más"
+          ],
+          "answer": 0,
+          "explanation": "A részvényes társtulajdonos és osztalékra jogosult, a kötvénytulajdonos hitelező, aki kamatot kap."
+        },
+        {
+          "question": "Mi jellemzi a pénzpiacot?",
+          "options": [
+            "Rövid, legfeljebb egyéves lejáratú ügyletek",
+            "Csak részvényekkel kereskednek",
+            "Kizárólag hosszú lejáratú hitelek",
+            "Csak az állam vehet részt benne"
+          ],
+          "answer": 0,
+          "explanation": "A pénzpiac a rövid távú források piaca; a hosszú lejáratú ügyletek a tőkepiachoz tartoznak."
+        },
+        {
+          "question": "Mit jelent a diverzifikáció?",
+          "options": [
+            "A befektetés megosztását több eszköz között a kockázat csökkentésére",
+            "A hozam garantálását",
+            "A tőzsdei kereskedés tiltását",
+            "A kamat tőkésítését"
+          ],
+          "answer": 0,
+          "explanation": "Ha nem egyetlen eszközbe fektetünk, egy rossz befektetés kevésbé rendíti meg a portfóliót."
+        }
+      ]
+    },
+    {
+      "id": "economics-11",
+      "title": "Pénzforgalom",
+      "summary": "Készpénzes és készpénz nélküli fizetés, bankszámla.",
+      "video": {
+        "youtubeId": "",
+        "title": "Pénzforgalom"
+      },
+      "slides": [
+        {
+          "title": "A fizetés két útja",
+          "body": "**Készpénzes fizetés:** bankjeggyel és érmével, a vállalkozásnál a **házipénztáron** keresztül.\n\n**Készpénz nélküli fizetés:** bankszámlák közötti pénzmozgással, bizonylat alapján.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Fizetési módok",
+          "body": "• **átutalás:** a fizető fél indítja\n• **beszedés (inkasszó):** a jogosult kezdeményezi, a fizető fél felhatalmazása alapján\n• **okmányos meghitelezés (akkreditív):** a bank fizet az okmányok ellenében, főleg külkereskedelemben\n• bankkártyás fizetés",
+          "emotion": "confident",
+          "mentor": "Átutalásnál a fizető, beszedésnél a jogosult indít."
+        },
+        {
+          "title": "Bankszámla és pénztár",
+          "body": "A vállalkozás pénzforgalmi számlát vezet, a készpénzt pedig a házipénztárban kezeli.\n\nA pénztári mozgásokat **bevételi és kiadási pénztárbizonylat** kíséri, a nyilvántartás a pénztárjelentés.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Határidők",
+          "body": "A számlán szerepel a **fizetési határidő**. Késedelem esetén **késedelmi kamat** számítható fel.\n\nA pontos fizetés a vállalkozás likviditásának alapja: a pénz beérkezése és kiadása időben eltér.",
+          "emotion": "nervous"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Ki kezdeményezi az átutalást?",
+          "options": [
+            "A fizető fél",
+            "A jogosult",
+            "A bank",
+            "Az adóhatóság"
+          ],
+          "answer": 0,
+          "explanation": "Átutalásnál a fizető fél ad megbízást; beszedésnél a jogosult kezdeményez felhatalmazás alapján."
+        },
+        {
+          "question": "Mi a házipénztár?",
+          "options": [
+            "A vállalkozás készpénzének kezelésére szolgáló pénztár",
+            "A dolgozók magánszámlája",
+            "A bank széfszolgáltatása",
+            "Az adóhatóság számlája"
+          ],
+          "answer": 0,
+          "explanation": "A házipénztár forgalmát pénztárbizonylatok és pénztárjelentés dokumentálja."
+        },
+        {
+          "question": "Mikor használnak jellemzően akkreditívet?",
+          "options": [
+            "Külkereskedelmi ügyleteknél, ahol a felek nem bíznak meg egymásban",
+            "Bérfizetéskor",
+            "Készpénzfelvételkor",
+            "Adófizetéskor"
+          ],
+          "answer": 0,
+          "explanation": "A bank az okmányok bemutatása ellenében fizet, így mindkét fél biztonságban érzi magát."
+        }
+      ]
+    },
+    {
+      "id": "economics-12",
+      "title": "Biztosítás, valuta és deviza",
+      "summary": "Kockázatközösség, biztosítási ágak, árfolyamok.",
+      "video": {
+        "youtubeId": "",
+        "title": "Biztosítási alapismeretek, valuta- és devizaárfolyam"
+      },
+      "slides": [
+        {
+          "title": "A biztosítás lényege",
+          "body": "A biztosítás **kockázatközösség**: sokan fizetnek díjat, és abból térítik azok kárát, akiket baj ér.\n\nAlapfogalmak: biztosító, szerződő, biztosított, díj, kár, kártérítés, önrész.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Biztosítási ágak",
+          "body": "• **életbiztosítás:** megtakarítási és kockázati elemmel\n• **nem-életbiztosítás:** vagyon-, felelősség- és balesetbiztosítás\n\nKötelező gépjármű-felelősségbiztosítást minden üzembentartónak kötnie kell.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Valuta és deviza",
+          "body": "**Valuta:** külföldi pénz **készpénzben**.\n**Deviza:** külföldi pénzre szóló **számlapénz** vagy követelés.\n\nA kettőt a bankok külön árfolyamon jegyzik.",
+          "emotion": "surprised",
+          "mentor": "Valuta a zsebedben, deviza a számládon."
+        },
+        {
+          "title": "Árfolyamok",
+          "body": "A bank **vételi** árfolyamon vásárol tőlünk, **eladási** árfolyamon ad el nekünk – az eladási mindig magasabb, a különbség a bank haszna.\n\nA kettő átlaga a **középárfolyam**. Ha a hazai pénz gyengül, az a leértékelődés.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mi a különbség a valuta és a deviza között?",
+          "options": [
+            "A valuta készpénz, a deviza számlapénz vagy követelés",
+            "A valuta csak euró lehet",
+            "A deviza mindig készpénz",
+            "Nincs köztük különbség"
+          ],
+          "answer": 0,
+          "explanation": "A valuta a külföldi fizetőeszköz készpénzben, a deviza a külföldi pénzre szóló számlakövetelés."
+        },
+        {
+          "question": "Ha eurót szeretnél venni a banktól, melyik árfolyamon kapod?",
+          "options": [
+            "Eladási árfolyamon",
+            "Vételi árfolyamon",
+            "Középárfolyamon",
+            "Jegybanki alapkamaton"
+          ],
+          "answer": 0,
+          "explanation": "A bank szemszögéből ő ad el, tehát az eladási árfolyam érvényes, ami magasabb a vételinél."
+        },
+        {
+          "question": "Mit jelent a kockázatközösség a biztosításban?",
+          "options": [
+            "Sokan fizetnek díjat, és ebből térítik a kevesek kárát",
+            "Mindenki a saját kárát fizeti",
+            "A biztosító vállalja az összes kockázatot ingyen",
+            "Az állam téríti a károkat"
+          ],
+          "answer": 0,
+          "explanation": "Ez a biztosítás alapelve: a sok kis befizetésből fedezhető a ritkán bekövetkező nagy kár."
+        }
+      ]
+    },
+    {
+      "id": "economics-13",
+      "title": "Mikrogazdasági alapok",
+      "summary": "Szűkösség, alternatív költség, a piac szereplői.",
+      "video": {
+        "youtubeId": "",
+        "title": "Mikrogazdasági alapok, piaci alapfogalmak"
+      },
+      "slides": [
+        {
+          "title": "Szűkösség és választás",
+          "body": "A szükségletek végtelenek, az erőforrások **szűkösek** – ezért választani kell.\n\nMinden döntésnek van **alternatív költsége**: az az érték, amiről lemondunk, amikor a másik lehetőséget választjuk.",
+          "emotion": "thinking",
+          "mentor": "Ha tanulsz, az alternatív költség a kihagyott meccs."
+        },
+        {
+          "title": "A gazdaság szereplői",
+          "body": "• **háztartások:** fogyasztanak és erőforrást kínálnak (munkát)\n• **vállalatok:** termelnek, profitot céloznak\n• **állam:** szabályoz, újraoszt, közjavakat biztosít\n\nA szereplők közötti kapcsolatot a gazdasági körforgás írja le.",
+          "emotion": "confident"
+        },
+        {
+          "title": "A piac",
+          "body": "A piac a **kereslet és a kínálat találkozása**. Az ár információt hordoz: jelzi a szűkösséget, és irányítja az erőforrásokat.\n\nA piac lehet helyi vagy világméretű, és termékcsoportonként eltérő.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Egyensúly, hiány, felesleg",
+          "body": "Az **egyensúlyi áron** a keresett és a kínált mennyiség megegyezik.\n\nAz egyensúlyi ár fölött **túlkínálat** (felesleg) keletkezik, alatta **túlkereslet** (hiány) – mindkettő az ár elmozdulását indítja el.",
+          "emotion": "surprised"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mit jelent az alternatív költség?",
+          "options": [
+            "A feláldozott legjobb lehetőség értékét",
+            "A termelés pénzben kifejezett költségét",
+            "Az adók összegét",
+            "A piaci árat"
+          ],
+          "answer": 0,
+          "explanation": "Az alternatív költség nem feltétlenül pénz: az az érték, amiről a döntéssel lemondunk."
+        },
+        {
+          "question": "Mi alakul ki, ha az ár az egyensúlyi ár alatt van?",
+          "options": [
+            "Túlkereslet, vagyis hiány",
+            "Túlkínálat, vagyis felesleg",
+            "Egyensúly",
+            "Infláció"
+          ],
+          "answer": 0,
+          "explanation": "Alacsony áron sokan vásárolnának, de kevesen kínálnak: hiány lép fel, és az ár emelkedni kezd."
+        },
+        {
+          "question": "Melyik szereplő kínál munkaerőt a gazdasági körforgásban?",
+          "options": [
+            "A háztartások",
+            "A vállalatok",
+            "Az állam",
+            "A bankok"
+          ],
+          "answer": 0,
+          "explanation": "A háztartások erőforrást (munkát) kínálnak, és fogyasztóként terméket vásárolnak."
+        }
+      ]
+    },
+    {
+      "id": "economics-14",
+      "title": "Fogyasztói és termelői magatartás",
+      "summary": "Határhaszon, keresleti és kínálati görbe, rugalmasság.",
+      "video": {
+        "youtubeId": "",
+        "title": "A fogyasztói magatartás, a kereslet és a kínálat"
+      },
+      "slides": [
+        {
+          "title": "A fogyasztó döntése",
+          "body": "A fogyasztó a **hasznosság** maximalizálására törekszik, de **költségvetési korlát** köti.\n\nA **csökkenő határhaszon** elve szerint minden újabb elfogyasztott egység kisebb többlethasznot ad.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A keresleti görbe",
+          "body": "A **kereslet törvénye**: ha az ár nő, a keresett mennyiség csökken – a görbe lejt.\n\nA görbét eltolja a jövedelem, az ízlés, a **helyettesítő** és a **kiegészítő** termékek ára.",
+          "emotion": "confident",
+          "mentor": "Saját ár: mozgás a görbén. Más tényező: a görbe tolódik el."
+        },
+        {
+          "title": "A termelő döntése",
+          "body": "A vállalat **profitot** maximalizál: a bevétel és a költség különbségét.\n\nMagasabb áron többet éri meg termelni, ezért a **kínálati görbe emelkedő**.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Rugalmasság",
+          "body": "Az árrugalmasság azt mutatja, hány százalékkal változik a mennyiség 1%-os árváltozásra.\n\n**Rugalmas** a kereslet, ha az ár kis változására erősen reagál (például luxuscikkeknél), és **rugalmatlan**, ha alig (például alapvető gyógyszereknél).",
+          "emotion": "surprised"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mit mond ki a csökkenő határhaszon elve?",
+          "options": [
+            "Minden újabb elfogyasztott egység kisebb többlethasznot ad",
+            "A fogyasztás mindig növeli a hasznosságot azonos mértékben",
+            "A hasznosság független a mennyiségtől",
+            "A drágább termék mindig hasznosabb"
+          ],
+          "answer": 0,
+          "explanation": "A harmadik szelet pizza már kevesebb örömet ad, mint az első – ez a csökkenő határhaszon."
+        },
+        {
+          "question": "Mi történik, ha egy helyettesítő termék ára megemelkedik?",
+          "options": [
+            "A vizsgált termék iránti kereslet nő",
+            "A vizsgált termék iránti kereslet csökken",
+            "Semmi nem történik",
+            "A kínálati görbe eltolódik"
+          ],
+          "answer": 0,
+          "explanation": "A drágább helyettesítő helyett többen választják a vizsgált terméket, így annak keresleti görbéje jobbra tolódik."
+        },
+        {
+          "question": "Mikor nevezzük rugalmatlannak a keresletet?",
+          "options": [
+            "Ha az árváltozásra a mennyiség alig reagál",
+            "Ha az árváltozásra a mennyiség erősen reagál",
+            "Ha a termék drága",
+            "Ha nincs helyettesítő termék ára"
+          ],
+          "answer": 0,
+          "explanation": "Az alapvető szükségleti cikkek kereslete jellemzően rugalmatlan: akkor is megvesszük, ha drágul."
+        }
+      ]
+    },
+    {
+      "id": "economics-15",
+      "title": "Költségfüggvények és piaci formák",
+      "summary": "Fix és változó költség, határköltség, versenyformák.",
+      "video": {
+        "youtubeId": "",
+        "title": "Költségfüggvények, a piac formái"
+      },
+      "slides": [
+        {
+          "title": "Költségek csoportosítása",
+          "body": "**Állandó (fix) költség:** a termelés mennyiségétől függetlenül felmerül (bérleti díj, biztosítás).\n**Változó költség:** a termeléssel együtt nő (anyag, teljesítménybér).\n\nA kettő összege a **teljes költség**.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Átlag- és határköltség",
+          "body": "**Átlagköltség:** a teljes költség osztva a termelt mennyiséggel.\n\n**Határköltség:** mennyivel nő a teljes költség egy további egység előállításakor. A vállalat döntéseit jellemzően a határköltség vezérli.",
+          "emotion": "confident",
+          "mentor": "A határköltség az „egy darabbal több” költsége."
+        },
+        {
+          "title": "Profit és fedezeti pont",
+          "body": "**Profit = összes bevétel − összes költség.**\n\nA **fedezeti pontnál** a bevétel éppen fedezi a költségeket: itt a vállalat nem nyer és nem veszít.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Piaci formák",
+          "body": "• **tökéletes verseny:** sok kicsi szereplő, azonos termék, árelfogadók\n• **monopólium:** egyetlen eladó, ő alakítja az árat\n• **oligopólium:** néhány nagy szereplő, egymásra figyelve döntenek\n• **monopolisztikus verseny:** sok eladó, de megkülönböztetett termékek",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik példa állandó (fix) költségre?",
+          "options": [
+            "A bérleti díj",
+            "Az anyagköltség",
+            "A teljesítménybér",
+            "A csomagolóanyag"
+          ],
+          "answer": 0,
+          "explanation": "A bérleti díj akkor is felmerül, ha egyetlen terméket sem gyártunk."
+        },
+        {
+          "question": "Mit mutat a határköltség?",
+          "options": [
+            "Mennyivel nő a teljes költség egy további egység előállításakor",
+            "A költségek átlagát",
+            "A fix költségek összegét",
+            "A termék eladási árát"
+          ],
+          "answer": 0,
+          "explanation": "A határköltség a következő egység előállításának pluszköltsége – ez alapján érdemes dönteni a termelés bővítéséről."
+        },
+        {
+          "question": "Mi jellemzi a monopóliumot?",
+          "options": [
+            "Egyetlen eladó van a piacon, aki befolyásolja az árat",
+            "Sok kicsi eladó árelfogadóként viselkedik",
+            "Néhány nagy vállalat versenyez",
+            "A termékek teljesen azonosak"
+          ],
+          "answer": 0,
+          "explanation": "Monopóliumnál nincs verseny, ezért az eladó árat alakít, nem árat fogad el."
+        }
+      ]
+    },
+    {
+      "id": "economics-16",
+      "title": "A nemzetgazdaság",
+      "summary": "GDP, infláció, munkanélküliség, gazdasági ciklusok.",
+      "video": {
+        "youtubeId": "",
+        "title": "A nemzetgazdaság"
+      },
+      "slides": [
+        {
+          "title": "A teljesítmény mérése",
+          "body": "A **GDP** (bruttó hazai termék) egy ország területén, egy év alatt előállított **végtermékek és szolgáltatások** összértéke.\n\nA **nominális** GDP folyó áron, a **reál** GDP változatlan áron számol, így az utóbbi mutatja a valódi növekedést.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Infláció",
+          "body": "Az infláció az **árszínvonal tartós emelkedése**, mérőszáma a fogyasztóiár-index.\n\nMértéke szerint lehet kúszó, vágtató vagy hiperinfláció. Az infláció rontja a megtakarítások értékét.",
+          "emotion": "surprised",
+          "mentor": "Az infláció miatt kell a pénz időértékével is számolni."
+        },
+        {
+          "title": "Munkanélküliség",
+          "body": "A **munkanélküliségi ráta** a munkanélküliek aránya a gazdaságilag aktív népességen belül.\n\nTípusai: súrlódásos, strukturális, konjunkturális és szezonális munkanélküliség.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Gazdasági ciklusok",
+          "body": "A gazdaság hullámzik: fellendülés, csúcs, visszaesés, válság, majd újra fellendülés.\n\nAz állam **fiskális** (költségvetési) és a jegybank **monetáris** eszközökkel próbálja simítani a ciklusokat.",
+          "emotion": "confident"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mit mér a GDP?",
+          "options": [
+            "Az ország területén egy év alatt előállított végtermékek és szolgáltatások értékét",
+            "Az állam bevételeit",
+            "A lakosság megtakarításait",
+            "A külföldön dolgozó állampolgárok jövedelmét"
+          ],
+          "answer": 0,
+          "explanation": "A GDP területi alapú mutató: az számít, hol állították elő a terméket, nem az, ki a tulajdonos."
+        },
+        {
+          "question": "Mivel mérjük leggyakrabban az inflációt?",
+          "options": [
+            "A fogyasztóiár-indexszel",
+            "A GDP-vel",
+            "A munkanélküliségi rátával",
+            "A jegybanki alapkamattal"
+          ],
+          "answer": 0,
+          "explanation": "A fogyasztói kosár árainak változását követő index mutatja az árszínvonal emelkedését."
+        },
+        {
+          "question": "Hogyan számoljuk a munkanélküliségi rátát?",
+          "options": [
+            "A munkanélküliek száma osztva a gazdaságilag aktív népességgel",
+            "A munkanélküliek száma osztva a teljes népességgel",
+            "A foglalkoztatottak száma osztva a munkanélküliekkel",
+            "A munkanélküliek száma osztva a nyugdíjasokéval"
+          ],
+          "answer": 0,
+          "explanation": "Az aktív népesség a foglalkoztatottak és a munkanélküliek összege; a gyerekek és a nyugdíjasok nem tartoznak bele."
+        }
+      ]
+    },
+    {
+      "id": "economics-17",
+      "title": "Az államháztartás és az adózás alapjai",
+      "summary": "Alrendszerek, költségvetés, adónemek.",
+      "video": {
+        "youtubeId": "",
+        "title": "Az államháztartás alrendszere, adózási alapfogalmak"
+      },
+      "slides": [
+        {
+          "title": "Az államháztartás alrendszerei",
+          "body": "Az államháztartás két alrendszere a **központi alrendszer** (költségvetési szervek, elkülönített alapok, társadalombiztosítási alapok) és az **önkormányzati alrendszer**.\n\nMindkettő éves költségvetés alapján gazdálkodik.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "A költségvetés",
+          "body": "A költségvetés a tervezett **bevételek és kiadások** szembeállítása.\n\nHa a kiadás nagyobb: **hiány (deficit)**, ha a bevétel: **többlet**. A halmozódó hiányt hitelből fedezik, ebből lesz az államadósság.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Mi az adó?",
+          "body": "Az adó **kötelező, közvetlen ellenszolgáltatás nélküli** befizetés az államnak.\n\nFunkciói: fedezetet teremt a közkiadásokra (fiskális), újraoszt (redisztribúciós) és befolyásolja a viselkedést (szabályozó).",
+          "emotion": "confident",
+          "mentor": "Az adóért nem jár közvetlen ellenszolgáltatás – ez különbözteti meg a díjaktól."
+        },
+        {
+          "title": "Adónemek",
+          "body": "**Közvetlen (direkt) adó:** a jövedelmet vagy a vagyont terheli, például a személyi jövedelemadó és a társasági adó.\n\n**Közvetett (indirekt) adó:** a fogyasztást terheli és az árban jelenik meg, például az áfa és a jövedéki adó.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Melyik az államháztartás két alrendszere?",
+          "options": [
+            "A központi és az önkormányzati alrendszer",
+            "A bevételi és a kiadási alrendszer",
+            "Az állami és a magánszektor",
+            "A jegybank és a kereskedelmi bankok"
+          ],
+          "answer": 0,
+          "explanation": "A társadalombiztosítási alapok és az elkülönített állami pénzalapok a központi alrendszer részei."
+        },
+        {
+          "question": "Melyik közvetett adó?",
+          "options": [
+            "Az általános forgalmi adó",
+            "A személyi jövedelemadó",
+            "A társasági adó",
+            "A gépjárműadó"
+          ],
+          "answer": 0,
+          "explanation": "A közvetett adó a fogyasztást terheli, és az árban jelenik meg – ilyen az áfa és a jövedéki adó."
+        },
+        {
+          "question": "Mi jellemző az adóra?",
+          "options": [
+            "Kötelező, és nem jár érte közvetlen ellenszolgáltatás",
+            "Önkéntes hozzájárulás",
+            "Mindig visszatérítik",
+            "Csak a vállalkozásokat terheli"
+          ],
+          "answer": 0,
+          "explanation": "Az adóból finanszírozott szolgáltatásokat mindenki használja, de nem az egyéni befizetés arányában."
+        }
+      ]
+    },
+    {
+      "id": "economics-18",
+      "title": "Személyi jövedelemadó",
+      "summary": "Adóalap, kulcs, kedvezmények, bevallás.",
+      "video": {
+        "youtubeId": "",
+        "title": "Személyi jövedelemadó"
+      },
+      "slides": [
+        {
+          "title": "Kit terhel?",
+          "body": "A személyi jövedelemadó (szja) a **magánszemélyek jövedelmét** terheli.\n\nA jövedelem a bevétel és az elismert költségek különbsége; az adót ebből, az adóalapból számoljuk.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Adóalap és kulcs",
+          "body": "Az **összevont adóalapba** tartozik a munkaviszonyból és az önálló tevékenységből származó jövedelem.\n\nAz szja **egykulcsos**: jelenleg **15%**. A külön adózó jövedelmeknek (például osztalék) saját szabályaik vannak.",
+          "emotion": "confident",
+          "mentor": "A kulcsokat és a kedvezményeket mindig az adott évre nézd meg, mert változhatnak."
+        },
+        {
+          "title": "Kedvezmények",
+          "body": "Az adóalapot vagy az adót csökkentheti például a **családi kedvezmény**, az **első házasok kedvezménye**, a 25 év alattiak kedvezménye és az anyáknak járó kedvezmények.\n\nEzek feltételeit és összegét törvény szabályozza.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Levonás és bevallás",
+          "body": "Munkaviszonynál a munkáltató **adóelőleget** von le havonta.\n\nAz év végén bevallás készül: az adóhatóság elkészíti a bevallási tervezetet, amelyet a magánszemély elfogad vagy módosít.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mekkora jelenleg a személyi jövedelemadó kulcsa?",
+          "options": [
+            "15%",
+            "9%",
+            "27%",
+            "18,5%"
+          ],
+          "answer": 0,
+          "explanation": "Az szja egykulcsos, 15%. A 9% a társasági adó, a 27% az általános áfakulcs."
+        },
+        {
+          "question": "Mi tartozik az összevont adóalapba?",
+          "options": [
+            "A munkaviszonyból és az önálló tevékenységből származó jövedelem",
+            "Csak az osztalék",
+            "Csak a kamatjövedelem",
+            "A családi pótlék"
+          ],
+          "answer": 0,
+          "explanation": "A külön adózó jövedelmek (osztalék, árfolyamnyereség) nem kerülnek az összevont adóalapba."
+        },
+        {
+          "question": "Mit jelent az adóelőleg-levonás?",
+          "options": [
+            "A munkáltató havonta levonja és befizeti az adót a bérből",
+            "Az adót év végén egy összegben fizetjük",
+            "Az adóhatóság előre kifizeti az adót",
+            "A munkavállaló önként fizet be"
+          ],
+          "answer": 0,
+          "explanation": "Így az adó folyamatosan befolyik, év végén pedig a bevallásban rendeződik a különbözet."
+        }
+      ]
+    },
+    {
+      "id": "economics-19",
+      "title": "Általános forgalmi adó és helyi adók",
+      "summary": "Áfakulcsok, fizetendő és levonható áfa, helyi adónemek.",
+      "video": {
+        "youtubeId": "",
+        "title": "Általános forgalmi adó, helyi adók"
+      },
+      "slides": [
+        {
+          "title": "Mi az áfa?",
+          "body": "Az általános forgalmi adó **fogyasztási típusú, közvetett adó**: a termék árában jelenik meg, és végső soron a **fogyasztó viseli**.\n\nA vállalkozás csak beszedi és továbbítja az államnak.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Kulcsok és adóalap",
+          "body": "Magyarországon az általános kulcs **27%**, emellett kedvezményes **18%** és **5%** kulcs is létezik.\n\nAz adó alapja a nettó ár: bruttó ár = nettó ár + áfa.",
+          "emotion": "confident",
+          "mentor": "27%-os kulcsnál a bruttó ár a nettó 1,27-szerese."
+        },
+        {
+          "title": "Fizetendő és levonható áfa",
+          "body": "Az eladáskor **fizetendő** áfa keletkezik, a beszerzéskor **levonható** áfa.\n\n**Elszámolandó áfa = fizetendő − levonható.** Ha pozitív, be kell fizetni, ha negatív, visszaigényelhető.",
+          "emotion": "surprised"
+        },
+        {
+          "title": "Helyi adók",
+          "body": "Az önkormányzat vethet ki helyi adót, például **helyi iparűzési adót**, építményadót, telekadót, idegenforgalmi adót és magánszemélyek kommunális adóját.\n\nA helyi adók az önkormányzat saját bevételei.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mekkora Magyarországon az általános áfakulcs?",
+          "options": [
+            "27%",
+            "18%",
+            "15%",
+            "5%"
+          ],
+          "answer": 0,
+          "explanation": "Az általános kulcs 27%, emellett 18%-os és 5%-os kedvezményes kulcs is van."
+        },
+        {
+          "question": "Hogyan számoljuk az elszámolandó áfát?",
+          "options": [
+            "Fizetendő áfa mínusz levonható áfa",
+            "Levonható áfa mínusz fizetendő áfa",
+            "A bruttó ár 27%-a",
+            "A nettó árbevétel 5%-a"
+          ],
+          "answer": 0,
+          "explanation": "Ha az eredmény pozitív, befizetjük az államnak; ha negatív, visszaigényelhető."
+        },
+        {
+          "question": "Melyik helyi adó?",
+          "options": [
+            "A helyi iparűzési adó",
+            "A személyi jövedelemadó",
+            "Az általános forgalmi adó",
+            "A társasági adó"
+          ],
+          "answer": 0,
+          "explanation": "A helyi adókat az önkormányzat veti ki, és az ő bevételét képezik."
+        }
+      ]
+    },
+    {
+      "id": "economics-20",
+      "title": "Statisztikai alapfogalmak",
+      "summary": "Sokaság, ismérv, viszonyszámok és középértékek.",
+      "video": {
+        "youtubeId": "",
+        "title": "Statisztikai alapfogalmak, viszonyszámok és középértékek"
+      },
+      "slides": [
+        {
+          "title": "Sokaság és ismérv",
+          "body": "A **sokaság** a vizsgált egyedek összessége (lehet álló vagy mozgó, diszkrét vagy folytonos).\n\nAz **ismérv** az a tulajdonság, ami szerint vizsgálódunk: minőségi, mennyiségi, területi vagy időbeli.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Sorok és táblák",
+          "body": "Az adatokat statisztikai **sorokba** és **táblákba** rendezzük (például megoszlási sor, idősor).\n\nA grafikus ábrázolás – oszlop-, vonal- vagy kördiagram – teszi átláthatóvá az eredményt.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Viszonyszámok",
+          "body": "• **megoszlási:** a rész a teljes egészhez képest\n• **dinamikus:** az időbeli változás (bázis- és láncviszonyszám)\n• **intenzitási:** két különböző fajta adat hányadosa (például egy főre jutó GDP)\n• **koordinációs:** a sokaság két részének aránya",
+          "emotion": "surprised",
+          "mentor": "A viszonyszám mindig két adat hányadosa: az a kérdés, mihez viszonyítunk."
+        },
+        {
+          "title": "Középértékek",
+          "body": "• **számtani átlag:** az adatok összege osztva a darabszámmal\n• **medián:** a sorba rendezett adatok középső értéke\n• **módusz:** a leggyakrabban előforduló érték\n\nKiugró értékek esetén a medián jobban jellemez, mint az átlag.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mit mutat a medián?",
+          "options": [
+            "A sorba rendezett adatok középső értékét",
+            "A leggyakoribb értéket",
+            "Az adatok átlagát",
+            "A legnagyobb és a legkisebb érték különbségét"
+          ],
+          "answer": 0,
+          "explanation": "A medián felezi a sokaságot: az adatok fele kisebb, fele nagyobb nála."
+        },
+        {
+          "question": "Melyik példa megoszlási viszonyszámra?",
+          "options": [
+            "A nők aránya az összes dolgozón belül",
+            "Az idei és a tavalyi bevétel hányadosa",
+            "Az egy főre jutó GDP",
+            "A férfiak és a nők aránya egymáshoz"
+          ],
+          "answer": 0,
+          "explanation": "A megoszlási viszonyszám a részt a teljes sokasághoz viszonyítja."
+        },
+        {
+          "question": "Mikor jellemzi jobban a mediánt használni az átlag helyett?",
+          "options": [
+            "Ha néhány kiugróan nagy vagy kicsi érték torzítja az átlagot",
+            "Ha minden adat egyforma",
+            "Ha csak két adat van",
+            "Ha az adatok időbeli sorrendben állnak"
+          ],
+          "answer": 0,
+          "explanation": "Néhány szélsőséges érték az átlagot elhúzza, a mediánt viszont alig befolyásolja."
+        }
+      ]
+    },
+    {
+      "id": "economics-21",
+      "title": "Indexszámítás",
+      "summary": "Ár-, volumen- és értékindex, értelmezésük.",
+      "video": {
+        "youtubeId": "",
+        "title": "Indexszámítás"
+      },
+      "slides": [
+        {
+          "title": "Mi az index?",
+          "body": "Az index **átlagos változást** mér két időszak között: a tárgyidőszak adatát viszonyítja a bázisidőszakéhoz.\n\nHa az index 1,08, az 8%-os növekedést jelent.",
+          "emotion": "thinking"
+        },
+        {
+          "title": "Ár- és volumenindex",
+          "body": "Az **árindex** az árak átlagos változását mutatja változatlan mennyiség mellett.\n\nA **volumenindex** a mennyiség átlagos változását mutatja változatlan áron.",
+          "emotion": "confident"
+        },
+        {
+          "title": "Az értékindex",
+          "body": "Az értékindex a teljes érték (ár · mennyiség) változását mutatja.\n\n**Értékindex = árindex · volumenindex** – ez az indexszámítás alapösszefüggése.",
+          "emotion": "surprised",
+          "mentor": "Ha ezt tudod, a hiányzó harmadik tagot mindig ki tudod számolni."
+        },
+        {
+          "title": "Értelmezés",
+          "body": "Példa: ha az árindex 1,1 és a volumenindex 0,9, akkor az értékindex 0,99.\n\nVagyis az árak 10%-kal nőttek, a mennyiség 10%-kal csökkent, és az összérték 1%-kal mérséklődött.",
+          "emotion": "thinking"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mi az indexszámítás alapösszefüggése?",
+          "options": [
+            "Értékindex = árindex · volumenindex",
+            "Értékindex = árindex + volumenindex",
+            "Árindex = értékindex · volumenindex",
+            "Volumenindex = árindex · értékindex"
+          ],
+          "answer": 0,
+          "explanation": "Az érték az ár és a mennyiség szorzata, ezért az indexeik is szorzódnak."
+        },
+        {
+          "question": "Az árindex 1,2, a volumenindex 1,0. Mennyi az értékindex?",
+          "options": [
+            "1,2",
+            "2,2",
+            "0,83",
+            "1,0"
+          ],
+          "answer": 0,
+          "explanation": "1,2 · 1,0 = 1,2, vagyis az összérték 20%-kal nőtt, pusztán az árak emelkedése miatt."
+        },
+        {
+          "question": "Mit mutat a volumenindex?",
+          "options": [
+            "A mennyiség átlagos változását változatlan áron",
+            "Az árak változását",
+            "Az összérték változását",
+            "Az infláció mértékét"
+          ],
+          "answer": 0,
+          "explanation": "A volumenindex az áraktól tisztított mennyiségi változást méri."
+        }
+      ]
+    }
   ]
 }

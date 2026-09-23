@@ -32,12 +32,13 @@
   align-items: center;
   gap: calc(var(--px) * 4);
   padding: calc(var(--px) * 3);
+  background: var(--subject-pale);
   color: var(--sg-black);
   text-decoration: none;
 }
 
 .subject:hover {
-  background: var(--subject-pale);
+  background: var(--subject-pale-strong);
 }
 
 .subject:focus-visible {

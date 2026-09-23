@@ -30,8 +30,8 @@ Minden tananyag a `src/data/` mappa JSON-fájljaiban van, kódot nem kell hozzá
 Mentés után a `npm test` jelzi, ha valami hibás (pl. nem létező helyes válasz vagy elírt érzelemnév).
 
 - `math.json`, `history.json`, `economics.json`: egy-egy tárgy a leckéivel. A matek 13, a
-  történelem 34 témakört tartalmaz, a `Math/Slide PDFs` és a `History/Slide PDFs` diasorai alapján
-  (a diasorok maguk nem kerülnek a repóba)
+  történelem 34, a közgazdaságtan 21 témakört tartalmaz, a `Math`, `History` és `Economics`
+  mappák `Slide PDFs` diasorai alapján (a diasorok maguk nem kerülnek a repóba)
 - `characters.json`: a karakterek neve, titulusa és a reakció-mondataik
 - `intro.json`: Csery bemutatkozása a kezdőképernyőn
 

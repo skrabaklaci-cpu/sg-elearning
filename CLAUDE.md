@@ -30,8 +30,8 @@ sprites/                  nyers karakterképek (NEM kerülnek a buildbe)
 scripts/build-sprites.mjs nyers képek → natív felbontású, átlátszó PNG + cellaméretek
 iframe-test.html          csak dev: az appot telefonméretű, cross-site iframe-be ágyazza
 .github/workflows/        deploy.yml: lint + teszt + build → GitHub Pages
-Math/Slide PDFs/          a matek diasorai (forrásanyag a leckékhez, NEM verziókövetett)
-History/Slide PDFs/       a történelem diasorai (szintén nem verziókövetett)
+Math|History|Economics/   a felkészítő eredeti diasorai (Slide PDFs), forrásanyag a leckékhez.
+                          A repó nyilvános, ezért ezek a mappák NEM verziókövetettek.
 src/
   main.js                 indítás: állapot betöltése, globális rétegek (szintlépés, toast), router
   router.js               hash-router: #/, #/subjects, #/subject/:id, #/lesson/:id

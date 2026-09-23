@@ -118,7 +118,7 @@
    *  --subject-ink    a --subject-strong-on olvasható szövegszín
    *  --subject-dark   sötét árnyalat világos panelen lévő szöveghez
    *  --subject-deep   nagyon sötét árnyalat háttérhez
-   *  --subject-pale   világos árnyalat halvány kiemeléshez
+   *  --subject-pale   világos árnyalat: a tárgy kártyájának és paneljeinek háttere
    *  --subject-light  sötét háttéren olvasható, világosított árnyalat (kis szöveghez)
    */
   --subject: var(--sg-blue);
@@ -127,6 +127,7 @@
   --subject-dark: var(--sg-blue-dark);
   --subject-deep: var(--sg-blue-deep);
   --subject-pale: var(--sg-blue-pale);
+  --subject-pale-strong: color-mix(in srgb, var(--sg-blue) 28%, var(--sg-light));
   --subject-light: var(--sg-blue);
 }
 
@@ -137,6 +138,7 @@
   --subject-dark: color-mix(in srgb, var(--sg-math) 62%, var(--sg-black));
   --subject-deep: color-mix(in srgb, var(--sg-math) 22%, var(--sg-black));
   --subject-pale: color-mix(in srgb, var(--sg-math) 14%, var(--sg-light));
+  --subject-pale-strong: color-mix(in srgb, var(--sg-math) 26%, var(--sg-light));
   --subject-light: color-mix(in srgb, var(--sg-math) 70%, var(--sg-light));
 }
 
@@ -147,6 +149,7 @@
   --subject-dark: color-mix(in srgb, var(--sg-history) 55%, var(--sg-black));
   --subject-deep: color-mix(in srgb, var(--sg-history) 22%, var(--sg-black));
   --subject-pale: color-mix(in srgb, var(--sg-history) 18%, var(--sg-light));
+  --subject-pale-strong: color-mix(in srgb, var(--sg-history) 30%, var(--sg-light));
   --subject-light: color-mix(in srgb, var(--sg-history) 70%, var(--sg-light));
 }
 
@@ -157,6 +160,7 @@
   --subject-dark: color-mix(in srgb, var(--sg-economics) 45%, var(--sg-black));
   --subject-deep: color-mix(in srgb, var(--sg-economics) 22%, var(--sg-black));
   --subject-pale: color-mix(in srgb, var(--sg-economics) 20%, var(--sg-light));
+  --subject-pale-strong: color-mix(in srgb, var(--sg-economics) 32%, var(--sg-light));
   --subject-light: color-mix(in srgb, var(--sg-economics) 70%, var(--sg-light));
 }
 

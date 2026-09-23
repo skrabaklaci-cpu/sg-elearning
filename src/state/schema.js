@@ -7,7 +7,7 @@
 
 import { isDateString } from '../lib/date.js';
 
-export const SCHEMA_VERSION = 3;
+export const SCHEMA_VERSION = 4;
 
 export function createInitialState() {
   return {
@@ -48,6 +48,12 @@ function migrate(raw) {
   if (data.version === 2) {
     data.lessons = dropLessons(data.lessons, 'history-');
     data.version = 3;
+  }
+
+  // v3 → v4: és a közgazdaságtannal, amikor a 21 témakör bekerült.
+  if (data.version === 3) {
+    data.lessons = dropLessons(data.lessons, 'economics-');
+    data.version = 4;
   }
 
   return data;
